@@ -1,13 +1,15 @@
 # ISH / ICH2026 frontend
 
-Static one-page frontend designed for embedding in Google Sites through
+Static multipage frontend designed for embedding in Google Sites through
 `Insert > Embed > Embed URL`.
 
 ## Files
 
-- `index.html`: page content and structure.
+- `index.html`: public home/About ISH page.
+- `about-ish/`, `ich2026/`, `contact/`: static pages matching the original site structure.
 - `styles.css`: responsive design, layout, motion and theme.
 - `script.js`: mobile menu, scroll reveal and active navigation state.
+- `scripts/build_site.py`: regenerates the static HTML pages from shared page data.
 
 ## Local preview
 
@@ -17,6 +19,10 @@ This can be opened directly in a browser:
 
 For a closer production preview, serve the folder with any static server and open
 the generated local URL.
+
+Regenerate pages after editing shared content:
+
+`python3 scripts/build_site.py`
 
 ## Hosting for Google Sites embed
 

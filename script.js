@@ -4,7 +4,15 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
 const mobileQuery = window.matchMedia("(max-width: 780px)");
 const sections = navLinks
-  .map((link) => document.querySelector(link.getAttribute("href")))
+  .map((link) => {
+    const href = link.getAttribute("href") || "";
+    if (!href.startsWith("#")) return null;
+    try {
+      return document.querySelector(href);
+    } catch {
+      return null;
+    }
+  })
   .filter(Boolean);
 
 function setMenu(open) {
@@ -65,6 +73,13 @@ const navObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => navObserver.observe(section));
+
+const currentPage = body.dataset.page;
+if (currentPage) {
+  navLinks.forEach((link) => {
+    link.classList.toggle("active", link.dataset.nav === currentPage);
+  });
+}
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
