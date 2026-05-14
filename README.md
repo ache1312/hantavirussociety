@@ -31,6 +31,23 @@ Target Google Site page:
 
 `https://sites.google.com/view/jejetesting/p%C3%A1gina-principal`
 
+GitHub repository:
+
+`https://github.com/ache1312/hantavirussociety`
+
+Expected GitHub Pages URL:
+
+`https://ache1312.github.io/hantavirussociety/`
+
+If the URL returns 404 after pushing, enable Pages in GitHub:
+
+1. Open `https://github.com/ache1312/hantavirussociety/settings/pages`.
+2. Under `Build and deployment`, choose `Deploy from a branch`.
+3. Branch: `gh-pages`.
+4. Folder: `/ (root)`.
+5. Click `Save`.
+6. Wait 1-3 minutes and open `https://ache1312.github.io/hantavirussociety/`.
+
 After deployment:
 
 1. Open the Google Sites editor for that page.
