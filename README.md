@@ -62,6 +62,6 @@ empty and place only this embed on it.
 
 ## Asset note
 
-Current images are public URLs extracted from the reference site and should be
-treated as placeholders unless you have permission to reuse them. Replace them
-with authorized local files before final publication.
+Images are now stored locally under `assets/images/`, so the published page does
+not depend on Google Sites image hotlinks. Keep replacing or optimizing those
+files in the same paths as the site evolves.
