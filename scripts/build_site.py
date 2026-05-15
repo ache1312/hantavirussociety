@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 SITE_URL = "https://www.hantavirussociety.org"
+ASSET_VERSION = "20260515-picture-layout"
 
 OG_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp",
@@ -409,7 +410,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
 {THEME_BOOTSTRAP}
-    <link rel="stylesheet" href="{prefix}styles.css">{json_ld}
+    <link rel="stylesheet" href="{prefix}styles.css?v={ASSET_VERSION}">{json_ld}
   </head>
   <body data-page="{active}">
     <div class="scroll-progress" aria-hidden="true"></div>
