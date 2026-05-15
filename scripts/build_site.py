@@ -281,8 +281,8 @@ def home_page(
         </div>
         <div class="section-shell society-gallery single-image" aria-label="ISH visual archive">
           <figure class="reveal">
-            <img src="{img(prefix, "ui/society-archive-2.png")}" alt="ISH conference participants" loading="lazy" decoding="async">
-            <figcaption>Research community and training</figcaption>
+            <img src="{img(prefix, "ui/society-archive-2.png")}" alt="ICH2023 Seoul meeting participants" loading="lazy" decoding="async">
+            <figcaption>ICH2023 Seoul | Republic of Korea</figcaption>
           </figure>
         </div>
       </section>
