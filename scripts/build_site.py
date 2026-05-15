@@ -29,6 +29,23 @@ NAV = [
     ("contact", "Contact", "contact/"),
 ]
 
+NAV_GROUPS = [
+    ("Society", [("about", "About ISH", "about-ish/"), ("contact", "Contact", "contact/")]),
+    (
+        "Conference",
+        [
+            ("ich2026", "ICH2026", "ich2026/"),
+            ("keynote", "Keynotes", "ich2026/keynote-speakers/"),
+            ("programme", "Programme", "ich2026/programme/"),
+            ("registration", "Registration", "ich2026/abstracts-registration/"),
+            ("venue", "Venue", "ich2026/venue/"),
+            ("sponsors", "Sponsors", "ich2026/partners-sponsors/"),
+        ],
+    ),
+]
+
+ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "sponsors"}
+
 MEMBERSHIP_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1"
 CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3uFLpQiZlgOD5lr03vvze29w4axGWtQ/viewform"
 
@@ -119,10 +136,15 @@ def attrs(**values: str) -> str:
 
 
 def header(prefix: str, active: str) -> str:
-    nav = []
-    for key, label, href in NAV:
-        current = ' aria-current="page"' if key == active else ""
-        nav.append(f'<a href="{local(prefix, href)}" data-nav="{key}"{current}>{escape(label)}</a>')
+    nav_groups = []
+    for group_label, links in NAV_GROUPS:
+        items = []
+        for key, label, href in links:
+            current = ' aria-current="page"' if key == active else ""
+            items.append(f'<a href="{local(prefix, href)}" data-nav="{key}"{current}>{escape(label)}</a>')
+        nav_groups.append(
+            f'<div class="nav-group" data-nav-group="{escape(group_label.lower())}"><span>{escape(group_label)}</span><div>{"".join(items)}</div></div>'
+        )
     return f"""
     <header class="site-header" data-header>
       <a class="brand" href="{local(prefix)}" aria-label="International Society for Hantaviruses">
@@ -139,9 +161,23 @@ def header(prefix: str, active: str) -> str:
         <span class="sr-only">Menu</span>
       </button>
       <nav class="site-nav" id="site-menu" aria-label="Primary navigation" data-menu>
-        {"".join(nav)}
+        {"".join(nav_groups)}
       </nav>
     </header>"""
+
+
+def ich_subnav(prefix: str, active: str) -> str:
+    links = []
+    for key, label, href in NAV:
+        if key not in ICH_NAV_KEYS:
+            continue
+        current = ' aria-current="page"' if key == active else ""
+        links.append(f'<a href="{local(prefix, href)}" data-nav="{key}"{current}>{escape(label)}</a>')
+    return f"""
+      <nav class="subnav-strip" aria-label="ICH2026 section navigation">
+        <span>ICH2026</span>
+        <div>{"".join(links)}</div>
+      </nav>"""
 
 
 def footer(prefix: str) -> str:
@@ -176,6 +212,7 @@ def footer(prefix: str) -> str:
 
 def doc(out_path: str, active: str, title: str, description: str, body: str) -> str:
     prefix = prefix_for(out_path)
+    subnav = ich_subnav(prefix, active) if active in ICH_NAV_KEYS else ""
     return f"""<!doctype html>
 <html lang="en">
   <head>
@@ -191,6 +228,8 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
   </head>
   <body data-page="{active}">
 {header(prefix, active)}
+    <div class="menu-backdrop" data-menu-backdrop hidden></div>
+{subnav}
     <main id="top">
 {body}
     </main>
@@ -258,6 +297,23 @@ def home_page(prefix: str) -> str:
             <article class="focus-item reveal" role="listitem"><span>02</span><h3>Virus-host biology</h3><p>Understanding replication, immune response, pathogenesis and host-pathogen interaction.</p></article>
             <article class="focus-item reveal" role="listitem"><span>03</span><h3>Diagnostics & care</h3><p>Improving early diagnosis, clinical management and risk assessment after exposure.</p></article>
             <article class="focus-item reveal" role="listitem"><span>04</span><h3>Vaccines & therapeutics</h3><p>Accelerating translational work on prevention, treatment and preparedness.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="section research-domains">
+        <div class="section-shell research-domain-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Scientific domains</p>
+            <h2>From field ecology to clinical preparedness.</h2>
+          </div>
+          <div class="domain-list reveal" aria-label="Hantavirus research domains">
+            <span>Reservoir ecology</span>
+            <span>Viral evolution</span>
+            <span>Host response</span>
+            <span>Diagnostics</span>
+            <span>Clinical care</span>
+            <span>Vaccines</span>
+            <span>Therapeutics</span>
           </div>
         </div>
       </section>
@@ -355,6 +411,12 @@ def ich2026_page(prefix: str) -> str:
           </div>
         </div>
       </section>
+      <section class="conference-summary" aria-label="ICH2026 quick facts">
+        <div class="summary-item"><span>Dates</span><strong>November 2-5, 2026</strong></div>
+        <div class="summary-item"><span>City</span><strong>Puerto Varas, Chile</strong></div>
+        <div class="summary-item"><span>Venue</span><strong>Hotel Bellavista</strong></div>
+        <div class="summary-item"><span>Focus</span><strong>Hantavirus science and Andes Virus workshop</strong></div>
+      </section>
       <section class="section intro-band">
         <div class="section-shell ich-story">
           <div class="section-heading reveal">
@@ -369,6 +431,20 @@ def ich2026_page(prefix: str) -> str:
             <img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Puerto Varas waterfront and Lake Llanquihue" loading="lazy" decoding="async">
             <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
           </figure>
+        </div>
+      </section>
+      <section class="section conference-path-section">
+        <div class="section-shell">
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Conference path</p>
+            <h2>Move through ICH2026 by decision point.</h2>
+          </div>
+          <div class="conference-path" role="list">
+            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/venue/")}"><span>01</span><strong>Plan travel</strong><small>Venue, airports, local transfers and Puerto Varas context.</small></a>
+            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>02</span><strong>Choose sessions</strong><small>Scientific themes, main meeting and Andes Virus workshop.</small></a>
+            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/abstracts-registration/")}"><span>03</span><strong>Submit and register</strong><small>Abstract submission, early bird timing and conference form.</small></a>
+            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/partners-sponsors/")}"><span>04</span><strong>Review partners</strong><small>Institutional support and scientific host network.</small></a>
+          </div>
         </div>
       </section>
       <section class="section data-section">
@@ -405,6 +481,15 @@ def ich2026_page(prefix: str) -> str:
                 <a class="text-link" href="{local(prefix, "ich2026/abstracts-registration/")}">Registration details</a>
               </div>
             </article>
+            <article class="ich-feature reveal">
+              <img src="{img(prefix, "ich2026/conference-volcano.jpg")}" alt="Osorno Volcano and Petrohue waterfalls" loading="lazy" decoding="async">
+              <div>
+                <span>04</span>
+                <h3>Andes Virus Workshop</h3>
+                <p>A focused day on regional evidence, clinical care, early diagnosis and public health response.</p>
+                <a class="text-link" href="{local(prefix, "ich2026/programme/")}">Workshop details</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -427,14 +512,19 @@ def ich2026_page(prefix: str) -> str:
             <p class="eyebrow">Organizing Committees</p>
             <h2>Scientific and local teams from the original ICH2026 page.</h2>
           </div>
-          <div class="committee-section">
+          <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
+            <button type="button" class="is-active" data-committee-filter="all">All</button>
+            <button type="button" data-committee-filter="scientific">Scientific</button>
+            <button type="button" data-committee-filter="local">Local</button>
+          </div>
+          <div class="committee-section" data-committee-section="scientific">
             <div class="committee-label reveal">
               <span>Scientific Committee</span>
               <p>International scientific direction for the conference programme.</p>
             </div>
             {scientific_people}
           </div>
-          <div class="committee-section">
+          <div class="committee-section" data-committee-section="local">
             <div class="committee-label reveal">
               <span>Local Organizing Committee</span>
               <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
@@ -470,9 +560,16 @@ def programme_page(prefix: str) -> str:
       {page_hero(prefix, "Scientific programme", "Focused sessions for the full research-to-care pathway.", "The programme connects viral ecology, evolution, host biology, clinical care, diagnostics, vaccines and therapeutics.", "ui/society-archive-2.png", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")])}
       <section class="section program">
         <div class="section-shell">
-          <div class="program-grid">
-            <article class="program-track reveal"><p class="track-date">November 2-4</p><h3>International Hantavirus Conference</h3><ul><li>Viral epidemiology, evolution and genetics</li><li>Virus ecology and climate change</li><li>Viral replication and host interaction</li><li>Pathogenesis, diagnostics and clinical care</li><li>Vaccines and therapeutics</li></ul></article>
-            <article class="program-track highlight reveal"><p class="track-date">November 5</p><h3>Specialized Andes Virus Workshop</h3><ul><li>Translation of vaccine and therapeutic candidates</li><li>Early diagnosis and exposed-person management</li><li>Regional surveillance and response network</li><li>Round table with scientific and health authorities</li></ul><p class="track-note">Simultaneous English-Spanish interpretation planned.</p></article>
+          <div class="section-heading compact reveal"><p class="eyebrow">Programme timeline</p><h2>Four days organized by scientific depth and public health relevance.</h2></div>
+          <div class="program-timeline">
+            <article class="program-day reveal"><span>Nov 2</span><h3>Opening and viral ecology</h3><p>Arrival, opening session, epidemiology, reservoirs, viral diversity and climate-linked transmission.</p></article>
+            <article class="program-day reveal"><span>Nov 3</span><h3>Virus-host biology</h3><p>Replication, immune response, pathogenesis and host-pathogen interaction across hantavirus systems.</p></article>
+            <article class="program-day reveal"><span>Nov 4</span><h3>Clinical translation</h3><p>Diagnostics, clinical care, vaccines, therapeutics and preparedness across endemic regions.</p></article>
+            <article class="program-day highlight reveal"><span>Nov 5</span><h3>Specialized Andes Virus Workshop</h3><p>Regional evidence, early diagnosis, exposed-person management, response capacity and round-table discussion.</p><small>Simultaneous English-Spanish interpretation planned.</small></article>
+          </div>
+          <div class="program-grid program-support">
+            <article class="program-track reveal"><p class="track-date">Main conference themes</p><h3>International Hantavirus Conference</h3><ul><li>Viral epidemiology, evolution and genetics</li><li>Virus ecology and climate change</li><li>Viral replication and host interaction</li><li>Pathogenesis, diagnostics and clinical care</li><li>Vaccines and therapeutics</li></ul></article>
+            <article class="program-track highlight reveal"><p class="track-date">Workshop focus</p><h3>Andes Virus</h3><ul><li>Translation of vaccine and therapeutic candidates</li><li>Early diagnosis and exposed-person management</li><li>Regional surveillance and response network</li><li>Round table with scientific and health authorities</li></ul><p class="track-note">Detailed session timing will be published as the programme is finalized.</p></article>
           </div>
         </div>
       </section>"""
@@ -482,10 +579,13 @@ def registration_page(prefix: str) -> str:
     return f"""
       {page_hero(prefix, "Abstracts & registration", "Registration and abstract submission.", "The original site notes that abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", local(prefix, "contact/"), "button-secondary")])}
       <section class="section intro-band">
-        <div class="section-shell registration-grid">
-          <article class="registration-item reveal"><span>Abstract submission</span><strong>Opening May 2026</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submission form</a></article>
-          <article class="registration-item reveal"><span>Early bird registration</span><strong>May-July</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Registration link</a></article>
-          <article class="registration-item reveal"><span>Standard registration</span><strong>August-October</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Registration link</a></article>
+        <div class="section-shell registration-flow-layout">
+          <div class="section-heading reveal"><p class="eyebrow">Registration flow</p><h2>Submit, register, and prepare for Puerto Varas.</h2></div>
+          <div class="registration-flow">
+            <article class="registration-item reveal"><span>Step 01</span><strong>Abstract submission</strong><p>Opening May 2026 for scientific contributions across the conference themes.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submission form</a></article>
+            <article class="registration-item reveal"><span>Step 02</span><strong>Early bird registration</strong><p>Planned for May-July, with the same conference form used for registration.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Registration link</a></article>
+            <article class="registration-item reveal"><span>Step 03</span><strong>Standard registration</strong><p>Planned for August-October for participants completing registration after early bird timing.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Registration link</a></article>
+          </div>
         </div>
       </section>"""
 
@@ -522,6 +622,16 @@ def contact_page(prefix: str) -> str:
         <div class="section-shell contact-layout">
           <div class="section-heading reveal"><p class="eyebrow">Organizers</p><h2>Questions, registration and abstract support.</h2></div>
           <div class="contact-actions reveal"><a class="contact-email" href="mailto:ICH2026@hantavirussociety.org">ICH2026@hantavirussociety.org</a><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Conference form</a><a class="button button-secondary" href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH membership</a></div>
+        </div>
+      </section>
+      <section class="section contact-utility">
+        <div class="section-shell contact-topics">
+          <div class="section-heading reveal"><p class="eyebrow">What to contact us about</p><h2>Use the right route for the request.</h2></div>
+          <div class="topic-list reveal">
+            <a href="mailto:ICH2026@hantavirussociety.org"><span>01</span><strong>Conference questions</strong><small>Programme, venue, local organization and participation logistics.</small></a>
+            <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer"><span>02</span><strong>Abstracts & registration</strong><small>Submission, registration timing and form-based conference requests.</small></a>
+            <a href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer"><span>03</span><strong>ISH membership</strong><small>Requests related to joining the international hantavirus research network.</small></a>
+          </div>
         </div>
       </section>"""
 
