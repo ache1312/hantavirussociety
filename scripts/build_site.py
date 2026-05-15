@@ -53,12 +53,11 @@ CONFERENCE_JSON_LD = """{
 THEME_BOOTSTRAP = """    <script>
       (() => {
         const root = document.documentElement;
-        const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         let storedTheme = null;
         try {
           storedTheme = localStorage.getItem("ish-theme");
         } catch {}
-        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : "light";
         root.dataset.theme = theme;
         root.style.colorScheme = theme;
       })();
@@ -253,10 +252,10 @@ def header(prefix: str, active: str) -> str:
       <nav class="site-nav" id="site-menu" aria-label="Primary navigation" data-menu>
         {"".join(nav_groups)}
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch theme" data-theme-toggle>
+      <button class="theme-toggle" type="button" aria-label="Light mode active. Switch to dark mode." aria-pressed="false" title="Light mode active. Switch to dark mode." data-theme-tooltip="Light mode active. Switch to dark mode." data-theme-toggle>
         <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
-        <span class="sr-only" data-theme-label>Switch theme</span>
+        <span class="sr-only" data-theme-label>Light mode active. Switch to dark mode.</span>
       </button>
     </header>"""
 
