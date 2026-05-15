@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://www.hantavirussociety.org"
 
 OG_IMAGES: dict[str, str] = {
+    "home": "ui/home-science-hero.webp",
     "about": "ui/home-science-hero.webp",
     "ich2026": "ich2026/conference-volcano.jpg",
     "keynote": "venue/conference-landscape.png",
@@ -83,11 +84,10 @@ NAV = [
     ("registration", "Registration", "ich2026/abstracts-registration/"),
     ("venue", "Venue", "ich2026/venue/"),
     ("sponsors", "Sponsors", "ich2026/partners-sponsors/"),
-    ("contact", "Contact", "contact/"),
 ]
 
 NAV_GROUPS = [
-    ("Society", [("about", "About ISH", "about-ish/"), ("contact", "Contact", "contact/")]),
+    ("Society", [("about", "About ISH", "about-ish/")]),
     (
         "Conference",
         [
@@ -199,6 +199,10 @@ def local(prefix: str, path: str = "") -> str:
     return f"{prefix}{path}"
 
 
+def contact_href(prefix: str) -> str:
+    return local(prefix, "about-ish/#contact")
+
+
 def attrs(**values: str) -> str:
     return " ".join(f'{key.replace("_", "-")}="{escape(value)}"' for key, value in values.items() if value)
 
@@ -286,7 +290,7 @@ def footer(prefix: str) -> str:
         <a href="{local(prefix, "about-ish/")}">About ISH</a>
         <a href="{local(prefix, "ich2026/")}">ICH2026</a>
         <a href="{local(prefix, "ich2026/abstracts-registration/")}">Registration</a>
-        <a href="{local(prefix, "contact/")}">Contact</a>
+        <a href="{contact_href(prefix)}">Contact</a>
       </nav>
       <nav aria-label="Original Google Sites pages">
         <strong>Original Google Sites</strong>
@@ -459,7 +463,7 @@ def home_page(
           </div>
           <div class="contact-actions reveal">
             <a class="button button-primary" href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH membership</a>
-            <a class="button button-secondary light" href="{local(prefix, "contact/")}">Contact ICH2026</a>
+            <a class="button button-secondary light" href="{contact_href(prefix)}">Contact ICH2026</a>
           </div>
         </div>
       </section>"""
@@ -467,10 +471,23 @@ def home_page(
 
 def advisory_grid(prefix: str) -> str:
     cards = []
-    for name, role, image, href in BOARD:
+    for index, (name, role, image, href) in enumerate(BOARD):
+        if "|" in role:
+            title, country = [part.strip() for part in role.split("|", 1)]
+        else:
+            title, country = "International Advisory Board", role
         heading = f'<a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a>' if href else escape(name)
+        officer_class = " advisor-officer" if index < 4 else ""
         cards.append(
-            f'<article class="advisor reveal" role="listitem"><img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async"><h3>{heading}</h3><p>{escape(role)}</p></article>'
+            f"""
+            <article class="advisor{officer_class} reveal" role="listitem">
+              <div class="advisor-photo"><img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async"></div>
+              <div class="advisor-copy">
+                <span class="advisor-location">{escape(country)}</span>
+                <h3>{heading}</h3>
+                <p>{escape(title)}</p>
+              </div>
+            </article>"""
         )
     return f'<div class="advisory-grid" role="list">{"".join(cards)}</div>'
 
@@ -591,7 +608,7 @@ def ich2026_page(prefix: str) -> str:
           </div>
           <div class="ich-feature-grid">
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/hantavirus-em.jpg")}" alt="Hantavirus particles under electron microscopy" loading="lazy" decoding="async">
+              <img src="{img(prefix, "ich2026/generated/scientific-program.jpg")}" alt="Researchers reviewing hantavirus program topics in a scientific session" loading="lazy" decoding="async">
               <div>
                 <span>01</span>
                 <h3>Scientific Program</h3>
@@ -600,7 +617,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/rodent-reservoir.jpg")}" alt="Rodent reservoir associated with hantavirus ecology" loading="lazy" decoding="async">
+              <img src="{img(prefix, "ich2026/generated/keynote-speakers.jpg")}" alt="Keynote speaker presenting hantavirus microscopy to a scientific audience" loading="lazy" decoding="async">
               <div>
                 <span>02</span>
                 <h3>Keynote Speakers</h3>
@@ -609,7 +626,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "venue/conference-landscape.png")}" alt="Conference landscape in Southern Chile" loading="lazy" decoding="async">
+              <img src="{img(prefix, "ich2026/generated/abstract-registration.jpg")}" alt="Scientist preparing abstract submission and conference registration materials" loading="lazy" decoding="async">
               <div>
                 <span>03</span>
                 <h3>Abstract Submission & Registration</h3>
@@ -618,7 +635,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/conference-volcano.jpg")}" alt="Osorno Volcano and Petrohue waterfalls" loading="lazy" decoding="async">
+              <img src="{img(prefix, "ich2026/generated/andes-virus-workshop.jpg")}" alt="Clinical and public health team working on Andes virus workshop materials in Southern Chile" loading="lazy" decoding="async">
               <div>
                 <span>04</span>
                 <h3>Andes Virus Workshop</h3>
@@ -722,7 +739,7 @@ def programme_page(prefix: str) -> str:
 def registration_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Abstracts & Registration", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", local(prefix, "contact/"), "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
           <div class="section-heading reveal"><p class="eyebrow">Registration flow</p><h2>ICH2026 Registration & Abstract Submission</h2><p>Comming soon ...</p><p>We apologize for the delay. Our team is currently supporting the cruise ship emergency.</p></div>
@@ -816,15 +833,18 @@ def sponsors_page(prefix: str) -> str:
       <section class="section sponsors"><div class="section-shell"><div class="sponsor-grid" role="list">{cards}</div></div></section>"""
 
 
-def contact_page(prefix: str) -> str:
+def contact_section() -> str:
     return f"""
-      {page_hero(prefix, "Contact", "CONTACT ICH2026 Organizers", "ICH2026@hantavirussociety.org", "venue/conference-landscape.png", [("Email ICH2026", "mailto:ICH2026@hantavirussociety.org", "button-primary")])}
-      <section class="section contact">
+      <section class="section contact" id="contact">
         <div class="section-shell contact-layout">
           <div class="section-heading reveal"><p class="eyebrow">Contact</p><h2>CONTACT ICH2026 Organizers</h2></div>
           <div class="contact-actions reveal"><a class="contact-email" href="mailto:ICH2026@hantavirussociety.org">ICH2026@hantavirussociety.org</a></div>
         </div>
       </section>"""
+
+
+def contact_page(prefix: str) -> str:
+    return contact_section()
 
 
 def about_page(prefix: str) -> str:
@@ -853,15 +873,16 @@ def about_page(prefix: str) -> str:
         <div class="section-shell">
           <div class="section-heading compact reveal">
             <p class="eyebrow">International Advisory Board</p>
-            <h2>International Advisory Board</h2>
+            <h2>Global advisory leadership across hantavirus-affected regions.</h2>
           </div>
           {advisory_grid(prefix)}
         </div>
-      </section>"""
+      </section>
+      {contact_section()}"""
 
 
 PAGES = [
-    ("index.html", "about", "International Society for Hantaviruses", "International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.", home_page),
+    ("index.html", "home", "International Society for Hantaviruses", "International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.", home_page),
     ("about-ish/index.html", "about", "About ISH | International Society for Hantaviruses", "About the International Society for Hantaviruses.", about_page),
     ("ich2026/index.html", "ich2026", "ICH2026 | International Society for Hantaviruses", "International Conference on Hantaviruses 2026 in Puerto Varas, Chile.", ich2026_page),
     ("ich2026/keynote-speakers/index.html", "keynote", "Keynote Speakers | ICH2026", "Keynote speakers for ICH2026.", keynote_page),
@@ -875,12 +896,12 @@ PAGES = [
 
 def generate_sitemap() -> None:
     urls = []
-    priorities = {"about": "1.0", "ich2026": "0.9"}
+    priorities = {"home": "1.0", "about": "0.9", "ich2026": "0.9"}
     for out_path, active, *_ in PAGES:
         page_dir = str(Path(out_path).parent)
         loc = SITE_URL + "/" if page_dir == "." else f"{SITE_URL}/{page_dir}/"
         priority = priorities.get(active, "0.8")
-        changefreq = "weekly" if active in ("about", "ich2026") else "monthly"
+        changefreq = "weekly" if active in ("home", "about", "ich2026") else "monthly"
         urls.append(
             f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>{changefreq}</changefreq>\n    <priority>{priority}</priority>\n  </url>"
         )
