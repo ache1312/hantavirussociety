@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from html import escape
 from pathlib import Path
 
@@ -194,6 +195,72 @@ def img(prefix: str, asset_path: str) -> str:
     return f"{prefix}assets/images/{asset_path}"
 
 
+def load_image_manifest() -> dict[str, dict[str, object]]:
+    manifest_path = ROOT / "assets" / "images" / "optimized" / "manifest.json"
+    if not manifest_path.exists():
+        return {}
+    return json.loads(manifest_path.read_text(encoding="utf-8"))
+
+
+IMAGE_MANIFEST = load_image_manifest()
+
+
+def asset_key(asset_path: str) -> str:
+    return asset_path.split("?", 1)[0]
+
+
+def format_attrs(values: dict[str, object]) -> str:
+    parts = []
+    for key, value in values.items():
+        if value is None or (value == "" and key != "alt"):
+            continue
+        name = key[:-1] if key.endswith("_") else key
+        parts.append(f'{name.replace("_", "-")}="{escape(str(value), quote=True)}"')
+    return " ".join(parts)
+
+
+def optimized_source(prefix: str, asset_path: str, sizes: str) -> str:
+    manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
+    if not manifest:
+        return ""
+    variants = sorted(manifest["variants"], key=lambda item: item["width"])  # type: ignore[index]
+    srcset = ", ".join(
+        f'{prefix}assets/images/{variant["path"]} {variant["width"]}w' for variant in variants
+    )
+    return f'<source {format_attrs({"type": "image/webp", "srcset": srcset, "sizes": sizes})}>'
+
+
+def responsive_image(
+    prefix: str,
+    asset_path: str,
+    alt: str,
+    *,
+    class_name: str = "",
+    picture_class: str = "responsive-image",
+    loading: str = "",
+    decoding: str = "",
+    fetchpriority: str = "",
+    sizes: str = "100vw",
+    aria_hidden: str = "",
+) -> str:
+    manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
+    image_attrs: dict[str, object] = {
+        "class": class_name,
+        "src": img(prefix, asset_path),
+        "alt": alt,
+        "loading": loading,
+        "decoding": decoding,
+        "fetchpriority": fetchpriority,
+        "aria_hidden": aria_hidden,
+    }
+    if manifest:
+        image_attrs["width"] = manifest["width"]
+        image_attrs["height"] = manifest["height"]
+    picture_attrs = format_attrs({"class": picture_class})
+    picture_attrs = f" {picture_attrs}" if picture_attrs else ""
+    return f'<picture{picture_attrs}>{optimized_source(prefix, asset_path, sizes)}<img {format_attrs(image_attrs)}></picture>'
+
+
 def local(prefix: str, path: str = "") -> str:
     return f"{prefix}{path}"
 
@@ -203,7 +270,7 @@ def contact_href(prefix: str) -> str:
 
 
 def attrs(**values: str) -> str:
-    return " ".join(f'{key.replace("_", "-")}="{escape(value)}"' for key, value in values.items() if value)
+    return format_attrs(values)
 
 
 def travel_icon(name: str) -> str:
@@ -237,7 +304,7 @@ def header(prefix: str, active: str) -> str:
     return f"""
     <header class="site-header" data-header>
       <a class="brand" href="{local(prefix)}" aria-label="International Society for Hantaviruses">
-        <img class="brand-logo" src="{img(prefix, "ui/logo.png")}" alt="International Society for Hantaviruses logo" loading="eager">
+        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", class_name="brand-logo", loading="eager", decoding="async", sizes="65px")}
         <span class="brand-copy">
           <strong>International Society</strong>
           <span>for Hantaviruses</span>
@@ -281,7 +348,7 @@ def footer(prefix: str) -> str:
     return f"""
     <footer class="site-footer-rich">
       <div>
-        <img src="{img(prefix, "ui/logo.png")}" alt="International Society for Hantaviruses logo" loading="lazy">
+        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="120px")}
         <p>Website of the International Society for Hantaviruses.</p>
       </div>
       <nav aria-label="Site pages">
@@ -368,9 +435,7 @@ def home_page(
 ) -> str:
     return f"""
       <section class="hero" aria-labelledby="hero-title">
-        <picture class="hero-media">
-          <img src="{img(prefix, hero_image)}" alt="{escape(hero_alt)}" fetchpriority="high">
-        </picture>
+        {responsive_image(prefix, hero_image, hero_alt, picture_class="hero-media", fetchpriority="high", sizes="100vw")}
         <div class="hero-overlay"></div>
         <div class="hero-content reveal is-visible">
           <p class="eyebrow">Research collaboration since 1989</p>
@@ -411,7 +476,7 @@ def home_page(
         </div>
         <div class="section-shell society-gallery single-image" aria-label="ISH visual archive">
           <figure class="reveal">
-            <img src="{img(prefix, "ui/society-archive-2.png")}" alt="ICH2023 Seoul meeting participants" loading="lazy" decoding="async">
+            {responsive_image(prefix, "ui/society-archive-2.png", "ICH2023 Seoul meeting participants", loading="lazy", decoding="async", sizes="(max-width: 780px) 100vw, 1180px")}
             <figcaption>ICH2023 Seoul | Republic of Korea</figcaption>
           </figure>
         </div>
@@ -482,7 +547,7 @@ def advisory_grid(prefix: str) -> str:
         cards.append(
             f"""
             <article class="advisor{officer_class} reveal" role="listitem">
-              <div class="advisor-photo"><img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async"></div>
+              <div class="advisor-photo">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 780px) 104px, 184px")}</div>
               <div class="advisor-copy">
                 <span class="advisor-location">{escape(country)}</span>
                 <h3>{heading}</h3>
@@ -509,7 +574,7 @@ def page_hero(prefix: str, eyebrow: str, title: str, lede: str, image: str, ctas
         breadcrumb_html = f'<nav class="breadcrumb" aria-label="Breadcrumb"><ol>{"".join(items)}</ol></nav>'
     return f"""
       <section class="page-hero">
-        <img class="page-hero-bg" src="{img(prefix, image)}" alt="" aria-hidden="true">
+        {responsive_image(prefix, image, "", class_name="page-hero-bg", loading="eager", decoding="async", sizes="100vw", aria_hidden="true")}
         <div class="page-hero-overlay"></div>
         <div class="page-hero-copy reveal is-visible">
           {breadcrumb_html}
@@ -528,7 +593,7 @@ def committee_grid(prefix: str, people: list[tuple[str, str, str, str, str, str]
         cards.append(
             f"""
             <article class="committee-person reveal" role="listitem">
-              <img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async">
+              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="96px")}
               <div>
                 <h3><a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a></h3>
                 <p>{escape(role)}</p>
@@ -545,7 +610,7 @@ def ich2026_page(prefix: str) -> str:
     local_people = committee_grid(prefix, LOCAL_COMMITTEE)
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
-        <img class="ich-hero-bg" src="{img(prefix, "ich2026/conference-volcano.jpg")}" alt="Osorno Volcano and Petrohue waterfalls near Puerto Varas" fetchpriority="high">
+        {responsive_image(prefix, "ich2026/conference-volcano.jpg", "Osorno Volcano and Petrohue waterfalls near Puerto Varas", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
         <div class="ich-hero-copy reveal is-visible">
           <p class="eyebrow">International Conference on Hantaviruses</p>
@@ -581,7 +646,7 @@ def ich2026_page(prefix: str) -> str:
             <p>The conference will bring together scientists and health professionals from around the world to share and discuss the latest advances across a broad range of topics, including viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical aspects of disease, and the development of vaccines and therapeutics.</p>
           </div>
           <figure class="ich-story-figure reveal">
-            <img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Puerto Varas waterfront and Lake Llanquihue" loading="lazy" decoding="async">
+            {responsive_image(prefix, "venue/puerto-varas-waterfront.jpg", "Puerto Varas waterfront and Lake Llanquihue", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 420px")}
             <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
           </figure>
         </div>
@@ -609,7 +674,7 @@ def ich2026_page(prefix: str) -> str:
           </div>
           <div class="ich-feature-grid">
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/generated/scientific-program.jpg")}" alt="Researchers reviewing hantavirus program topics in a scientific session" loading="lazy" decoding="async">
+              {responsive_image(prefix, "ich2026/generated/scientific-program.jpg", "Researchers reviewing hantavirus program topics in a scientific session", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
               <div>
                 <span>01</span>
                 <h3>Scientific Program</h3>
@@ -618,7 +683,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/generated/keynote-speakers.jpg")}" alt="Keynote speaker presenting hantavirus microscopy to a scientific audience" loading="lazy" decoding="async">
+              {responsive_image(prefix, "ich2026/generated/keynote-speakers.jpg", "Keynote speaker presenting hantavirus microscopy to a scientific audience", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
               <div>
                 <span>02</span>
                 <h3>Keynote Speakers</h3>
@@ -627,7 +692,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/generated/abstract-registration.jpg")}" alt="Scientist preparing abstract submission and conference registration materials" loading="lazy" decoding="async">
+              {responsive_image(prefix, "ich2026/generated/abstract-registration.jpg", "Scientist preparing abstract submission and conference registration materials", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
               <div>
                 <span>03</span>
                 <h3>Abstract Submission & Registration</h3>
@@ -636,7 +701,7 @@ def ich2026_page(prefix: str) -> str:
               </div>
             </article>
             <article class="ich-feature reveal">
-              <img src="{img(prefix, "ich2026/generated/andes-virus-workshop.jpg")}" alt="Clinical and public health team working on Andes virus workshop materials in Southern Chile" loading="lazy" decoding="async">
+              {responsive_image(prefix, "ich2026/generated/andes-virus-workshop.jpg", "Clinical and public health team working on Andes virus workshop materials in Southern Chile", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
               <div>
                 <span>04</span>
                 <h3>Andes Virus Workshop</h3>
@@ -699,7 +764,7 @@ def keynote_page(prefix: str) -> str:
       <section class="section speakers">
         <div class="section-shell speaker-grid">
           <article class="speaker reveal">
-            <img src="{img(prefix, "speakers/marcela-ferres.png")}" alt="Dr. Marcela Ferres" loading="lazy" decoding="async">
+            {responsive_image(prefix, "speakers/marcela-ferres.png", "Dr. Marcela Ferres", loading="lazy", decoding="async", sizes="196px")}
             <div>
               <h2>Dr. Marcela Ferres</h2>
               <p class="speaker-meta">Pontificia Universidad Catolica, Chile</p>
@@ -710,7 +775,7 @@ def keynote_page(prefix: str) -> str:
             </div>
           </article>
           <article class="speaker reveal">
-            <img src="{img(prefix, "speakers/jay-hooper.png")}" alt="Dr. Jay Hooper" loading="lazy" decoding="async">
+            {responsive_image(prefix, "speakers/jay-hooper.png", "Dr. Jay Hooper", loading="lazy", decoding="async", sizes="196px")}
             <div>
               <h2>Dr. Jay Hooper</h2>
               <p class="speaker-meta">United States Army Medical Research Institute of Infectious Diseases (USAMRIID), USA</p>
@@ -773,7 +838,7 @@ def venue_page(prefix: str) -> str:
               <div><span>Transfer</span><strong>Puerto Varas</strong><small>Private transfer, taxi, bus or shuttle to the venue.</small></div>
             </div>
           </div>
-          <figure class="venue-image reveal"><img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Hotel Bellavista conference room" loading="lazy" decoding="async"><figcaption>Hotel Bellavista conference facilities</figcaption></figure>
+          <figure class="venue-image reveal">{responsive_image(prefix, "venue/puerto-varas-waterfront.jpg", "Hotel Bellavista conference room", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 520px")}<figcaption>Hotel Bellavista conference facilities</figcaption></figure>
         </div>
       </section>
       <section class="section intro-band">
@@ -825,7 +890,7 @@ def venue_page(prefix: str) -> str:
 
 def sponsors_page(prefix: str) -> str:
     cards = "".join(
-        f'<a class="sponsor reveal" href="{href}" target="_blank" rel="noreferrer"><img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async"><span>{escape(name)}</span></a>'
+        f'<a class="sponsor reveal" href="{href}" target="_blank" rel="noreferrer">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="220px")}<span>{escape(name)}</span></a>'
         for name, href, image in SPONSORS
     )
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Partners & Sponsors", None)]
@@ -865,7 +930,7 @@ def about_page(prefix: str) -> str:
         </div>
         <div class="section-shell society-gallery single-image" aria-label="ICH2023 Seoul">
           <figure class="reveal">
-            <img src="{img(prefix, "ui/society-archive-2.png")}" alt="ICH2023 Seoul meeting participants" loading="lazy" decoding="async">
+            {responsive_image(prefix, "ui/society-archive-2.png", "ICH2023 Seoul meeting participants", loading="lazy", decoding="async", sizes="(max-width: 780px) 100vw, 1180px")}
             <figcaption>ICH2023 Seoul | Republic of Korea</figcaption>
           </figure>
         </div>
