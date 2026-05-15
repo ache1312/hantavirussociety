@@ -242,7 +242,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
 
 def home_page(
     prefix: str,
-    hero_image: str = "ui/home-science-hero.webp",
+    hero_image: str = "ui/home-science-hero.webp?v=sober-20260515",
     hero_alt: str = "Scientist examining microscopy data in a virology laboratory",
 ) -> str:
     return f"""
