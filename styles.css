@@ -668,6 +668,10 @@ h3 {
   margin-top: 58px;
 }
 
+.society-gallery.single-image {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .society-gallery figure {
   position: relative;
   min-height: 320px;
