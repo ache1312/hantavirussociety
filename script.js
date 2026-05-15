@@ -1,8 +1,9 @@
 const body = document.body;
 const menu = document.querySelector("[data-menu]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
+const menuBackdrop = document.querySelector("[data-menu-backdrop]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
-const mobileQuery = window.matchMedia("(max-width: 780px)");
+const mobileQuery = window.matchMedia("(max-width: 1100px)");
 const sections = navLinks
   .map((link) => {
     const href = link.getAttribute("href") || "";
@@ -20,6 +21,9 @@ function setMenu(open) {
   menuToggle.setAttribute("aria-expanded", String(open));
   menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
   body.classList.toggle("menu-open", open);
+  if (menuBackdrop) {
+    menuBackdrop.hidden = !open;
+  }
   syncMenuAccessibility(open);
 }
 
@@ -42,6 +46,10 @@ menuToggle.addEventListener("click", () => {
 navLinks.forEach((link) => {
   link.addEventListener("click", () => setMenu(false));
 });
+
+if (menuBackdrop) {
+  menuBackdrop.addEventListener("click", () => setMenu(false));
+}
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -86,6 +94,30 @@ document.addEventListener("keydown", (event) => {
     setMenu(false);
   }
 });
+
+const committeeFilters = Array.from(document.querySelectorAll("[data-committee-filter]"));
+const committeeSections = Array.from(document.querySelectorAll("[data-committee-section]"));
+
+function setCommitteeFilter(filter) {
+  committeeFilters.forEach((button) => {
+    const active = button.dataset.committeeFilter === filter;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+
+  committeeSections.forEach((section) => {
+    const visible = filter === "all" || section.dataset.committeeSection === filter;
+    section.classList.toggle("is-hidden", !visible);
+  });
+}
+
+committeeFilters.forEach((button) => {
+  button.addEventListener("click", () => setCommitteeFilter(button.dataset.committeeFilter));
+});
+
+if (committeeFilters.length) {
+  setCommitteeFilter("all");
+}
 
 mobileQuery.addEventListener("change", () => {
   if (!mobileQuery.matches) {
