@@ -127,3 +127,50 @@ mobileQuery.addEventListener("change", () => {
 });
 
 syncMenuAccessibility();
+
+/* ── Scroll progress bar ── */
+const scrollProgress = document.querySelector(".scroll-progress");
+if (scrollProgress) {
+  const updateProgress = () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
+    scrollProgress.style.setProperty("--progress", pct + "%");
+  };
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  updateProgress();
+}
+
+/* ── Back to top ── */
+const backToTop = document.querySelector(".back-to-top");
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    backToTop.classList.toggle("is-visible", window.scrollY > 500);
+  }, { passive: true });
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+/* ── Countdown timer ── */
+function updateCountdown() {
+  const el = document.querySelector("[data-countdown]");
+  if (!el) return;
+  const target = new Date(el.dataset.countdown + "T09:00:00-03:00");
+  const now = new Date();
+  const diff = target - now;
+
+  const set = (unit, val) => {
+    const node = el.querySelector(`[data-unit="${unit}"]`);
+    if (node) node.textContent = diff <= 0 ? "0" : String(val).padStart(2, "0");
+  };
+
+  if (diff <= 0) {
+    set("days", 0); set("hours", 0); set("minutes", 0);
+    return;
+  }
+  set("days", Math.floor(diff / 864e5));
+  set("hours", Math.floor((diff % 864e5) / 36e5));
+  set("minutes", Math.floor((diff % 36e5) / 6e4));
+}
+updateCountdown();
+setInterval(updateCountdown, 30000);

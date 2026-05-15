@@ -1,18 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.">
     <title>International Society for Hantaviruses</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="International Society for Hantaviruses">
+    <meta property="og:description" content="International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.">
+    <meta property="og:image" content="https://www.hantavirussociety.org/assets/images/ui/home-science-hero.webp">
+    <meta property="og:url" content="https://www.hantavirussociety.org/">
+    <meta property="og:site_name" content="International Society for Hantaviruses">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="International Society for Hantaviruses">
+    <meta name="twitter:description" content="International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.">
+    <meta name="twitter:image" content="https://www.hantavirussociety.org/assets/images/ui/home-science-hero.webp">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.hantavirussociety.org/">
     <link rel="icon" href="assets/images/ui/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body data-page="about">
-
+    <div class="scroll-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header" data-header>
@@ -46,18 +60,25 @@
           <p class="eyebrow">Research collaboration since 1989</p>
           <h1 id="hero-title">International Society for Hantaviruses</h1>
           <p class="hero-lede">A global scientific network advancing hantavirus research, clinical knowledge and international collaboration.</p>
-          <div class="hero-actions" role="group" aria-label="Primary actions">
+          <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="ich2026/">ICH2026 in Chile</a>
             <a class="button button-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1" target="_blank" rel="noreferrer">Apply for membership</a>
-            <a class="button button-ghost" href="ich2026/abstracts-registration/">Abstracts &amp; registration</a>
+            <a class="button button-ghost" href="ich2026/abstracts-registration/">Abstracts & registration</a>
           </div>
         </div>
-        <div class="hero-panel" role="group" aria-label="Conference date">
+        <aside class="hero-panel" aria-label="Conference date">
           <span>International Conference on Hantaviruses</span>
           <strong>Nov 2-5, 2026</strong>
           <small>Puerto Varas, Chile</small>
+          <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
+            <div class="countdown-unit"><span class="countdown-val" data-unit="days">—</span><span class="countdown-label">days</span></div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="hours">—</span><span class="countdown-label">hrs</span></div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">—</span><span class="countdown-label">min</span></div>
+          </div>
           <a href="ich2026/programme/">Programme</a>
-        </div>
+        </aside>
       </section>
       <section class="section intro-band">
         <div class="section-shell two-column">
@@ -70,7 +91,7 @@
             <p>The society connects experts in epidemiology, ecology, viral replication, host-pathogen interaction, pathogenesis, diagnostics, clinical care, vaccines and therapeutics.</p>
           </div>
         </div>
-        <div class="section-shell society-gallery single-image" role="group" aria-label="ISH visual archive">
+        <div class="section-shell society-gallery single-image" aria-label="ISH visual archive">
           <figure class="reveal">
             <img src="assets/images/ui/society-archive-2.png" alt="ICH2023 Seoul meeting participants" loading="lazy" decoding="async">
             <figcaption>ICH2023 Seoul | Republic of Korea</figcaption>
@@ -83,11 +104,11 @@
             <p class="eyebrow">Research focus</p>
             <h2>A practical agenda for hantavirus science.</h2>
           </div>
-          <div class="focus-grid">
-            <article class="focus-item reveal"><span>01</span><h3>Epidemiology &amp; ecology</h3><p>Tracking viral diversity, reservoirs, climate influence and regional transmission dynamics.</p></article>
-            <article class="focus-item reveal"><span>02</span><h3>Virus-host biology</h3><p>Understanding replication, immune response, pathogenesis and host-pathogen interaction.</p></article>
-            <article class="focus-item reveal"><span>03</span><h3>Diagnostics &amp; care</h3><p>Improving early diagnosis, clinical management and risk assessment after exposure.</p></article>
-            <article class="focus-item reveal"><span>04</span><h3>Vaccines &amp; therapeutics</h3><p>Accelerating translational work on prevention, treatment and preparedness.</p></article>
+          <div class="focus-grid" role="list">
+            <article class="focus-item reveal" role="listitem"><span>01</span><h3>Epidemiology & ecology</h3><p>Tracking viral diversity, reservoirs, climate influence and regional transmission dynamics.</p></article>
+            <article class="focus-item reveal" role="listitem"><span>02</span><h3>Virus-host biology</h3><p>Understanding replication, immune response, pathogenesis and host-pathogen interaction.</p></article>
+            <article class="focus-item reveal" role="listitem"><span>03</span><h3>Diagnostics & care</h3><p>Improving early diagnosis, clinical management and risk assessment after exposure.</p></article>
+            <article class="focus-item reveal" role="listitem"><span>04</span><h3>Vaccines & therapeutics</h3><p>Accelerating translational work on prevention, treatment and preparedness.</p></article>
           </div>
         </div>
       </section>
@@ -97,7 +118,7 @@
             <p class="eyebrow">Scientific domains</p>
             <h2>From field ecology to clinical preparedness.</h2>
           </div>
-          <div class="domain-list reveal" role="group" aria-label="Hantavirus research domains">
+          <div class="domain-list reveal" aria-label="Hantavirus research domains">
             <span>Reservoir ecology</span>
             <span>Viral evolution</span>
             <span>Host response</span>
@@ -114,7 +135,7 @@
             <p class="eyebrow">International Advisory Board</p>
             <h2>A global board connecting countries affected by hantavirus disease.</h2>
           </div>
-          <div class="advisory-grid"><article class="advisor reveal"><img src="assets/images/board/nicole-tischler.jpg" alt="Nicole Tischler" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4578-4780" target="_blank" rel="noreferrer">Nicole Tischler</a></h3><p>President ISH | Chile</p></article><article class="advisor reveal"><img src="assets/images/board/piet-maes.jpg" alt="Piet Maes" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4571-5232" target="_blank" rel="noreferrer">Piet Maes</a></h3><p>President Elect | Belgium</p></article><article class="advisor reveal"><img src="assets/images/board/colleen-jonsson.jpg" alt="Colleen B. Jonsson" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-2640-7672" target="_blank" rel="noreferrer">Colleen B. Jonsson</a></h3><p>Secretary ISH | USA</p></article><article class="advisor reveal"><img src="assets/images/board/jin-won-song.jpg" alt="Jin Won Song" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-0796-8332" target="_blank" rel="noreferrer">Jin Won Song</a></h3><p>Past-President | Korea</p></article><article class="advisor reveal"><img src="assets/images/board/satoru-arai.jpg" alt="Satoru Arai" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-5865-0717" target="_blank" rel="noreferrer">Satoru Arai</a></h3><p>Japan</p></article><article class="advisor reveal"><img src="assets/images/board/tatjana-avsic-zupanc.jpg" alt="Tatjana Avsic-Zupanc" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-6243-0688" target="_blank" rel="noreferrer">Tatjana Avsic-Zupanc</a></h3><p>Slovenia</p></article><article class="advisor reveal"><img src="assets/images/board/roger-hewson.jpg" alt="Roger Hewson" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-2273-3152" target="_blank" rel="noreferrer">Roger Hewson</a></h3><p>United Kingdom</p></article><article class="advisor reveal"><img src="assets/images/board/boris-klempa.jpg" alt="Boris Klempa" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-6931-1224" target="_blank" rel="noreferrer">Boris Klempa</a></h3><p>Slovakia</p></article><article class="advisor reveal"><img src="assets/images/board/jonas-klingstrom.jpg" alt="Jonas Klingstrom" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-9076-1441" target="_blank" rel="noreferrer">Jonas Klingstrom</a></h3><p>Sweden</p></article><article class="advisor reveal"><img src="assets/images/board/dexin-li.jpg" alt="Dexin Li" loading="lazy" decoding="async"><h3>Dexin Li</h3><p>China</p></article><article class="advisor reveal"><img src="assets/images/board/mifang-liang.jpg" alt="Mifang Liang" loading="lazy" decoding="async"><h3>Mifang Liang</h3><p>China</p></article><article class="advisor reveal"><img src="assets/images/board/almeka-markotic.jpg" alt="Alemka Markotic" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-4104-7940" target="_blank" rel="noreferrer">Alemka Markotic</a></h3><p>Croatia</p></article><article class="advisor reveal"><img src="assets/images/board/valeria-martinez.jpg" alt="Valeria Martinez" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4356-8136" target="_blank" rel="noreferrer">Valeria Martinez</a></h3><p>Argentina</p></article><article class="advisor reveal"><img src="assets/images/board/gustavo-palacios.jpg" alt="Gustavo Palacios" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-5062-1938" target="_blank" rel="noreferrer">Gustavo Palacios</a></h3><p>USA</p></article><article class="advisor reveal"><img src="assets/images/board/anna-papa.jpg" alt="Anna Papa" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-6643-3322" target="_blank" rel="noreferrer">Anna Papa</a></h3><p>Greece</p></article><article class="advisor reveal"><img src="assets/images/board/liudmila-yashina.jpg" alt="Liudmila Yashina" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-2844-7835" target="_blank" rel="noreferrer">Liudmila Yashina</a></h3><p>Russia</p></article><article class="advisor reveal"><img src="assets/images/board/connie-schmaljohn.jpg" alt="Connie Schmaljohn" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-8852-5482" target="_blank" rel="noreferrer">Connie Schmaljohn</a></h3><p>Honorary Member | USA</p></article></div>
+          <div class="advisory-grid" role="list"><article class="advisor reveal" role="listitem"><img src="assets/images/board/nicole-tischler.jpg" alt="Nicole Tischler" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4578-4780" target="_blank" rel="noreferrer">Nicole Tischler</a></h3><p>President ISH | Chile</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/piet-maes.jpg" alt="Piet Maes" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4571-5232" target="_blank" rel="noreferrer">Piet Maes</a></h3><p>President Elect | Belgium</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/colleen-jonsson.jpg" alt="Colleen B. Jonsson" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-2640-7672" target="_blank" rel="noreferrer">Colleen B. Jonsson</a></h3><p>Secretary ISH | USA</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/jin-won-song.jpg" alt="Jin Won Song" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-0796-8332" target="_blank" rel="noreferrer">Jin Won Song</a></h3><p>Past-President | Korea</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/satoru-arai.jpg" alt="Satoru Arai" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-5865-0717" target="_blank" rel="noreferrer">Satoru Arai</a></h3><p>Japan</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/tatjana-avsic-zupanc.jpg" alt="Tatjana Avsic-Zupanc" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-6243-0688" target="_blank" rel="noreferrer">Tatjana Avsic-Zupanc</a></h3><p>Slovenia</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/roger-hewson.jpg" alt="Roger Hewson" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-2273-3152" target="_blank" rel="noreferrer">Roger Hewson</a></h3><p>United Kingdom</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/boris-klempa.jpg" alt="Boris Klempa" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-6931-1224" target="_blank" rel="noreferrer">Boris Klempa</a></h3><p>Slovakia</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/jonas-klingstrom.jpg" alt="Jonas Klingstrom" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-9076-1441" target="_blank" rel="noreferrer">Jonas Klingstrom</a></h3><p>Sweden</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/dexin-li.jpg" alt="Dexin Li" loading="lazy" decoding="async"><h3>Dexin Li</h3><p>China</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/mifang-liang.jpg" alt="Mifang Liang" loading="lazy" decoding="async"><h3>Mifang Liang</h3><p>China</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/almeka-markotic.jpg" alt="Alemka Markotic" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-4104-7940" target="_blank" rel="noreferrer">Alemka Markotic</a></h3><p>Croatia</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/valeria-martinez.jpg" alt="Valeria Martinez" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-4356-8136" target="_blank" rel="noreferrer">Valeria Martinez</a></h3><p>Argentina</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/gustavo-palacios.jpg" alt="Gustavo Palacios" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-5062-1938" target="_blank" rel="noreferrer">Gustavo Palacios</a></h3><p>USA</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/anna-papa.jpg" alt="Anna Papa" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0002-6643-3322" target="_blank" rel="noreferrer">Anna Papa</a></h3><p>Greece</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/liudmila-yashina.jpg" alt="Liudmila Yashina" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0003-2844-7835" target="_blank" rel="noreferrer">Liudmila Yashina</a></h3><p>Russia</p></article><article class="advisor reveal" role="listitem"><img src="assets/images/board/connie-schmaljohn.jpg" alt="Connie Schmaljohn" loading="lazy" decoding="async"><h3><a href="https://orcid.org/0000-0001-8852-5482" target="_blank" rel="noreferrer">Connie Schmaljohn</a></h3><p>Honorary Member | USA</p></article></div>
         </div>
       </section>
       <section class="section contact-band">
@@ -161,6 +182,7 @@
         <a href="mailto:ICH2026@hantavirussociety.org">Contact ICH2026</a>
       </nav>
     </footer>
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
     <script src="script.js" defer></script>
   </body>
 </html>
