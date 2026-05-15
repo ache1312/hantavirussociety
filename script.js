@@ -1,9 +1,14 @@
 const body = document.body;
+const root = document.documentElement;
 const menu = document.querySelector("[data-menu]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menuBackdrop = document.querySelector("[data-menu-backdrop]");
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeLabel = document.querySelector("[data-theme-label]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
 const mobileQuery = window.matchMedia("(max-width: 1100px)");
+const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const themeStorageKey = "ish-theme";
 const sections = navLinks
   .map((link) => {
     const href = link.getAttribute("href") || "";
@@ -15,6 +20,61 @@ const sections = navLinks
     }
   })
   .filter(Boolean);
+
+function storedTheme() {
+  try {
+    const value = localStorage.getItem(themeStorageKey);
+    return value === "dark" || value === "light" ? value : null;
+  } catch {
+    return null;
+  }
+}
+
+function systemTheme() {
+  return themeQuery.matches ? "dark" : "light";
+}
+
+function syncThemeToggle(theme) {
+  if (!themeToggle || !themeLabel) return;
+  const nextTheme = theme === "dark" ? "light" : "dark";
+  const label = `Switch to ${nextTheme} theme`;
+  themeToggle.setAttribute("aria-label", label);
+  themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+  themeToggle.title = label;
+  themeLabel.textContent = label;
+}
+
+function applyTheme(theme) {
+  root.dataset.theme = theme;
+  root.style.colorScheme = theme;
+  syncThemeToggle(theme);
+}
+
+applyTheme(root.dataset.theme === "dark" || root.dataset.theme === "light" ? root.dataset.theme : storedTheme() || systemTheme());
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(nextTheme);
+    try {
+      localStorage.setItem(themeStorageKey, nextTheme);
+    } catch {
+      // Ignore storage failures; the visible theme still changes for this page load.
+    }
+  });
+}
+
+const handleSystemThemeChange = () => {
+  if (!storedTheme()) {
+    applyTheme(systemTheme());
+  }
+};
+
+if (typeof themeQuery.addEventListener === "function") {
+  themeQuery.addEventListener("change", handleSystemThemeChange);
+} else if (typeof themeQuery.addListener === "function") {
+  themeQuery.addListener(handleSystemThemeChange);
+}
 
 function setMenu(open) {
   menu.classList.toggle("is-open", open);
