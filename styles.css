@@ -2158,7 +2158,11 @@ h3 {
   }
 
   .hero {
-    min-height: 700px;
+    min-height: 760px;
+  }
+
+  .hero-content {
+    margin-bottom: 208px;
   }
 
   h1 {
