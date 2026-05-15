@@ -52,28 +52,32 @@ BOARD = [
     ("Connie Schmaljohn", "Honorary Member | USA", "board/connie-schmaljohn.jpg", "https://orcid.org/0000-0001-8852-5482"),
 ]
 
-COMMITTEE = [
-    ("Nicole Tischler", "Fundacion Ciencia & Vida | Chile", "https://orcid.org/0000-0002-4578-4780"),
-    ("Piet Maes", "KU Leuven | Belgium", "https://orcid.org/0000-0002-4571-5232"),
-    ("Colleen B. Jonsson", "University of Tennessee | USA", "https://orcid.org/0000-0002-2640-7672"),
-    ("Jin Won Song", "Korea University | Korea", "https://orcid.org/0000-0003-0796-8332"),
-    ("Satoru Arai", "Japan", "https://orcid.org/0000-0001-5865-0717"),
-    ("Steven Bradfute", "University of New Mexico | USA", "https://orcid.org/0000-0002-1985-751X"),
-    ("Roger Hewson", "United Kingdom", "https://orcid.org/0000-0003-2273-3152"),
-    ("Boris Klempa", "Slovak Academy of Sciences | Slovakia", "https://orcid.org/0000-0002-6931-1224"),
-    ("Jonas Klingstrom", "Linkoping University | Sweden", "https://orcid.org/0000-0001-9076-1441"),
-    ("Valeria Martinez", "INEI / ANLIS Dr. C. G. Malbran | Argentina", "https://orcid.org/0000-0002-4356-8136"),
-    ("Gustavo Palacios", "Icahn School of Medicine at Mount Sinai | USA", "https://orcid.org/0000-0001-5062-1938"),
-    ("Jenniffer Angulo", "Chile", "https://orcid.org/0000-0002-0471-4751"),
-    ("Maria Ines Barria", "Chile", "https://orcid.org/0000-0001-6225-5971"),
-    ("Mario Calvo", "Chile", "https://orcid.org/0000-0002-1796-2236"),
-    ("Marcela Ferres", "Pontificia Universidad Catolica de Chile", "https://orcid.org/0000-0001-9415-4657"),
-    ("Juan Hormazabal", "Chile", "https://orcid.org/0000-0003-0726-2778"),
-    ("Nicole Le Corre", "Chile", "https://orcid.org/0000-0002-9361-4049"),
-    ("Constanza Martinez-Valdevenito", "Pontificia Universidad Catolica de Chile", "https://orcid.org/0000-0002-2836-9817"),
-    ("Fernando Torres-Perez", "Pontificia Universidad Catolica de Valparaiso", "https://orcid.org/0000-0001-8655-7288"),
-    ("Cecilia Vial", "Universidad del Desarrollo", "https://orcid.org/0000-0002-0399-6144"),
-    ("Pablo Vial", "Universidad del Desarrollo", "https://orcid.org/0000-0002-4135-0416"),
+SCIENTIFIC_COMMITTEE = [
+    ("Nicole Tischler", "President ISH", "Fundacion Ciencia & Vida / Universidad San Sebastian", "Chile", "ich2026/scientific-nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
+    ("Piet Maes", "President Elect ISH", "Universite libre de Bruxelles", "Belgium", "ich2026/scientific-piet-maes.jpg", "https://orcid.org/0000-0002-4571-5232"),
+    ("Colleen B. Jonsson", "Secretary ISH", "University of Tennessee Health Science Center", "USA", "ich2026/scientific-colleen-jonsson.jpg", "https://orcid.org/0000-0002-2640-7672"),
+    ("Jin Won Song", "Past-President ISH", "Korea University College of Medicine", "Korea", "ich2026/scientific-jin-won-song.jpg", "https://orcid.org/0000-0003-0796-8332"),
+    ("Satoru Arai", "Scientific Committee", "National Institute of Infectious Diseases / Japan Institute for Health Security", "Japan", "ich2026/scientific-satoru-arai.jpg", "https://orcid.org/0000-0001-5865-0717"),
+    ("Steven Bradfute", "Scientific Committee", "Center for Global Health, University of New Mexico", "USA", "ich2026/scientific-steven-bradfute.jpg", "https://orcid.org/0000-0002-1985-751X"),
+    ("Roger Hewson", "Scientific Committee", "UK Health Security Agency / London School of Hygiene & Tropical Medicine", "UK", "ich2026/scientific-roger-hewson.jpg", "https://orcid.org/0000-0003-2273-3152"),
+    ("Boris Klempa", "Scientific Committee", "Biomedical Research Center, Slovak Academy of Sciences", "Slovakia", "ich2026/scientific-boris-klempa.jpg", "https://orcid.org/0000-0002-6931-1224"),
+    ("Jonas Klingstrom", "Scientific Committee", "Linkoping University", "Sweden", "ich2026/scientific-jonas-klingstrom.jpg", "https://orcid.org/0000-0001-9076-1441"),
+    ("Valeria Martinez", "Scientific Committee", "INEI / ANLIS Dr. C. G. Malbran", "Argentina", "ich2026/scientific-valeria-martinez.jpg", "https://orcid.org/0000-0002-4356-8136"),
+    ("Gustavo Palacios", "Scientific Committee", "Icahn School of Medicine at Mount Sinai", "USA", "ich2026/scientific-gustavo-palacios.jpg", "https://orcid.org/0000-0001-5062-1938"),
+]
+
+LOCAL_COMMITTEE = [
+    ("Jenniffer Angulo", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-jenniffer-angulo.jpg", "https://orcid.org/0000-0002-0471-4751"),
+    ("Maria Ines Barria", "Local Organizing Committee", "Universidad San Sebastian", "Puerto Montt", "ich2026/local-maria-ines-barria.jpg", "https://orcid.org/0000-0001-6225-5971"),
+    ("Mario Calvo", "Local Organizing Committee", "Universidad Austral de Chile", "Valdivia", "ich2026/local-mario-calvo.jpg", "https://orcid.org/0000-0002-1796-2236"),
+    ("Marcela Ferres", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-marcela-ferres.jpg", "https://orcid.org/0000-0001-9415-4657"),
+    ("Juan Hormazabal", "Local Organizing Committee", "Universidad del Desarrollo", "", "ich2026/local-juan-hormazabal.jpg", "https://orcid.org/0000-0003-0726-2778"),
+    ("Nicole Le Corre", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-nicole-le-corre.jpg", "https://orcid.org/0000-0002-9361-4049"),
+    ("Constanza Martinez-Valdevenito", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-constanza-martinez-valdevenito.jpg", "https://orcid.org/0000-0002-2836-9817"),
+    ("Nicole Tischler", "Local Organizing Committee", "Fundacion Ciencia & Vida / Universidad San Sebastian", "", "ich2026/scientific-nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
+    ("Fernando Torres-Perez", "Local Organizing Committee", "Pontificia Universidad Catolica de Valparaiso", "", "ich2026/local-fernando-torres-perez.jpg", "https://orcid.org/0000-0001-8655-7288"),
+    ("Cecilia Vial", "Local Organizing Committee", "Universidad del Desarrollo", "", "ich2026/local-cecilia-vial.jpg", "https://orcid.org/0000-0002-0399-6144"),
+    ("Pablo Vial", "Local Organizing Committee", "Universidad del Desarrollo", "", "ich2026/local-pablo-vial.jpg", "https://orcid.org/0000-0002-4135-0416"),
 ]
 
 SPONSORS = [
@@ -165,7 +169,7 @@ def footer(prefix: str) -> str:
         <strong>Actions</strong>
         <a href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH membership</a>
         <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Conference form</a>
-        <a href="mailto:ICH2026@hantavirussociety.org">ICH2026@hantavirussociety.org</a>
+        <a href="mailto:ICH2026@hantavirussociety.org">Contact ICH2026</a>
       </nav>
     </footer>"""
 
@@ -205,7 +209,6 @@ def home_page(prefix: str) -> str:
         </picture>
         <div class="hero-overlay"></div>
         <div class="hero-content reveal is-visible">
-          <img class="hero-logo" src="{img(prefix, "ui/logo.png")}" alt="International Society for Hantaviruses logo" loading="eager">
           <p class="eyebrow">Research collaboration since 1989</p>
           <h1 id="hero-title">International Society for Hantaviruses</h1>
           <p class="hero-lede">A global scientific network advancing hantavirus research, clinical knowledge and international collaboration.</p>
@@ -309,39 +312,138 @@ def page_hero(prefix: str, eyebrow: str, title: str, lede: str, image: str, ctas
       </section>"""
 
 
+def committee_grid(prefix: str, people: list[tuple[str, str, str, str, str, str]]) -> str:
+    cards = []
+    for name, role, affiliation, location, image, href in people:
+        location_html = f"<span>{escape(location)}</span>" if location else ""
+        cards.append(
+            f"""
+            <article class="committee-person reveal" role="listitem">
+              <img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async">
+              <div>
+                <h3><a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a></h3>
+                <p>{escape(role)}</p>
+                <span>{escape(affiliation)}</span>
+                {location_html}
+              </div>
+            </article>"""
+        )
+    return f'<div class="committee-people-grid" role="list">{"".join(cards)}</div>'
+
+
 def ich2026_page(prefix: str) -> str:
-    committee_cards = "".join(
-        f'<a class="profile-link reveal" href="{href}" target="_blank" rel="noreferrer"><strong>{escape(name)}</strong><span>{escape(role)}</span></a>'
-        for name, role, href in COMMITTEE
-    )
+    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE)
+    local_people = committee_grid(prefix, LOCAL_COMMITTEE)
     return f"""
-      {page_hero(prefix, "Puerto Varas | Chile", "International Conference on Hantaviruses 2026", "Four days of scientific exchange in Chile's Lake District, followed by a specialized Andes Virus workshop.", "venue/conference-landscape.png", [( "Programme", local(prefix, "ich2026/programme/"), "button-primary"), ("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-secondary")])}
-      <section class="section intro-band">
-        <div class="section-shell detail-grid">
-          <div class="section-heading reveal"><p class="eyebrow">Conference frame</p><h2>Research, clinical practice and public health in one programme.</h2></div>
-          <div class="detail-list reveal">
-            <div><span>Dates</span><strong>November 2-5, 2026</strong></div>
-            <div><span>Venue</span><strong>Hotel Bellavista, Puerto Varas</strong></div>
-            <div><span>Workshop</span><strong>Andes Virus, November 5</strong></div>
+      <section class="ich-hero" aria-labelledby="ich-title">
+        <img class="ich-hero-bg" src="{img(prefix, "ich2026/conference-volcano.jpg")}" alt="Osorno Volcano and Petrohue waterfalls near Puerto Varas" fetchpriority="high">
+        <div class="ich-hero-overlay"></div>
+        <div class="ich-hero-copy reveal is-visible">
+          <p class="eyebrow">International Conference on Hantaviruses</p>
+          <h1 id="ich-title">Puerto Varas, Chile</h1>
+          <p class="hero-lede">November 2-5, 2026</p>
+          <div class="ich-hero-meta" aria-label="Conference details">
+            <span>Venue & Location</span>
+            <strong>Hotel Bellavista, Lake District</strong>
+            <span>Specialized workshop</span>
+            <strong>Andes Virus, November 5</strong>
           </div>
+          <div class="hero-actions page-actions">
+            <a class="button button-primary" href="{local(prefix, "ich2026/abstracts-registration/")}">Abstracts & registration</a>
+            <a class="button button-secondary" href="{local(prefix, "ich2026/programme/")}">Scientific programme</a>
+            <a class="button button-secondary" href="{local(prefix, "ich2026/venue/")}">Venue</a>
+          </div>
+        </div>
+      </section>
+      <section class="section intro-band">
+        <div class="section-shell ich-story">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Venue & Location</p>
+            <h2>Scientific exchange at the foot of the Osorno Volcano.</h2>
+          </div>
+          <div class="prose reveal">
+            <p>The 2026 meeting of the International Society for Hantaviruses will take place in Puerto Varas, in the scenic Lake District of Southern Chile and widely regarded as a gateway to Patagonia.</p>
+            <p>The conference brings together scientists and health professionals to discuss advances in viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical disease, vaccines and therapeutics.</p>
+          </div>
+          <figure class="ich-story-figure reveal">
+            <img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Puerto Varas waterfront and Lake Llanquihue" loading="lazy" decoding="async">
+            <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="section data-section">
         <div class="section-shell">
-          <div class="section-heading compact reveal"><p class="eyebrow">ICH2026 pages</p><h2>Navigate the conference information by task.</h2></div>
-          <div class="resource-grid">
-            <a class="resource-item reveal" href="{local(prefix, "ich2026/keynote-speakers/")}"><span>01</span><strong>Keynote speakers</strong><small>Clinical insight and high-consequence virology.</small></a>
-            <a class="resource-item reveal" href="{local(prefix, "ich2026/programme/")}"><span>02</span><strong>Programme</strong><small>Sessions and Andes Virus workshop.</small></a>
-            <a class="resource-item reveal" href="{local(prefix, "ich2026/abstracts-registration/")}"><span>03</span><strong>Abstracts & registration</strong><small>Submission and registration windows.</small></a>
-            <a class="resource-item reveal" href="{local(prefix, "ich2026/venue/")}"><span>04</span><strong>Venue</strong><small>Hotel, map and travel planning.</small></a>
-            <a class="resource-item reveal" href="{local(prefix, "ich2026/partners-sponsors/")}"><span>05</span><strong>Partners & sponsors</strong><small>Institutional support.</small></a>
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Scientific Program & Keynote Speakers</p>
+            <h2>A conference path for students, postdoctoral researchers and established scientists.</h2>
+          </div>
+          <div class="ich-feature-grid">
+            <article class="ich-feature reveal">
+              <img src="{img(prefix, "ich2026/hantavirus-em.jpg")}" alt="Hantavirus particles under electron microscopy" loading="lazy" decoding="async">
+              <div>
+                <span>01</span>
+                <h3>Scientific Program</h3>
+                <p>Sessions span viral epidemiology, ecology, virus-host interaction, pathogenesis, clinical aspects, vaccines and therapeutics.</p>
+                <a class="text-link" href="{local(prefix, "ich2026/programme/")}">View programme</a>
+              </div>
+            </article>
+            <article class="ich-feature reveal">
+              <img src="{img(prefix, "ich2026/rodent-reservoir.jpg")}" alt="Rodent reservoir associated with hantavirus ecology" loading="lazy" decoding="async">
+              <div>
+                <span>02</span>
+                <h3>Keynote Speakers</h3>
+                <p>Invited experts highlight current developments across hantavirus research, clinical science and medical countermeasures.</p>
+                <a class="text-link" href="{local(prefix, "ich2026/keynote-speakers/")}">See speakers</a>
+              </div>
+            </article>
+            <article class="ich-feature reveal">
+              <img src="{img(prefix, "venue/conference-landscape.png")}" alt="Conference landscape in Southern Chile" loading="lazy" decoding="async">
+              <div>
+                <span>03</span>
+                <h3>Abstract Submission & Registration</h3>
+                <p>Submission and registration are handled through the conference form, with early registration timing listed on the registration page.</p>
+                <a class="text-link" href="{local(prefix, "ich2026/abstracts-registration/")}">Registration details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section ich-workshop">
+        <div class="section-shell ich-workshop-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Specialized Workshop: Andes Virus</p>
+            <h2>A focused day for regional evidence, clinical care and public health response.</h2>
+          </div>
+          <div class="prose reveal">
+            <p>On November 5 the conference will feature a one-day workshop dedicated to Andes virus, a pathogen of particular regional importance.</p>
+            <p>The workshop creates space for researchers, clinicians, public health professionals and local decision-makers to discuss hantavirus cardiopulmonary syndrome, early diagnosis and response capacity.</p>
+            <a class="button button-primary" href="{local(prefix, "ich2026/programme/")}">Workshop programme</a>
           </div>
         </div>
       </section>
       <section class="section committees">
         <div class="section-shell">
-          <div class="section-heading compact reveal"><p class="eyebrow">Scientific and organizing network</p><h2>Committee profiles and ORCID records from the original site.</h2></div>
-          <div class="profile-grid">{committee_cards}</div>
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Organizing Committees</p>
+            <h2>Scientific and local teams from the original ICH2026 page.</h2>
+          </div>
+          <div class="committee-section">
+            <div class="committee-label reveal">
+              <span>Scientific Committee</span>
+              <p>International scientific direction for the conference programme.</p>
+            </div>
+            {scientific_people}
+          </div>
+          <div class="committee-section">
+            <div class="committee-label reveal">
+              <span>Local Organizing Committee</span>
+              <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
+            </div>
+            {local_people}
+          </div>
+          <div class="partners-link reveal">
+            <a class="button button-primary" href="{local(prefix, "ich2026/partners-sponsors/")}">ICH2026 Partners & Sponsors</a>
+          </div>
         </div>
       </section>"""
 
@@ -418,7 +520,7 @@ def contact_page(prefix: str) -> str:
       {page_hero(prefix, "Contact", "Reach the ICH2026 organizing team.", "Use the conference email or forms for registration, abstract submission and membership requests.", "venue/conference-landscape.png", [("Email ICH2026", "mailto:ICH2026@hantavirussociety.org", "button-primary"), ("Conference form", CONFERENCE_FORM, "button-secondary")])}
       <section class="section contact">
         <div class="section-shell contact-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Organizers</p><h2>ICH2026@hantavirussociety.org</h2></div>
+          <div class="section-heading reveal"><p class="eyebrow">Organizers</p><h2>Questions, registration and abstract support.</h2></div>
           <div class="contact-actions reveal"><a class="contact-email" href="mailto:ICH2026@hantavirussociety.org">ICH2026@hantavirussociety.org</a><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Conference form</a><a class="button button-secondary" href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH membership</a></div>
         </div>
       </section>"""
