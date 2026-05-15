@@ -1,14 +1,19 @@
 from __future__ import annotations
 
+import hashlib
 import json
+import os
+import re
 from html import escape
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 
-SITE_URL = "https://www.hantavirussociety.org"
-ASSET_VERSION = "20260515-picture-layout"
+SITE_URL = os.environ.get("SITE_URL", "https://ache1312.github.io/hantavirussociety").rstrip("/")
+STYLESHEET = "styles.min.css"
+FONTSHEET = "fonts.min.css"
+SCRIPT = "script.min.js"
 
 OG_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp",
@@ -22,7 +27,18 @@ OG_IMAGES: dict[str, str] = {
     "contact": "venue/conference-landscape.png",
 }
 
-CONFERENCE_JSON_LD = """{
+HERO_IMAGES: dict[str, str] = {
+    "home": "ui/home-science-hero.webp?v=sober-20260515",
+    "about": "about-hantavirus-microscopy-pixnio.jpg",
+    "ich2026": "ich2026/conference-volcano.jpg",
+    "keynote": "venue/conference-landscape.png",
+    "programme": "ui/society-archive-2.png",
+    "registration": "venue/puerto-varas-waterfront.jpg",
+    "venue": "venue/hotel-bellavista.jpg",
+    "sponsors": "ui/society-archive-1.png",
+}
+
+CONFERENCE_JSON_LD_TEMPLATE = """{
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "International Conference on Hantaviruses 2026",
@@ -44,10 +60,10 @@ CONFERENCE_JSON_LD = """{
     "organizer": {
       "@type": "Organization",
       "name": "International Society for Hantaviruses",
-      "url": "https://www.hantavirussociety.org"
+      "url": "__SITE_URL__"
     },
-    "url": "https://www.hantavirussociety.org/ich2026",
-    "image": "https://www.hantavirussociety.org/assets/images/ich2026/conference-volcano.jpg",
+    "url": "__SITE_URL__/ich2026",
+    "image": "__SITE_URL__/assets/images/ich2026/conference-volcano.jpg",
     "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile. Covering viral epidemiology, ecology, virus-host interactions, pathogenesis, vaccines and therapeutics."
   }"""
 
@@ -204,6 +220,123 @@ def load_image_manifest() -> dict[str, dict[str, object]]:
 
 
 IMAGE_MANIFEST = load_image_manifest()
+FILE_VERSION_CACHE: dict[str, str] = {}
+
+
+def strip_css_comments(css: str) -> str:
+    return re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+
+
+def minify_css(css: str) -> str:
+    css = strip_css_comments(css)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{}:;,>~])\s*", r"\1", css)
+    css = re.sub(r";}", "}", css)
+    return css.strip() + "\n"
+
+
+def strip_js_comments(source: str) -> str:
+    result: list[str] = []
+    i = 0
+    quote = ""
+    escaped = False
+    while i < len(source):
+        char = source[i]
+        next_char = source[i + 1] if i + 1 < len(source) else ""
+
+        if quote:
+            result.append(char)
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == quote:
+                quote = ""
+            i += 1
+            continue
+
+        if char in {"'", '"', "`"}:
+            quote = char
+            result.append(char)
+            i += 1
+            continue
+
+        if char == "/" and next_char == "/":
+            i += 2
+            while i < len(source) and source[i] not in "\r\n":
+                i += 1
+            continue
+
+        if char == "/" and next_char == "*":
+            i += 2
+            while i + 1 < len(source) and not (source[i] == "*" and source[i + 1] == "/"):
+                i += 1
+            i += 2
+            continue
+
+        result.append(char)
+        i += 1
+    return "".join(result)
+
+
+def minify_js(source: str) -> str:
+    js = strip_js_comments(source)
+    result: list[str] = []
+    i = 0
+    quote = ""
+    escaped = False
+    punct = set("{}()[].;,:?=<>+-*/%&|!")
+
+    while i < len(js):
+        char = js[i]
+
+        if quote:
+            result.append(char)
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == quote:
+                quote = ""
+            i += 1
+            continue
+
+        if char in {"'", '"', "`"}:
+            quote = char
+            result.append(char)
+            i += 1
+            continue
+
+        if char.isspace():
+            next_index = i + 1
+            while next_index < len(js) and js[next_index].isspace():
+                next_index += 1
+            previous = result[-1] if result else ""
+            next_char = js[next_index] if next_index < len(js) else ""
+            if previous and next_char and previous not in punct and next_char not in punct:
+                result.append(" ")
+            i = next_index
+            continue
+
+        if char in punct and result and result[-1] == " ":
+            result.pop()
+        result.append(char)
+        i += 1
+
+    return "".join(result).strip() + "\n"
+
+
+def minify_static_assets() -> None:
+    (ROOT / STYLESHEET).write_text(minify_css((ROOT / "styles.css").read_text(encoding="utf-8")), encoding="utf-8")
+    (ROOT / FONTSHEET).write_text(minify_css((ROOT / "fonts.css").read_text(encoding="utf-8")), encoding="utf-8")
+    (ROOT / SCRIPT).write_text(minify_js((ROOT / "script.js").read_text(encoding="utf-8")), encoding="utf-8")
+
+
+def file_version(path: str) -> str:
+    if path not in FILE_VERSION_CACHE:
+        digest = hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+        FILE_VERSION_CACHE[path] = digest[:12]
+    return FILE_VERSION_CACHE[path]
 
 
 def asset_key(asset_path: str) -> str:
@@ -220,15 +353,20 @@ def format_attrs(values: dict[str, object]) -> str:
     return " ".join(parts)
 
 
-def optimized_source(prefix: str, asset_path: str, sizes: str) -> str:
+def optimized_source(prefix: str, asset_path: str, sizes: str, format_name: str) -> str:
     manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
     if not manifest:
         return ""
-    variants = sorted(manifest["variants"], key=lambda item: item["width"])  # type: ignore[index]
+    formats = manifest.get("formats", {})  # type: ignore[assignment]
+    variants = formats.get(format_name, []) if isinstance(formats, dict) else []
+    if not variants and format_name == "webp":
+        variants = manifest.get("variants", [])  # type: ignore[assignment]
+    if not variants:
+        return ""
     srcset = ", ".join(
         f'{prefix}assets/images/{variant["path"]} {variant["width"]}w' for variant in variants
     )
-    return f'<source {format_attrs({"type": "image/webp", "srcset": srcset, "sizes": sizes})}>'
+    return f'<source {format_attrs({"type": f"image/{format_name}", "srcset": srcset, "sizes": sizes})}>'
 
 
 def responsive_image(
@@ -259,7 +397,25 @@ def responsive_image(
         image_attrs["height"] = manifest["height"]
     picture_attrs = format_attrs({"class": picture_class})
     picture_attrs = f" {picture_attrs}" if picture_attrs else ""
-    return f'<picture{picture_attrs}>{optimized_source(prefix, asset_path, sizes)}<img {format_attrs(image_attrs)}></picture>'
+    sources = optimized_source(prefix, asset_path, sizes, "avif") + optimized_source(prefix, asset_path, sizes, "webp")
+    return f'<picture{picture_attrs}>{sources}<img {format_attrs(image_attrs)}></picture>'
+
+
+def preload_image(prefix: str, asset_path: str, sizes: str = "100vw") -> str:
+    manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
+    if not manifest:
+        return f'    <link rel="preload" as="image" href="{img(prefix, asset_path)}" fetchpriority="high">'
+    formats = manifest.get("formats", {})  # type: ignore[assignment]
+    format_name = "avif" if isinstance(formats, dict) and formats.get("avif") else "webp"
+    variants = formats.get(format_name, []) if isinstance(formats, dict) else manifest.get("variants", [])  # type: ignore[assignment]
+    if not variants:
+        return f'    <link rel="preload" as="image" href="{img(prefix, asset_path)}" fetchpriority="high">'
+    variants = sorted(variants, key=lambda item: item["width"])
+    srcset = ", ".join(
+        f'{prefix}assets/images/{variant["path"]} {variant["width"]}w' for variant in variants
+    )
+    href = f'{prefix}assets/images/{variants[-1]["path"]}'
+    return f'<link {format_attrs({"rel": "preload", "as": "image", "href": href, "type": f"image/{format_name}", "imagesrcset": srcset, "imagesizes": sizes, "fetchpriority": "high"})}>'
 
 
 def local(prefix: str, path: str = "") -> str:
@@ -272,6 +428,10 @@ def contact_href(prefix: str) -> str:
 
 def attrs(**values: str) -> str:
     return format_attrs(values)
+
+
+def conference_json_ld() -> str:
+    return CONFERENCE_JSON_LD_TEMPLATE.replace("__SITE_URL__", SITE_URL)
 
 
 def travel_icon(name: str) -> str:
@@ -290,6 +450,13 @@ def travel_link_card(icon: str, label: str, description: str, href: str) -> str:
 
 def clean_output(content: str) -> str:
     return "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
+
+
+def minify_html(content: str) -> str:
+    content = re.sub(r"<!--.*?-->", "", content, flags=re.S)
+    content = re.sub(r">\s+<", "><", content)
+    content = re.sub(r"\s{2,}", " ", content)
+    return content.strip() + "\n"
 
 
 def header(prefix: str, active: str) -> str:
@@ -375,6 +542,7 @@ def footer(prefix: str) -> str:
 def doc(out_path: str, active: str, title: str, description: str, body: str) -> str:
     prefix = prefix_for(out_path)
     subnav = ich_subnav(prefix, active) if active in ICH_NAV_KEYS else ""
+    hero_preload = preload_image(prefix, HERO_IMAGES[active]) if active in HERO_IMAGES else ""
 
     page_dir = str(Path(out_path).parent)
     canonical = SITE_URL + "/" if page_dir == "." else f"{SITE_URL}/{page_dir}/"
@@ -382,7 +550,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
 
     json_ld = ""
     if active in ICH_NAV_KEYS:
-        json_ld = f'\n    <script type="application/ld+json">\n    {CONFERENCE_JSON_LD}\n    </script>'
+        json_ld = f'\n    <script type="application/ld+json">{conference_json_ld()}</script>'
 
     return f"""<!doctype html>
 <html lang="en">
@@ -406,11 +574,12 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <!-- Canonical -->
     <link rel="canonical" href="{canonical}">
     <link rel="icon" href="{img(prefix, "ui/logo.png")}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+{hero_preload}
+    <link rel="preload" href="{prefix}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{prefix}assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{prefix}{FONTSHEET}?v={file_version(FONTSHEET)}">
 {THEME_BOOTSTRAP}
-    <link rel="stylesheet" href="{prefix}styles.css?v={ASSET_VERSION}">{json_ld}
+    <link rel="stylesheet" href="{prefix}{STYLESHEET}?v={file_version(STYLESHEET)}">{json_ld}
   </head>
   <body data-page="{active}">
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -423,7 +592,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     </main>
 {footer(prefix)}
     <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
-    <script src="{prefix}script.js" defer></script>
+    <script src="{prefix}{SCRIPT}?v={file_version(SCRIPT)}" defer></script>
   </body>
 </html>
 """
@@ -980,9 +1149,11 @@ def generate_sitemap() -> None:
 
 
 def main() -> None:
+    minify_static_assets()
+    FILE_VERSION_CACHE.clear()
     for out_path, active, title, description, builder in PAGES:
         prefix = prefix_for(out_path)
-        html = clean_output(doc(out_path, active, title, description, builder(prefix)))
+        html = minify_html(clean_output(doc(out_path, active, title, description, builder(prefix))))
         target = ROOT / out_path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
