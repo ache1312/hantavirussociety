@@ -322,6 +322,36 @@ main:focus {
   transform: translateY(1px);
 }
 
+.theme-toggle::after {
+  content: attr(data-theme-tooltip);
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 40;
+  width: max-content;
+  max-width: 220px;
+  padding: 8px 10px;
+  color: var(--white);
+  background: rgba(7, 18, 17, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.35;
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.theme-toggle:hover::after,
+.theme-toggle:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .theme-icon {
   grid-area: 1 / 1;
   position: relative;
@@ -2399,6 +2429,17 @@ h3 {
   .site-header {
     gap: 14px;
     padding: 12px 18px;
+  }
+
+  .theme-toggle::after {
+    right: 50%;
+    max-width: min(220px, calc(100vw - 32px));
+    transform: translate(50%, -4px);
+  }
+
+  .theme-toggle:hover::after,
+  .theme-toggle:focus-visible::after {
+    transform: translate(50%, 0);
   }
 
   .brand-copy {

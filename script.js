@@ -7,7 +7,6 @@ const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeLabel = document.querySelector("[data-theme-label]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
 const mobileQuery = window.matchMedia("(max-width: 1100px)");
-const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
 const themeStorageKey = "ish-theme";
 const sections = navLinks
   .map((link) => {
@@ -30,16 +29,15 @@ function storedTheme() {
   }
 }
 
-function systemTheme() {
-  return themeQuery.matches ? "dark" : "light";
-}
-
 function syncThemeToggle(theme) {
   if (!themeToggle || !themeLabel) return;
   const nextTheme = theme === "dark" ? "light" : "dark";
-  const label = `Switch to ${nextTheme} theme`;
+  const currentLabel = theme === "dark" ? "Dark mode active" : "Light mode active";
+  const nextLabel = nextTheme === "dark" ? "dark mode" : "light mode";
+  const label = `${currentLabel}. Switch to ${nextLabel}.`;
   themeToggle.setAttribute("aria-label", label);
   themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+  themeToggle.setAttribute("data-theme-tooltip", label);
   themeToggle.title = label;
   themeLabel.textContent = label;
 }
@@ -50,7 +48,7 @@ function applyTheme(theme) {
   syncThemeToggle(theme);
 }
 
-applyTheme(root.dataset.theme === "dark" || root.dataset.theme === "light" ? root.dataset.theme : storedTheme() || systemTheme());
+applyTheme(root.dataset.theme === "dark" || root.dataset.theme === "light" ? root.dataset.theme : storedTheme() || "light");
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
@@ -62,18 +60,6 @@ if (themeToggle) {
       // Ignore storage failures; the visible theme still changes for this page load.
     }
   });
-}
-
-const handleSystemThemeChange = () => {
-  if (!storedTheme()) {
-    applyTheme(systemTheme());
-  }
-};
-
-if (typeof themeQuery.addEventListener === "function") {
-  themeQuery.addEventListener("change", handleSystemThemeChange);
-} else if (typeof themeQuery.addListener === "function") {
-  themeQuery.addListener(handleSystemThemeChange);
 }
 
 function setMenu(open) {
