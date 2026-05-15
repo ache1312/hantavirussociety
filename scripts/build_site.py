@@ -383,18 +383,20 @@ def home_page(
             <a class="button button-ghost" href="{local(prefix, "ich2026/abstracts-registration/")}">Abstracts & registration</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Conference date">
-          <span>International Conference on Hantaviruses</span>
-          <strong>Nov 2-5, 2026</strong>
-          <small>Puerto Varas, Chile</small>
-          <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
-            <div class="countdown-unit"><span class="countdown-val" data-unit="days">—</span><span class="countdown-label">days</span></div>
-            <span class="countdown-separator" aria-hidden="true">:</span>
-            <div class="countdown-unit"><span class="countdown-val" data-unit="hours">—</span><span class="countdown-label">hrs</span></div>
-            <span class="countdown-separator" aria-hidden="true">:</span>
-            <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">—</span><span class="countdown-label">min</span></div>
+        <aside class="hero-panel" aria-label="ICH2026 conference brief">
+          <div class="hero-panel-kicker">ICH2026</div>
+          <span class="hero-panel-title">International Conference on Hantaviruses</span>
+          <strong class="hero-panel-date">Nov 2-5, 2026</strong>
+          <div class="hero-panel-meta" aria-label="Conference location and venue">
+            <span>Puerto Varas, Chile</span>
+            <span>Hotel Bellavista</span>
           </div>
-          <a href="{local(prefix, "ich2026/programme/")}">Programme</a>
+          <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
+            <div class="countdown-unit"><span class="countdown-val" data-unit="days">--</span><span class="countdown-label">Days</span></div>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="hours">--</span><span class="countdown-label">Hours</span></div>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">--</span><span class="countdown-label">Minutes</span></div>
+          </div>
+          <a class="hero-panel-link" href="{local(prefix, "ich2026/programme/")}">Programme</a>
         </aside>
       </section>
       <section class="section intro-band">

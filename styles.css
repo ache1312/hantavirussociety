@@ -544,38 +544,91 @@ h3 {
   right: 32px;
   bottom: 30px;
   z-index: 2;
-  width: 280px;
-  padding: 18px;
+  display: grid;
+  gap: 16px;
+  width: min(370px, calc(100% - 64px));
+  padding: 22px;
   color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 6px;
-  background: rgba(7, 18, 17, 0.62);
-  backdrop-filter: blur(18px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    rgba(7, 18, 17, 0.7);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(20px);
 }
 
-.hero-panel span,
-.hero-panel small {
+.hero-panel-kicker {
+  display: inline-flex;
+  width: max-content;
+  min-height: 28px;
+  align-items: center;
+  padding: 0 10px;
+  color: var(--ink);
+  background: var(--accent);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.hero-panel-title {
   display: block;
-  color: rgba(255, 255, 255, 0.76);
+  max-width: 280px;
+  color: rgba(255, 255, 255, 0.74);
   font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
-.hero-panel strong {
+.hero-panel-date {
   display: block;
-  margin: 4px 0;
-  font-size: 24px;
-  line-height: 1.15;
+  margin-top: -4px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.02;
 }
 
-.hero-panel a {
+.hero-panel-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-panel-meta span {
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.hero-panel-link {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  margin-top: 14px;
-  color: var(--accent);
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  color: var(--ink);
+  background: var(--accent);
+  border-radius: 4px;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 900;
   text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.hero-panel-link:hover,
+.hero-panel-link:focus-visible {
+  background: #d0a33d;
+  outline: none;
+  transform: translateY(-1px);
 }
 
 .section {
@@ -2472,7 +2525,10 @@ h3 {
   }
 
   .hero {
-    min-height: 720px;
+    align-content: end;
+    gap: 22px;
+    min-height: auto;
+    padding: 120px 0 24px;
   }
 
   .hero-media img {
@@ -2487,14 +2543,25 @@ h3 {
 
   .hero-content {
     width: min(100% - 36px, 620px);
-    margin: 0 auto 168px;
+    margin: 0 auto;
   }
 
   .hero-panel {
-    right: 18px;
-    left: 18px;
-    bottom: 24px;
-    width: auto;
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    width: min(100% - 36px, 420px);
+    margin: 0 auto;
+    padding: 18px;
+  }
+
+  .hero-panel-date {
+    font-size: 30px;
+  }
+
+  .countdown-val {
+    font-size: 28px;
   }
 
   h1 {
@@ -2656,11 +2723,12 @@ h3 {
   }
 
   .hero {
-    min-height: 760px;
+    min-height: auto;
+    padding-top: 110px;
   }
 
   .hero-content {
-    margin-bottom: 208px;
+    margin-bottom: 0;
   }
 
   h1 {
@@ -2906,23 +2974,25 @@ h3 {
 
 /* ── Countdown widget ── */
 .countdown {
-  display: inline-flex;
-  gap: 16px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .countdown-unit {
   display: grid;
-  gap: 3px;
-  text-align: center;
-  min-width: 46px;
+  min-width: 0;
+  gap: 6px;
+  padding: 13px 8px 12px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
 .countdown-val {
   display: block;
-  font-size: 28px;
+  font-size: 31px;
   font-weight: 800;
   line-height: 1;
   color: var(--white);
@@ -2934,16 +3004,12 @@ h3 {
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.52);
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.58);
 }
 
 .countdown-separator {
-  align-self: center;
-  padding-bottom: 14px;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 20px;
-  font-weight: 300;
+  display: none;
 }
 
 /* ── Dark mode ── */
