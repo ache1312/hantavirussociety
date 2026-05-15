@@ -1121,6 +1121,38 @@ h3 {
   font-weight: 800;
 }
 
+.travel-detail-list {
+  display: grid;
+  gap: 46px;
+}
+
+.travel-detail-list article {
+  max-width: 880px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid var(--line);
+}
+
+.travel-detail-list article:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.travel-detail-list p,
+.travel-detail-list li {
+  color: var(--muted);
+}
+
+.travel-detail-list ul {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 22px;
+  padding-left: 20px;
+}
+
+.travel-detail-list h3 {
+  margin-top: 24px;
+}
+
 .text-link {
   color: var(--accent-strong);
   font-weight: 800;
