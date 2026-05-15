@@ -240,11 +240,15 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
 """
 
 
-def home_page(prefix: str) -> str:
+def home_page(
+    prefix: str,
+    hero_image: str = "ui/home-science-hero.webp",
+    hero_alt: str = "Scientist examining microscopy data in a virology laboratory",
+) -> str:
     return f"""
       <section class="hero" aria-labelledby="hero-title">
         <picture class="hero-media">
-          <img src="{img(prefix, "venue/puerto-varas-hero.jpg")}" alt="Puerto Varas landscape for the International Conference on Hantaviruses" fetchpriority="high">
+          <img src="{img(prefix, hero_image)}" alt="{escape(hero_alt)}" fetchpriority="high">
         </picture>
         <div class="hero-overlay"></div>
         <div class="hero-content reveal is-visible">
@@ -636,9 +640,17 @@ def contact_page(prefix: str) -> str:
       </section>"""
 
 
+def about_page(prefix: str) -> str:
+    return home_page(
+        prefix,
+        hero_image="venue/puerto-varas-hero.jpg",
+        hero_alt="Puerto Varas landscape for the International Conference on Hantaviruses",
+    )
+
+
 PAGES = [
     ("index.html", "about", "International Society for Hantaviruses", "International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.", home_page),
-    ("about-ish/index.html", "about", "About ISH | International Society for Hantaviruses", "About the International Society for Hantaviruses.", home_page),
+    ("about-ish/index.html", "about", "About ISH | International Society for Hantaviruses", "About the International Society for Hantaviruses.", about_page),
     ("ich2026/index.html", "ich2026", "ICH2026 | International Society for Hantaviruses", "International Conference on Hantaviruses 2026 in Puerto Varas, Chile.", ich2026_page),
     ("ich2026/keynote-speakers/index.html", "keynote", "Keynote Speakers | ICH2026", "Keynote speakers for ICH2026.", keynote_page),
     ("ich2026/programme/index.html", "programme", "Programme | ICH2026", "Scientific programme for ICH2026.", programme_page),
