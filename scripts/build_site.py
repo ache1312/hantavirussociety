@@ -49,6 +49,21 @@ CONFERENCE_JSON_LD = """{
   }"""
 
 
+THEME_BOOTSTRAP = """    <script>
+      (() => {
+        const root = document.documentElement;
+        const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        let storedTheme = null;
+        try {
+          storedTheme = localStorage.getItem("ish-theme");
+        } catch {}
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+        root.dataset.theme = theme;
+        root.style.colorScheme = theme;
+      })();
+    </script>"""
+
+
 ORIGINAL_PAGES = [
     ("About ISH", "https://www.hantavirussociety.org/about-ish"),
     ("ICH2026", "https://www.hantavirussociety.org/ich2026"),
@@ -149,15 +164,26 @@ SPONSORS = [
 ]
 
 TRAVEL_LINKS = [
-    ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/"),
-    ("Venue map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"),
-    ("Santiago airport", "https://thesantiagoairport.com/"),
-    ("Santiago day trips", "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"),
-    ("Santiago tours", "https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours"),
-    ("Airport transfer", "https://ww2.trasladoaeropuerto.cl/"),
-    ("Transfer WhatsApp", "https://api.whatsapp.com/send?phone=56976053701&text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web"),
-    ("Survip transfer", "https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php"),
+    ("hotel", "Hotel Bellavista", "Conference venue and event facilities.", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/"),
+    ("map-pin", "Venue map", "Av. Vicente Perez Rosales #060, Puerto Varas.", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"),
+    ("plane", "Santiago airport", "International arrival at Arturo Merino Benítez Airport.", "https://thesantiagoairport.com/"),
+    ("route", "Santiago day trips", "Optional stop-over ideas near Santiago.", "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"),
+    ("route", "Santiago tours", "Additional tours and day activities in Santiago.", "https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours"),
+    ("car", "Airport transfer", "Shared or private transfer from Puerto Montt airport.", "https://ww2.trasladoaeropuerto.cl/"),
+    ("message", "Transfer WhatsApp", "Direct WhatsApp contact for airport transfer reservations.", "https://api.whatsapp.com/send?phone=56976053701&text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web"),
+    ("mail", "Transfer email", "reservas@trasladoaeropuerto.cl", "mailto:reservas@trasladoaeropuerto.cl"),
+    ("car", "Survip transfer", "Transfer service from Puerto Montt airport to Puerto Varas.", "https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php"),
 ]
+
+TRAVEL_ICONS = {
+    "car": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.2A3 3 0 0 0 14.5 10h-5a3 3 0 0 0-2.9 1.8L5 17Z"/><path d="M7 17v2"/><path d="M17 17v2"/><path d="M6.5 14h11"/><circle cx="8" cy="17" r="1"/><circle cx="16" cy="17" r="1"/></svg>',
+    "hotel": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v15"/><path d="M16 10h2a2 2 0 0 1 2 2v9"/><path d="M8 8h.01"/><path d="M12 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M9 21v-4h3v4"/><path d="M3 21h18"/></svg>',
+    "mail": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m4 8 8 6 8-6"/></svg>',
+    "map-pin": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+    "message": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18.5 6.2 15A7 7 0 1 1 9 17.4L5 18.5Z"/><path d="M9 10h6"/><path d="M9 13h4"/></svg>',
+    "plane": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20 13 13l7-2.5a1.3 1.3 0 0 0 0-2.5L4 3l3.8 7L4 17l6.5-2.4V20Z"/></svg>',
+    "route": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H14a3 3 0 0 1 0 6h-4a3 3 0 0 0 0 6h5.5"/></svg>',
+}
 
 
 def prefix_for(out_path: str) -> str:
@@ -175,6 +201,24 @@ def local(prefix: str, path: str = "") -> str:
 
 def attrs(**values: str) -> str:
     return " ".join(f'{key.replace("_", "-")}="{escape(value)}"' for key, value in values.items() if value)
+
+
+def travel_icon(name: str) -> str:
+    return f'<span class="travel-link-icon" aria-hidden="true">{TRAVEL_ICONS[name]}</span>'
+
+
+def travel_link_card(icon: str, label: str, description: str, href: str) -> str:
+    target = "" if href.startswith("mailto:") else ' target="_blank" rel="noreferrer"'
+    return (
+        f'<a class="travel-link" href="{escape(href, quote=True)}"{target}>'
+        f'{travel_icon(icon)}'
+        f'<span class="travel-link-copy"><strong>{escape(label)}</strong><small>{escape(description)}</small></span>'
+        "</a>"
+    )
+
+
+def clean_output(content: str) -> str:
+    return "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
 
 
 def header(prefix: str, active: str) -> str:
@@ -205,6 +249,11 @@ def header(prefix: str, active: str) -> str:
       <nav class="site-nav" id="site-menu" aria-label="Primary navigation" data-menu>
         {"".join(nav_groups)}
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch theme" data-theme-toggle>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+        <span class="sr-only" data-theme-label>Switch theme</span>
+      </button>
     </header>"""
 
 
@@ -289,6 +338,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+{THEME_BOOTSTRAP}
     <link rel="stylesheet" href="{prefix}styles.css">{json_ld}
   </head>
   <body data-page="{active}">
@@ -596,7 +646,7 @@ def ich2026_page(prefix: str) -> str:
         <div class="section-shell">
           <div class="section-heading compact reveal">
             <p class="eyebrow">Organizing Committees</p>
-            <h2>Scientific and local teams from the original ICH2026 page.</h2>
+            <h2>Scientific and local teams coordinating ICH2026 in Puerto Varas.</h2>
           </div>
           <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
             <button type="button" class="is-active" data-committee-filter="all">All</button>
@@ -648,6 +698,7 @@ def keynote_page(prefix: str) -> str:
               <p class="speaker-meta">United States Army Medical Research Institute of Infectious Diseases (USAMRIID), USA</p>
               <p>Dr. Jay Hooper is the Chief of the Molecular Virology Branch at USAMRIID. He has more than 30 years of research experience working with lethal viruses, mostly in Biosafety Level 3 and BSL-4 high-containment. His research is aimed at the discovery and development of medical countermeasures targeting high consequence viral diseases of military importance, including hemorrhagic fever and diseases caused by poxviruses.</p>
               <p>Dr. Hooper received a B.A. in Biology from Colby College in 1986 and a Ph.D. in Virology from Harvard University in 1995. His research has resulted in more than 100 peer-reviewed publications and 15 patents.</p>
+              <a class="text-link" href="https://orcid.org/0000-0002-4475-0415" target="_blank" rel="noreferrer">ORCID profile</a>
             </div>
           </article>
         </div>
@@ -685,47 +736,54 @@ def registration_page(prefix: str) -> str:
 
 
 def venue_page(prefix: str) -> str:
-    links = "".join(f'<a href="{href}" target="_blank" rel="noreferrer">{escape(label)}</a>' for label, href in TRAVEL_LINKS)
+    links = "".join(travel_link_card(icon, label, description, href) for icon, label, description, href in TRAVEL_LINKS)
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Venue & Travel", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
       <section class="section venue">
         <div class="section-shell venue-layout">
           <div class="venue-copy reveal">
             <p class="eyebrow">How to get to Puerto Varas</p>
-            <h2>International arrival, domestic flight and local transfer.</h2>
+            <h2>A practical route into the Chilean Lake District.</h2>
+            <div class="venue-address">
+              <span>Venue address</span>
+              <a href="https://goo.gl/maps/dv2jUC4hSGLvr2Ld9" target="_blank" rel="noreferrer">Av. Vicente Perez Rosales #060, Puerto Varas</a>
+            </div>
             <div class="travel-steps">
-              <div><span>01</span>International arrival - Santiago (SCL)</div>
-              <div><span>02</span>Domestic flight - Santiago to Puerto Montt (PMC)</div>
-              <div><span>03</span>Transfer - Puerto Montt Airport to Puerto Varas</div>
+              <div><span>Arrival</span><strong>Santiago (SCL)</strong><small>Immigration, luggage and domestic connection.</small></div>
+              <div><span>Connection</span><strong>Puerto Montt (PMC)</strong><small>Domestic flight to El Tepual Airport.</small></div>
+              <div><span>Transfer</span><strong>Puerto Varas</strong><small>Private transfer, taxi, bus or shuttle to the venue.</small></div>
             </div>
           </div>
-          <figure class="venue-image reveal"><img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Puerto Varas waterfront" loading="lazy" decoding="async"><figcaption>Puerto Varas and Lake Llanquihue</figcaption></figure>
+          <figure class="venue-image reveal"><img src="{img(prefix, "venue/puerto-varas-waterfront.jpg")}" alt="Hotel Bellavista conference room" loading="lazy" decoding="async"><figcaption>Hotel Bellavista conference facilities</figcaption></figure>
         </div>
       </section>
       <section class="section intro-band">
         <div class="section-shell travel-detail-list">
           <article class="reveal">
-            <p class="eyebrow">Step 1</p>
-            <h2>International Arrival - Santiago (SCL)</h2>
-            <p>Most international travelers will arrive at Arturo Merino Benitez International Airport (SCL) in Santiago, Chile.</p>
+            <p class="eyebrow">International arrival</p>
+            <h2>Arrive through Santiago (SCL)</h2>
+            <p>Most international travelers will arrive at Arturo Merino Benítez International Airport (SCL) in Santiago, Chile.</p>
+            <h3>After landing</h3>
             <ul><li>Proceed through immigration and customs</li><li>Collect your luggage</li><li>Follow signs for domestic connections</li></ul>
             <p><strong>Tip:</strong> Allow at least 2-3 hours for connection time, especially if arriving from long-haul international flights.</p>
-            <p>Alternatively, you may prefer to make a stop-over in Santiago. There are several hotels near the airport. Also, it is possible to book day trips to diverse destinations, close to, or in Santiago.</p>
+            <p>Alternatively, you may prefer to make a stop-over in Santiago. There are several hotels near the airport. It is also possible to book <a class="text-link" href="https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html" target="_blank" rel="noreferrer">day trips</a> to diverse destinations, close to, or in <a class="text-link" href="https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours" target="_blank" rel="noreferrer">Santiago</a>.</p>
           </article>
           <article class="reveal">
-            <p class="eyebrow">Step 2</p>
-            <h2>Domestic Flight - Santiago to Puerto Montt (PMC)</h2>
+            <p class="eyebrow">Domestic connection</p>
+            <h2>Fly from Santiago to Puerto Montt (PMC)</h2>
             <p>From Santiago, take a domestic flight to El Tepual Airport (PMC) in Puerto Montt.</p>
             <ul><li>Flight duration: approximately 1 hour 40 minutes</li><li>Airlines operate multiple daily flights</li></ul>
             <p><strong>Tip:</strong> Puerto Montt is the main gateway to the Los Lagos region and Puerto Varas.</p>
           </article>
           <article class="reveal">
-            <p class="eyebrow">Step 3</p>
-            <h2>Transfer - Puerto Montt Airport to Puerto Varas</h2>
+            <p class="eyebrow">Airport transfer</p>
+            <h2>Connect from Puerto Montt Airport to Puerto Varas</h2>
             <p>Puerto Varas is located approximately 20-30 km from the airport, with a travel time of about 25-30 minutes depending on traffic.</p>
+            <p>Upon arrival at the airport, you will find several transportation options.</p>
             <h3>Private or Shared Transfer</h3>
             <ul><li>Pre-booked or available at the airport</li><li>Drop-off directly at your hotel</li><li>Travel time: ~30 minutes</li><li>Approximate amount: 15-25 USD</li></ul>
+            <p>You can find more information through <a class="text-link" href="https://ww2.trasladoaeropuerto.cl/" target="_blank" rel="noreferrer">Airport Transfer</a>, <a class="text-link" href="https://api.whatsapp.com/send?phone=56976053701&text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web" target="_blank" rel="noreferrer">WhatsApp +56976053701</a>, <a class="text-link" href="mailto:reservas@trasladoaeropuerto.cl">reservas@trasladoaeropuerto.cl</a>, or <a class="text-link" href="https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php" target="_blank" rel="noreferrer">Survip transfer</a>.</p>
             <h3>Taxi</h3>
             <ul><li>Available directly outside the terminal</li><li>Travel time: ~25-30 minutes</li><li>Safe and widely used</li><li>Estimated cost: 20-30 USD</li></ul>
             <h3>Bus / Shuttle</h3>
@@ -735,14 +793,15 @@ def venue_page(prefix: str) -> str:
           <article class="reveal">
             <p class="eyebrow">Final destination</p>
             <h2>Puerto Varas</h2>
-            <p>Puerto Varas is a scenic lakeside city located in southern Chile, known for Lake Llanquihue, Osorno Volcano, and easy access to national parks and research sites.</p>
+            <p>Puerto Varas is a scenic lakeside city located in southern Chile, known for:</p>
+            <ul><li>Lake Llanquihue</li><li>Osorno Volcano</li><li>Easy access to national parks and research sites</li></ul>
             <h3>Travel Tips</h3>
             <ul><li>Currency: Chilean Peso (CLP)</li><li>Most taxis and services accept cards, but carrying some cash is recommended</li><li>Weather can change quickly - bring appropriate clothing</li><li>Spanish is the local language, but basic English is commonly understood in tourism services</li></ul>
           </article>
         </div>
       </section>
       <section class="section data-section">
-        <div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">Travel links</p><h2>All travel hyperlinks from the original venue page.</h2></div><div class="link-list reveal">{links}</div></div>
+        <div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">Travel resources</p><h2>Venue, airport and transfer contacts for ICH2026 participants.</h2></div><div class="travel-link-list reveal">{links}</div></div>
       </section>"""
 
 
@@ -770,7 +829,7 @@ def contact_page(prefix: str) -> str:
 
 def about_page(prefix: str) -> str:
     return f"""
-      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "venue/puerto-varas-hero.jpg", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")])}
+      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "about-hantavirus-microscopy-pixnio.jpg", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")])}
       <section class="section intro-band">
         <div class="section-shell two-column">
           <div class="section-heading reveal">
@@ -835,7 +894,7 @@ def generate_sitemap() -> None:
 def main() -> None:
     for out_path, active, title, description, builder in PAGES:
         prefix = prefix_for(out_path)
-        html = doc(out_path, active, title, description, builder(prefix))
+        html = clean_output(doc(out_path, active, title, description, builder(prefix)))
         target = ROOT / out_path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
