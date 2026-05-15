@@ -1,20 +1,98 @@
 {
   "about-hantavirus-microscopy-pixnio.jpg": {
     "bytes": 1911757,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 13257,
+          "height": 213,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 27814,
+          "height": 319,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 46673,
+          "height": 425,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 85510,
+          "height": 638,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 116350,
+          "height": 851,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 145720,
+          "height": 1063,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 181995,
+          "height": 1276,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1920.avif",
+          "width": 1920
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 14634,
+          "height": 213,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 31152,
+          "height": 319,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 54824,
+          "height": 425,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 110770,
+          "height": 638,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 173062,
+          "height": 851,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 236810,
+          "height": 1063,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 311072,
+          "height": 1276,
+          "path": "optimized/about-hantavirus-microscopy-pixnio-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
     "height": 3050,
     "variants": [
-      {
-        "bytes": 4228,
-        "height": 106,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 8422,
-        "height": 159,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-240.webp",
-        "width": 240
-      },
       {
         "bytes": 14634,
         "height": 213,
@@ -62,6 +140,72 @@
   },
   "board/almeka-markotic.jpg": {
     "bytes": 35325,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2020,
+          "height": 160,
+          "path": "optimized/board/almeka-markotic-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3027,
+          "height": 240,
+          "path": "optimized/board/almeka-markotic-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3898,
+          "height": 320,
+          "path": "optimized/board/almeka-markotic-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5692,
+          "height": 480,
+          "path": "optimized/board/almeka-markotic-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7614,
+          "height": 640,
+          "path": "optimized/board/almeka-markotic-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2498,
+          "height": 160,
+          "path": "optimized/board/almeka-markotic-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4036,
+          "height": 240,
+          "path": "optimized/board/almeka-markotic-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5710,
+          "height": 320,
+          "path": "optimized/board/almeka-markotic-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9138,
+          "height": 480,
+          "path": "optimized/board/almeka-markotic-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12826,
+          "height": 640,
+          "path": "optimized/board/almeka-markotic-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -99,6 +243,72 @@
   },
   "board/anna-papa.jpg": {
     "bytes": 35292,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1318,
+          "height": 160,
+          "path": "optimized/board/anna-papa-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1941,
+          "height": 240,
+          "path": "optimized/board/anna-papa-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2492,
+          "height": 320,
+          "path": "optimized/board/anna-papa-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 3911,
+          "height": 480,
+          "path": "optimized/board/anna-papa-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 5572,
+          "height": 640,
+          "path": "optimized/board/anna-papa-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1456,
+          "height": 160,
+          "path": "optimized/board/anna-papa-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2400,
+          "height": 240,
+          "path": "optimized/board/anna-papa-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3540,
+          "height": 320,
+          "path": "optimized/board/anna-papa-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 6382,
+          "height": 480,
+          "path": "optimized/board/anna-papa-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10270,
+          "height": 640,
+          "path": "optimized/board/anna-papa-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -136,6 +346,72 @@
   },
   "board/boris-klempa.jpg": {
     "bytes": 39239,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2022,
+          "height": 160,
+          "path": "optimized/board/boris-klempa-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3072,
+          "height": 240,
+          "path": "optimized/board/boris-klempa-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3936,
+          "height": 320,
+          "path": "optimized/board/boris-klempa-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5830,
+          "height": 480,
+          "path": "optimized/board/boris-klempa-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 8061,
+          "height": 640,
+          "path": "optimized/board/boris-klempa-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2500,
+          "height": 160,
+          "path": "optimized/board/boris-klempa-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4126,
+          "height": 240,
+          "path": "optimized/board/boris-klempa-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5862,
+          "height": 320,
+          "path": "optimized/board/boris-klempa-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9612,
+          "height": 480,
+          "path": "optimized/board/boris-klempa-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 13716,
+          "height": 640,
+          "path": "optimized/board/boris-klempa-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -173,6 +449,72 @@
   },
   "board/colleen-jonsson.jpg": {
     "bytes": 45904,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2370,
+          "height": 160,
+          "path": "optimized/board/colleen-jonsson-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3862,
+          "height": 240,
+          "path": "optimized/board/colleen-jonsson-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 5501,
+          "height": 320,
+          "path": "optimized/board/colleen-jonsson-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9075,
+          "height": 480,
+          "path": "optimized/board/colleen-jonsson-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 13218,
+          "height": 640,
+          "path": "optimized/board/colleen-jonsson-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2872,
+          "height": 160,
+          "path": "optimized/board/colleen-jonsson-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5208,
+          "height": 240,
+          "path": "optimized/board/colleen-jonsson-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7628,
+          "height": 320,
+          "path": "optimized/board/colleen-jonsson-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13510,
+          "height": 480,
+          "path": "optimized/board/colleen-jonsson-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 19882,
+          "height": 640,
+          "path": "optimized/board/colleen-jonsson-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -210,6 +552,72 @@
   },
   "board/connie-schmaljohn.jpg": {
     "bytes": 51410,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2290,
+          "height": 160,
+          "path": "optimized/board/connie-schmaljohn-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3858,
+          "height": 240,
+          "path": "optimized/board/connie-schmaljohn-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6196,
+          "height": 320,
+          "path": "optimized/board/connie-schmaljohn-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11950,
+          "height": 480,
+          "path": "optimized/board/connie-schmaljohn-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 21300,
+          "height": 640,
+          "path": "optimized/board/connie-schmaljohn-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2494,
+          "height": 160,
+          "path": "optimized/board/connie-schmaljohn-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4624,
+          "height": 240,
+          "path": "optimized/board/connie-schmaljohn-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7896,
+          "height": 320,
+          "path": "optimized/board/connie-schmaljohn-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15970,
+          "height": 480,
+          "path": "optimized/board/connie-schmaljohn-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27714,
+          "height": 640,
+          "path": "optimized/board/connie-schmaljohn-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -247,6 +655,72 @@
   },
   "board/dexin-li.jpg": {
     "bytes": 26398,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1368,
+          "height": 160,
+          "path": "optimized/board/dexin-li-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1982,
+          "height": 240,
+          "path": "optimized/board/dexin-li-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2466,
+          "height": 320,
+          "path": "optimized/board/dexin-li-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 3848,
+          "height": 480,
+          "path": "optimized/board/dexin-li-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 5508,
+          "height": 640,
+          "path": "optimized/board/dexin-li-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1538,
+          "height": 160,
+          "path": "optimized/board/dexin-li-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2616,
+          "height": 240,
+          "path": "optimized/board/dexin-li-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3500,
+          "height": 320,
+          "path": "optimized/board/dexin-li-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 5930,
+          "height": 480,
+          "path": "optimized/board/dexin-li-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 8838,
+          "height": 640,
+          "path": "optimized/board/dexin-li-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -284,6 +758,72 @@
   },
   "board/gustavo-palacios.jpg": {
     "bytes": 30703,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1596,
+          "height": 160,
+          "path": "optimized/board/gustavo-palacios-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2444,
+          "height": 240,
+          "path": "optimized/board/gustavo-palacios-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3210,
+          "height": 320,
+          "path": "optimized/board/gustavo-palacios-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5132,
+          "height": 480,
+          "path": "optimized/board/gustavo-palacios-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7442,
+          "height": 640,
+          "path": "optimized/board/gustavo-palacios-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1754,
+          "height": 160,
+          "path": "optimized/board/gustavo-palacios-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3064,
+          "height": 240,
+          "path": "optimized/board/gustavo-palacios-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4488,
+          "height": 320,
+          "path": "optimized/board/gustavo-palacios-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7608,
+          "height": 480,
+          "path": "optimized/board/gustavo-palacios-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 11538,
+          "height": 640,
+          "path": "optimized/board/gustavo-palacios-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -321,6 +861,72 @@
   },
   "board/jin-won-song.jpg": {
     "bytes": 36693,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1603,
+          "height": 160,
+          "path": "optimized/board/jin-won-song-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2402,
+          "height": 240,
+          "path": "optimized/board/jin-won-song-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3210,
+          "height": 320,
+          "path": "optimized/board/jin-won-song-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5189,
+          "height": 480,
+          "path": "optimized/board/jin-won-song-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7441,
+          "height": 640,
+          "path": "optimized/board/jin-won-song-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1874,
+          "height": 160,
+          "path": "optimized/board/jin-won-song-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3166,
+          "height": 240,
+          "path": "optimized/board/jin-won-song-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4522,
+          "height": 320,
+          "path": "optimized/board/jin-won-song-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8242,
+          "height": 480,
+          "path": "optimized/board/jin-won-song-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12756,
+          "height": 640,
+          "path": "optimized/board/jin-won-song-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -358,6 +964,72 @@
   },
   "board/jonas-klingstrom.jpg": {
     "bytes": 25247,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1381,
+          "height": 160,
+          "path": "optimized/board/jonas-klingstrom-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2075,
+          "height": 240,
+          "path": "optimized/board/jonas-klingstrom-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2738,
+          "height": 320,
+          "path": "optimized/board/jonas-klingstrom-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 4063,
+          "height": 480,
+          "path": "optimized/board/jonas-klingstrom-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 5418,
+          "height": 640,
+          "path": "optimized/board/jonas-klingstrom-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1530,
+          "height": 160,
+          "path": "optimized/board/jonas-klingstrom-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2570,
+          "height": 240,
+          "path": "optimized/board/jonas-klingstrom-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3646,
+          "height": 320,
+          "path": "optimized/board/jonas-klingstrom-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 6048,
+          "height": 480,
+          "path": "optimized/board/jonas-klingstrom-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 8692,
+          "height": 640,
+          "path": "optimized/board/jonas-klingstrom-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -395,6 +1067,72 @@
   },
   "board/liudmila-yashina.jpg": {
     "bytes": 37903,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1833,
+          "height": 160,
+          "path": "optimized/board/liudmila-yashina-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2895,
+          "height": 240,
+          "path": "optimized/board/liudmila-yashina-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3793,
+          "height": 320,
+          "path": "optimized/board/liudmila-yashina-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5812,
+          "height": 480,
+          "path": "optimized/board/liudmila-yashina-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7951,
+          "height": 640,
+          "path": "optimized/board/liudmila-yashina-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2284,
+          "height": 160,
+          "path": "optimized/board/liudmila-yashina-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3942,
+          "height": 240,
+          "path": "optimized/board/liudmila-yashina-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5410,
+          "height": 320,
+          "path": "optimized/board/liudmila-yashina-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9066,
+          "height": 480,
+          "path": "optimized/board/liudmila-yashina-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12974,
+          "height": 640,
+          "path": "optimized/board/liudmila-yashina-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -432,6 +1170,72 @@
   },
   "board/mifang-liang.jpg": {
     "bytes": 46233,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2689,
+          "height": 160,
+          "path": "optimized/board/mifang-liang-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4661,
+          "height": 240,
+          "path": "optimized/board/mifang-liang-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6835,
+          "height": 320,
+          "path": "optimized/board/mifang-liang-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11620,
+          "height": 480,
+          "path": "optimized/board/mifang-liang-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 18274,
+          "height": 640,
+          "path": "optimized/board/mifang-liang-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3004,
+          "height": 160,
+          "path": "optimized/board/mifang-liang-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5604,
+          "height": 240,
+          "path": "optimized/board/mifang-liang-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8494,
+          "height": 320,
+          "path": "optimized/board/mifang-liang-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15164,
+          "height": 480,
+          "path": "optimized/board/mifang-liang-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23514,
+          "height": 640,
+          "path": "optimized/board/mifang-liang-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -469,6 +1273,72 @@
   },
   "board/nicole-tischler.jpg": {
     "bytes": 34056,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1926,
+          "height": 160,
+          "path": "optimized/board/nicole-tischler-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2867,
+          "height": 240,
+          "path": "optimized/board/nicole-tischler-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3637,
+          "height": 320,
+          "path": "optimized/board/nicole-tischler-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5399,
+          "height": 480,
+          "path": "optimized/board/nicole-tischler-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7453,
+          "height": 640,
+          "path": "optimized/board/nicole-tischler-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2222,
+          "height": 160,
+          "path": "optimized/board/nicole-tischler-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3680,
+          "height": 240,
+          "path": "optimized/board/nicole-tischler-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5172,
+          "height": 320,
+          "path": "optimized/board/nicole-tischler-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8524,
+          "height": 480,
+          "path": "optimized/board/nicole-tischler-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12034,
+          "height": 640,
+          "path": "optimized/board/nicole-tischler-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -506,6 +1376,72 @@
   },
   "board/piet-maes.jpg": {
     "bytes": 43630,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2037,
+          "height": 160,
+          "path": "optimized/board/piet-maes-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3248,
+          "height": 240,
+          "path": "optimized/board/piet-maes-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4409,
+          "height": 320,
+          "path": "optimized/board/piet-maes-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7546,
+          "height": 480,
+          "path": "optimized/board/piet-maes-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12223,
+          "height": 640,
+          "path": "optimized/board/piet-maes-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2452,
+          "height": 160,
+          "path": "optimized/board/piet-maes-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4168,
+          "height": 240,
+          "path": "optimized/board/piet-maes-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6150,
+          "height": 320,
+          "path": "optimized/board/piet-maes-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11522,
+          "height": 480,
+          "path": "optimized/board/piet-maes-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 19150,
+          "height": 640,
+          "path": "optimized/board/piet-maes-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -543,6 +1479,72 @@
   },
   "board/roger-hewson.jpg": {
     "bytes": 37829,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1805,
+          "height": 160,
+          "path": "optimized/board/roger-hewson-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2780,
+          "height": 240,
+          "path": "optimized/board/roger-hewson-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3638,
+          "height": 320,
+          "path": "optimized/board/roger-hewson-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5693,
+          "height": 480,
+          "path": "optimized/board/roger-hewson-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7734,
+          "height": 640,
+          "path": "optimized/board/roger-hewson-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2138,
+          "height": 160,
+          "path": "optimized/board/roger-hewson-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3652,
+          "height": 240,
+          "path": "optimized/board/roger-hewson-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5248,
+          "height": 320,
+          "path": "optimized/board/roger-hewson-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8882,
+          "height": 480,
+          "path": "optimized/board/roger-hewson-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 13078,
+          "height": 640,
+          "path": "optimized/board/roger-hewson-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -580,6 +1582,72 @@
   },
   "board/satoru-arai.jpg": {
     "bytes": 25803,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1362,
+          "height": 160,
+          "path": "optimized/board/satoru-arai-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2187,
+          "height": 240,
+          "path": "optimized/board/satoru-arai-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3004,
+          "height": 320,
+          "path": "optimized/board/satoru-arai-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 4751,
+          "height": 480,
+          "path": "optimized/board/satoru-arai-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 6797,
+          "height": 640,
+          "path": "optimized/board/satoru-arai-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1422,
+          "height": 160,
+          "path": "optimized/board/satoru-arai-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2662,
+          "height": 240,
+          "path": "optimized/board/satoru-arai-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3946,
+          "height": 320,
+          "path": "optimized/board/satoru-arai-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7092,
+          "height": 480,
+          "path": "optimized/board/satoru-arai-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10842,
+          "height": 640,
+          "path": "optimized/board/satoru-arai-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -617,6 +1685,72 @@
   },
   "board/tatjana-avsic-zupanc.jpg": {
     "bytes": 35973,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1779,
+          "height": 160,
+          "path": "optimized/board/tatjana-avsic-zupanc-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2767,
+          "height": 240,
+          "path": "optimized/board/tatjana-avsic-zupanc-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3620,
+          "height": 320,
+          "path": "optimized/board/tatjana-avsic-zupanc-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5992,
+          "height": 480,
+          "path": "optimized/board/tatjana-avsic-zupanc-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9708,
+          "height": 640,
+          "path": "optimized/board/tatjana-avsic-zupanc-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2060,
+          "height": 160,
+          "path": "optimized/board/tatjana-avsic-zupanc-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3506,
+          "height": 240,
+          "path": "optimized/board/tatjana-avsic-zupanc-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5054,
+          "height": 320,
+          "path": "optimized/board/tatjana-avsic-zupanc-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9174,
+          "height": 480,
+          "path": "optimized/board/tatjana-avsic-zupanc-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 14768,
+          "height": 640,
+          "path": "optimized/board/tatjana-avsic-zupanc-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -654,6 +1788,72 @@
   },
   "board/valeria-martinez.jpg": {
     "bytes": 43422,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1547,
+          "height": 160,
+          "path": "optimized/board/valeria-martinez-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2564,
+          "height": 240,
+          "path": "optimized/board/valeria-martinez-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3590,
+          "height": 320,
+          "path": "optimized/board/valeria-martinez-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6305,
+          "height": 480,
+          "path": "optimized/board/valeria-martinez-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9905,
+          "height": 640,
+          "path": "optimized/board/valeria-martinez-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1824,
+          "height": 160,
+          "path": "optimized/board/valeria-martinez-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3302,
+          "height": 240,
+          "path": "optimized/board/valeria-martinez-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5162,
+          "height": 320,
+          "path": "optimized/board/valeria-martinez-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9968,
+          "height": 480,
+          "path": "optimized/board/valeria-martinez-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15512,
+          "height": 640,
+          "path": "optimized/board/valeria-martinez-640.webp",
+          "width": 640
+        }
+      ]
+    },
     "height": 640,
     "variants": [
       {
@@ -691,20 +1891,74 @@
   },
   "ich2026/conference-volcano.jpg": {
     "bytes": 201357,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 8869,
+          "height": 214,
+          "path": "optimized/ich2026/conference-volcano-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 17046,
+          "height": 321,
+          "path": "optimized/ich2026/conference-volcano-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 27219,
+          "height": 428,
+          "path": "optimized/ich2026/conference-volcano-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 49493,
+          "height": 642,
+          "path": "optimized/ich2026/conference-volcano-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 75984,
+          "height": 856,
+          "path": "optimized/ich2026/conference-volcano-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 12060,
+          "height": 214,
+          "path": "optimized/ich2026/conference-volcano-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 23884,
+          "height": 321,
+          "path": "optimized/ich2026/conference-volcano-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 38650,
+          "height": 428,
+          "path": "optimized/ich2026/conference-volcano-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 71980,
+          "height": 642,
+          "path": "optimized/ich2026/conference-volcano-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 109082,
+          "height": 856,
+          "path": "optimized/ich2026/conference-volcano-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 856,
     "variants": [
-      {
-        "bytes": 3690,
-        "height": 107,
-        "path": "optimized/ich2026/conference-volcano-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7238,
-        "height": 161,
-        "path": "optimized/ich2026/conference-volcano-240.webp",
-        "width": 240
-      },
       {
         "bytes": 12060,
         "height": 214,
@@ -740,20 +1994,86 @@
   },
   "ich2026/generated/abstract-registration.jpg": {
     "bytes": 180386,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 5888,
+          "height": 200,
+          "path": "optimized/ich2026/generated/abstract-registration-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9275,
+          "height": 300,
+          "path": "optimized/ich2026/generated/abstract-registration-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12573,
+          "height": 400,
+          "path": "optimized/ich2026/generated/abstract-registration-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 18758,
+          "height": 600,
+          "path": "optimized/ich2026/generated/abstract-registration-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 24892,
+          "height": 800,
+          "path": "optimized/ich2026/generated/abstract-registration-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 31143,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/abstract-registration-1600.avif",
+          "width": 1600
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 8308,
+          "height": 200,
+          "path": "optimized/ich2026/generated/abstract-registration-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 14122,
+          "height": 300,
+          "path": "optimized/ich2026/generated/abstract-registration-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 20348,
+          "height": 400,
+          "path": "optimized/ich2026/generated/abstract-registration-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 33122,
+          "height": 600,
+          "path": "optimized/ich2026/generated/abstract-registration-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 46322,
+          "height": 800,
+          "path": "optimized/ich2026/generated/abstract-registration-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 60420,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/abstract-registration-1600.webp",
+          "width": 1600
+        }
+      ]
+    },
     "height": 1000,
     "variants": [
-      {
-        "bytes": 3298,
-        "height": 100,
-        "path": "optimized/ich2026/generated/abstract-registration-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5702,
-        "height": 150,
-        "path": "optimized/ich2026/generated/abstract-registration-240.webp",
-        "width": 240
-      },
       {
         "bytes": 8308,
         "height": 200,
@@ -795,20 +2115,86 @@
   },
   "ich2026/generated/andes-virus-workshop.jpg": {
     "bytes": 244554,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 7622,
+          "height": 200,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 12929,
+          "height": 300,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 18526,
+          "height": 400,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 29944,
+          "height": 600,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 40770,
+          "height": 800,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 52233,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-1600.avif",
+          "width": 1600
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 10526,
+          "height": 200,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 19034,
+          "height": 300,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27952,
+          "height": 400,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 48054,
+          "height": 600,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 68436,
+          "height": 800,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 91286,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/andes-virus-workshop-1600.webp",
+          "width": 1600
+        }
+      ]
+    },
     "height": 1000,
     "variants": [
-      {
-        "bytes": 3758,
-        "height": 100,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 6906,
-        "height": 150,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-240.webp",
-        "width": 240
-      },
       {
         "bytes": 10526,
         "height": 200,
@@ -850,20 +2236,86 @@
   },
   "ich2026/generated/keynote-speakers.jpg": {
     "bytes": 245895,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 7330,
+          "height": 200,
+          "path": "optimized/ich2026/generated/keynote-speakers-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 13059,
+          "height": 300,
+          "path": "optimized/ich2026/generated/keynote-speakers-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19836,
+          "height": 400,
+          "path": "optimized/ich2026/generated/keynote-speakers-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 34774,
+          "height": 600,
+          "path": "optimized/ich2026/generated/keynote-speakers-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 47928,
+          "height": 800,
+          "path": "optimized/ich2026/generated/keynote-speakers-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 61784,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/keynote-speakers-1600.avif",
+          "width": 1600
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 9458,
+          "height": 200,
+          "path": "optimized/ich2026/generated/keynote-speakers-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 17576,
+          "height": 300,
+          "path": "optimized/ich2026/generated/keynote-speakers-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27210,
+          "height": 400,
+          "path": "optimized/ich2026/generated/keynote-speakers-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 51012,
+          "height": 600,
+          "path": "optimized/ich2026/generated/keynote-speakers-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 75414,
+          "height": 800,
+          "path": "optimized/ich2026/generated/keynote-speakers-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 101196,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/keynote-speakers-1600.webp",
+          "width": 1600
+        }
+      ]
+    },
     "height": 1000,
     "variants": [
-      {
-        "bytes": 3256,
-        "height": 100,
-        "path": "optimized/ich2026/generated/keynote-speakers-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 6110,
-        "height": 150,
-        "path": "optimized/ich2026/generated/keynote-speakers-240.webp",
-        "width": 240
-      },
       {
         "bytes": 9458,
         "height": 200,
@@ -905,6 +2357,72 @@
   },
   "ich2026/generated/scientific-program.jpg": {
     "bytes": 197609,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2884,
+          "height": 100,
+          "path": "optimized/ich2026/generated/scientific-program-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4842,
+          "height": 150,
+          "path": "optimized/ich2026/generated/scientific-program-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6901,
+          "height": 200,
+          "path": "optimized/ich2026/generated/scientific-program-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11412,
+          "height": 300,
+          "path": "optimized/ich2026/generated/scientific-program-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 40246,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/scientific-program-1600.avif",
+          "width": 1600
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3262,
+          "height": 100,
+          "path": "optimized/ich2026/generated/scientific-program-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5810,
+          "height": 150,
+          "path": "optimized/ich2026/generated/scientific-program-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8652,
+          "height": 200,
+          "path": "optimized/ich2026/generated/scientific-program-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15138,
+          "height": 300,
+          "path": "optimized/ich2026/generated/scientific-program-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 66250,
+          "height": 1000,
+          "path": "optimized/ich2026/generated/scientific-program-1600.webp",
+          "width": 1600
+        }
+      ]
+    },
     "height": 1000,
     "variants": [
       {
@@ -932,24 +2450,6 @@
         "width": 480
       },
       {
-        "bytes": 22066,
-        "height": 400,
-        "path": "optimized/ich2026/generated/scientific-program-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 35968,
-        "height": 600,
-        "path": "optimized/ich2026/generated/scientific-program-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 51318,
-        "height": 800,
-        "path": "optimized/ich2026/generated/scientific-program-1280.webp",
-        "width": 1280
-      },
-      {
         "bytes": 66250,
         "height": 1000,
         "path": "optimized/ich2026/generated/scientific-program-1600.webp",
@@ -958,51 +2458,74 @@
     ],
     "width": 1600
   },
-  "ich2026/hantavirus-em.jpg": {
-    "bytes": 89331,
-    "height": 507,
-    "variants": [
-      {
-        "bytes": 3756,
-        "height": 116,
-        "path": "optimized/ich2026/hantavirus-em-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7696,
-        "height": 174,
-        "path": "optimized/ich2026/hantavirus-em-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 13340,
-        "height": 232,
-        "path": "optimized/ich2026/hantavirus-em-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 31102,
-        "height": 348,
-        "path": "optimized/ich2026/hantavirus-em-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 55582,
-        "height": 464,
-        "path": "optimized/ich2026/hantavirus-em-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 68274,
-        "height": 507,
-        "path": "optimized/ich2026/hantavirus-em-700.webp",
-        "width": 700
-      }
-    ],
-    "width": 700
-  },
   "ich2026/local-cecilia-vial.jpg": {
     "bytes": 59366,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1883,
+          "height": 170,
+          "path": "optimized/ich2026/local-cecilia-vial-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3261,
+          "height": 256,
+          "path": "optimized/ich2026/local-cecilia-vial-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4922,
+          "height": 341,
+          "path": "optimized/ich2026/local-cecilia-vial-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9394,
+          "height": 511,
+          "path": "optimized/ich2026/local-cecilia-vial-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19543,
+          "height": 720,
+          "path": "optimized/ich2026/local-cecilia-vial-676.avif",
+          "width": 676
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2192,
+          "height": 170,
+          "path": "optimized/ich2026/local-cecilia-vial-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4112,
+          "height": 256,
+          "path": "optimized/ich2026/local-cecilia-vial-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6650,
+          "height": 341,
+          "path": "optimized/ich2026/local-cecilia-vial-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13654,
+          "height": 511,
+          "path": "optimized/ich2026/local-cecilia-vial-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 26844,
+          "height": 720,
+          "path": "optimized/ich2026/local-cecilia-vial-676.webp",
+          "width": 676
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1030,12 +2553,6 @@
         "width": 480
       },
       {
-        "bytes": 22780,
-        "height": 682,
-        "path": "optimized/ich2026/local-cecilia-vial-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 26844,
         "height": 720,
         "path": "optimized/ich2026/local-cecilia-vial-676.webp",
@@ -1046,6 +2563,72 @@
   },
   "ich2026/local-constanza-martinez-valdevenito.jpg": {
     "bytes": 50624,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2344,
+          "height": 160,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3690,
+          "height": 240,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4838,
+          "height": 320,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7466,
+          "height": 480,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12333,
+          "height": 720,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2956,
+          "height": 160,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4872,
+          "height": 240,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6968,
+          "height": 320,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11662,
+          "height": 480,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 20490,
+          "height": 720,
+          "path": "optimized/ich2026/local-constanza-martinez-valdevenito-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1073,12 +2656,6 @@
         "width": 480
       },
       {
-        "bytes": 16898,
-        "height": 640,
-        "path": "optimized/ich2026/local-constanza-martinez-valdevenito-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 20490,
         "height": 720,
         "path": "optimized/ich2026/local-constanza-martinez-valdevenito-720.webp",
@@ -1089,6 +2666,72 @@
   },
   "ich2026/local-fernando-torres-perez.jpg": {
     "bytes": 38693,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1488,
+          "height": 160,
+          "path": "optimized/ich2026/local-fernando-torres-perez-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2261,
+          "height": 240,
+          "path": "optimized/ich2026/local-fernando-torres-perez-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3213,
+          "height": 320,
+          "path": "optimized/ich2026/local-fernando-torres-perez-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5614,
+          "height": 480,
+          "path": "optimized/ich2026/local-fernando-torres-perez-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10621,
+          "height": 720,
+          "path": "optimized/ich2026/local-fernando-torres-perez-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1734,
+          "height": 160,
+          "path": "optimized/ich2026/local-fernando-torres-perez-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2948,
+          "height": 240,
+          "path": "optimized/ich2026/local-fernando-torres-perez-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4554,
+          "height": 320,
+          "path": "optimized/ich2026/local-fernando-torres-perez-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8574,
+          "height": 480,
+          "path": "optimized/ich2026/local-fernando-torres-perez-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 16482,
+          "height": 720,
+          "path": "optimized/ich2026/local-fernando-torres-perez-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1116,12 +2759,6 @@
         "width": 480
       },
       {
-        "bytes": 13330,
-        "height": 640,
-        "path": "optimized/ich2026/local-fernando-torres-perez-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 16482,
         "height": 720,
         "path": "optimized/ich2026/local-fernando-torres-perez-720.webp",
@@ -1132,6 +2769,72 @@
   },
   "ich2026/local-jenniffer-angulo.jpg": {
     "bytes": 65989,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2770,
+          "height": 160,
+          "path": "optimized/ich2026/local-jenniffer-angulo-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4461,
+          "height": 240,
+          "path": "optimized/ich2026/local-jenniffer-angulo-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6303,
+          "height": 320,
+          "path": "optimized/ich2026/local-jenniffer-angulo-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 10737,
+          "height": 480,
+          "path": "optimized/ich2026/local-jenniffer-angulo-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 21215,
+          "height": 720,
+          "path": "optimized/ich2026/local-jenniffer-angulo-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3366,
+          "height": 160,
+          "path": "optimized/ich2026/local-jenniffer-angulo-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 6010,
+          "height": 240,
+          "path": "optimized/ich2026/local-jenniffer-angulo-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8760,
+          "height": 320,
+          "path": "optimized/ich2026/local-jenniffer-angulo-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15970,
+          "height": 480,
+          "path": "optimized/ich2026/local-jenniffer-angulo-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 30954,
+          "height": 720,
+          "path": "optimized/ich2026/local-jenniffer-angulo-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1159,12 +2862,6 @@
         "width": 480
       },
       {
-        "bytes": 24872,
-        "height": 640,
-        "path": "optimized/ich2026/local-jenniffer-angulo-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 30954,
         "height": 720,
         "path": "optimized/ich2026/local-jenniffer-angulo-720.webp",
@@ -1175,6 +2872,72 @@
   },
   "ich2026/local-juan-hormazabal.jpg": {
     "bytes": 55839,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2336,
+          "height": 160,
+          "path": "optimized/ich2026/local-juan-hormazabal-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4162,
+          "height": 240,
+          "path": "optimized/ich2026/local-juan-hormazabal-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6342,
+          "height": 320,
+          "path": "optimized/ich2026/local-juan-hormazabal-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 10835,
+          "height": 480,
+          "path": "optimized/ich2026/local-juan-hormazabal-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 17217,
+          "height": 720,
+          "path": "optimized/ich2026/local-juan-hormazabal-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2620,
+          "height": 160,
+          "path": "optimized/ich2026/local-juan-hormazabal-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5106,
+          "height": 240,
+          "path": "optimized/ich2026/local-juan-hormazabal-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7938,
+          "height": 320,
+          "path": "optimized/ich2026/local-juan-hormazabal-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 14808,
+          "height": 480,
+          "path": "optimized/ich2026/local-juan-hormazabal-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 24984,
+          "height": 720,
+          "path": "optimized/ich2026/local-juan-hormazabal-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1202,12 +2965,6 @@
         "width": 480
       },
       {
-        "bytes": 21310,
-        "height": 640,
-        "path": "optimized/ich2026/local-juan-hormazabal-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 24984,
         "height": 720,
         "path": "optimized/ich2026/local-juan-hormazabal-720.webp",
@@ -1218,6 +2975,72 @@
   },
   "ich2026/local-marcela-ferres.jpg": {
     "bytes": 42492,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2295,
+          "height": 160,
+          "path": "optimized/ich2026/local-marcela-ferres-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3541,
+          "height": 240,
+          "path": "optimized/ich2026/local-marcela-ferres-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4465,
+          "height": 320,
+          "path": "optimized/ich2026/local-marcela-ferres-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6374,
+          "height": 480,
+          "path": "optimized/ich2026/local-marcela-ferres-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9359,
+          "height": 720,
+          "path": "optimized/ich2026/local-marcela-ferres-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2682,
+          "height": 160,
+          "path": "optimized/ich2026/local-marcela-ferres-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4512,
+          "height": 240,
+          "path": "optimized/ich2026/local-marcela-ferres-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6152,
+          "height": 320,
+          "path": "optimized/ich2026/local-marcela-ferres-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9454,
+          "height": 480,
+          "path": "optimized/ich2026/local-marcela-ferres-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 14984,
+          "height": 720,
+          "path": "optimized/ich2026/local-marcela-ferres-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1245,12 +3068,6 @@
         "width": 480
       },
       {
-        "bytes": 13166,
-        "height": 640,
-        "path": "optimized/ich2026/local-marcela-ferres-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 14984,
         "height": 720,
         "path": "optimized/ich2026/local-marcela-ferres-720.webp",
@@ -1261,6 +3078,72 @@
   },
   "ich2026/local-maria-ines-barria.jpg": {
     "bytes": 48355,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1343,
+          "height": 160,
+          "path": "optimized/ich2026/local-maria-ines-barria-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2188,
+          "height": 240,
+          "path": "optimized/ich2026/local-maria-ines-barria-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3040,
+          "height": 320,
+          "path": "optimized/ich2026/local-maria-ines-barria-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5521,
+          "height": 480,
+          "path": "optimized/ich2026/local-maria-ines-barria-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10818,
+          "height": 720,
+          "path": "optimized/ich2026/local-maria-ines-barria-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1556,
+          "height": 160,
+          "path": "optimized/ich2026/local-maria-ines-barria-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2942,
+          "height": 240,
+          "path": "optimized/ich2026/local-maria-ines-barria-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4364,
+          "height": 320,
+          "path": "optimized/ich2026/local-maria-ines-barria-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8610,
+          "height": 480,
+          "path": "optimized/ich2026/local-maria-ines-barria-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 17382,
+          "height": 720,
+          "path": "optimized/ich2026/local-maria-ines-barria-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1288,12 +3171,6 @@
         "width": 480
       },
       {
-        "bytes": 13850,
-        "height": 640,
-        "path": "optimized/ich2026/local-maria-ines-barria-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 17382,
         "height": 720,
         "path": "optimized/ich2026/local-maria-ines-barria-720.webp",
@@ -1304,6 +3181,72 @@
   },
   "ich2026/local-mario-calvo.jpg": {
     "bytes": 54419,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1801,
+          "height": 160,
+          "path": "optimized/ich2026/local-mario-calvo-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2857,
+          "height": 240,
+          "path": "optimized/ich2026/local-mario-calvo-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3821,
+          "height": 320,
+          "path": "optimized/ich2026/local-mario-calvo-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6061,
+          "height": 480,
+          "path": "optimized/ich2026/local-mario-calvo-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 15763,
+          "height": 720,
+          "path": "optimized/ich2026/local-mario-calvo-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2090,
+          "height": 160,
+          "path": "optimized/ich2026/local-mario-calvo-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3578,
+          "height": 240,
+          "path": "optimized/ich2026/local-mario-calvo-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5182,
+          "height": 320,
+          "path": "optimized/ich2026/local-mario-calvo-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9454,
+          "height": 480,
+          "path": "optimized/ich2026/local-mario-calvo-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23630,
+          "height": 720,
+          "path": "optimized/ich2026/local-mario-calvo-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1331,12 +3274,6 @@
         "width": 480
       },
       {
-        "bytes": 16640,
-        "height": 640,
-        "path": "optimized/ich2026/local-mario-calvo-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 23630,
         "height": 720,
         "path": "optimized/ich2026/local-mario-calvo-720.webp",
@@ -1347,6 +3284,72 @@
   },
   "ich2026/local-nicole-le-corre.jpg": {
     "bytes": 61842,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2504,
+          "height": 160,
+          "path": "optimized/ich2026/local-nicole-le-corre-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3982,
+          "height": 240,
+          "path": "optimized/ich2026/local-nicole-le-corre-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 5555,
+          "height": 320,
+          "path": "optimized/ich2026/local-nicole-le-corre-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9603,
+          "height": 480,
+          "path": "optimized/ich2026/local-nicole-le-corre-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19239,
+          "height": 720,
+          "path": "optimized/ich2026/local-nicole-le-corre-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2974,
+          "height": 160,
+          "path": "optimized/ich2026/local-nicole-le-corre-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5100,
+          "height": 240,
+          "path": "optimized/ich2026/local-nicole-le-corre-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7558,
+          "height": 320,
+          "path": "optimized/ich2026/local-nicole-le-corre-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13820,
+          "height": 480,
+          "path": "optimized/ich2026/local-nicole-le-corre-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27070,
+          "height": 720,
+          "path": "optimized/ich2026/local-nicole-le-corre-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1374,12 +3377,6 @@
         "width": 480
       },
       {
-        "bytes": 21666,
-        "height": 640,
-        "path": "optimized/ich2026/local-nicole-le-corre-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 27070,
         "height": 720,
         "path": "optimized/ich2026/local-nicole-le-corre-720.webp",
@@ -1390,6 +3387,72 @@
   },
   "ich2026/local-pablo-vial.jpg": {
     "bytes": 53209,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1608,
+          "height": 160,
+          "path": "optimized/ich2026/local-pablo-vial-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2644,
+          "height": 240,
+          "path": "optimized/ich2026/local-pablo-vial-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3737,
+          "height": 320,
+          "path": "optimized/ich2026/local-pablo-vial-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6747,
+          "height": 480,
+          "path": "optimized/ich2026/local-pablo-vial-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 14570,
+          "height": 720,
+          "path": "optimized/ich2026/local-pablo-vial-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1870,
+          "height": 160,
+          "path": "optimized/ich2026/local-pablo-vial-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3492,
+          "height": 240,
+          "path": "optimized/ich2026/local-pablo-vial-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5234,
+          "height": 320,
+          "path": "optimized/ich2026/local-pablo-vial-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10198,
+          "height": 480,
+          "path": "optimized/ich2026/local-pablo-vial-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 21686,
+          "height": 720,
+          "path": "optimized/ich2026/local-pablo-vial-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1417,12 +3480,6 @@
         "width": 480
       },
       {
-        "bytes": 16886,
-        "height": 640,
-        "path": "optimized/ich2026/local-pablo-vial-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 21686,
         "height": 720,
         "path": "optimized/ich2026/local-pablo-vial-720.webp",
@@ -1431,57 +3488,74 @@
     ],
     "width": 720
   },
-  "ich2026/rodent-reservoir.jpg": {
-    "bytes": 36921,
-    "height": 562,
-    "variants": [
-      {
-        "bytes": 1078,
-        "height": 90,
-        "path": "optimized/ich2026/rodent-reservoir-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 1826,
-        "height": 135,
-        "path": "optimized/ich2026/rodent-reservoir-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 2884,
-        "height": 180,
-        "path": "optimized/ich2026/rodent-reservoir-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 5172,
-        "height": 270,
-        "path": "optimized/ich2026/rodent-reservoir-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 8000,
-        "height": 360,
-        "path": "optimized/ich2026/rodent-reservoir-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 13748,
-        "height": 540,
-        "path": "optimized/ich2026/rodent-reservoir-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 14834,
-        "height": 562,
-        "path": "optimized/ich2026/rodent-reservoir-1000.webp",
-        "width": 1000
-      }
-    ],
-    "width": 1000
-  },
   "ich2026/scientific-boris-klempa.jpg": {
     "bytes": 47787,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2007,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-boris-klempa-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3069,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-boris-klempa-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3893,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-boris-klempa-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5777,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-boris-klempa-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9235,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-boris-klempa-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2522,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-boris-klempa-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4210,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-boris-klempa-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5816,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-boris-klempa-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9672,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-boris-klempa-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 16160,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-boris-klempa-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1509,12 +3583,6 @@
         "width": 480
       },
       {
-        "bytes": 13804,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-boris-klempa-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 16160,
         "height": 720,
         "path": "optimized/ich2026/scientific-boris-klempa-720.webp",
@@ -1525,6 +3593,72 @@
   },
   "ich2026/scientific-colleen-jonsson.jpg": {
     "bytes": 55781,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2401,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3831,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 5509,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9020,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 14991,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2868,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5222,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7676,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13570,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23558,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-colleen-jonsson-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1552,12 +3686,6 @@
         "width": 480
       },
       {
-        "bytes": 19560,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-colleen-jonsson-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 23558,
         "height": 720,
         "path": "optimized/ich2026/scientific-colleen-jonsson-720.webp",
@@ -1568,6 +3696,72 @@
   },
   "ich2026/scientific-gustavo-palacios.jpg": {
     "bytes": 36993,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1588,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2466,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3225,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5133,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 8766,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1742,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3078,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4426,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7580,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 14022,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-gustavo-palacios-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1595,12 +3789,6 @@
         "width": 480
       },
       {
-        "bytes": 11144,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-gustavo-palacios-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 14022,
         "height": 720,
         "path": "optimized/ich2026/scientific-gustavo-palacios-720.webp",
@@ -1611,6 +3799,72 @@
   },
   "ich2026/scientific-jin-won-song.jpg": {
     "bytes": 45035,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1585,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-jin-won-song-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2395,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-jin-won-song-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3171,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-jin-won-song-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5220,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-jin-won-song-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 8638,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-jin-won-song-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1902,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-jin-won-song-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3124,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-jin-won-song-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4510,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-jin-won-song-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8134,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-jin-won-song-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15102,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-jin-won-song-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1638,12 +3892,6 @@
         "width": 480
       },
       {
-        "bytes": 12568,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-jin-won-song-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 15102,
         "height": 720,
         "path": "optimized/ich2026/scientific-jin-won-song-720.webp",
@@ -1654,6 +3902,72 @@
   },
   "ich2026/scientific-jonas-klingstrom.jpg": {
     "bytes": 29699,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1387,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2097,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2731,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 4068,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 6118,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1522,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2544,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3622,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 5978,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10158,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-jonas-klingstrom-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1681,12 +3995,6 @@
         "width": 480
       },
       {
-        "bytes": 8744,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-jonas-klingstrom-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 10158,
         "height": 720,
         "path": "optimized/ich2026/scientific-jonas-klingstrom-720.webp",
@@ -1697,6 +4005,72 @@
   },
   "ich2026/scientific-nicole-tischler.jpg": {
     "bytes": 41079,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1898,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-nicole-tischler-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2861,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-nicole-tischler-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3668,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-nicole-tischler-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5414,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-nicole-tischler-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 8556,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-nicole-tischler-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2256,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-nicole-tischler-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3650,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-nicole-tischler-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5046,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-nicole-tischler-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8398,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-nicole-tischler-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 14050,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-nicole-tischler-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1724,12 +4098,6 @@
         "width": 480
       },
       {
-        "bytes": 11964,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-nicole-tischler-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 14050,
         "height": 720,
         "path": "optimized/ich2026/scientific-nicole-tischler-720.webp",
@@ -1740,6 +4108,72 @@
   },
   "ich2026/scientific-piet-maes.jpg": {
     "bytes": 54125,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2058,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-piet-maes-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3204,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-piet-maes-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4391,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-piet-maes-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7454,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-piet-maes-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 15237,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-piet-maes-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2450,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-piet-maes-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4148,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-piet-maes-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6210,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-piet-maes-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11412,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-piet-maes-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23524,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-piet-maes-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1767,12 +4201,6 @@
         "width": 480
       },
       {
-        "bytes": 18420,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-piet-maes-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 23524,
         "height": 720,
         "path": "optimized/ich2026/scientific-piet-maes-720.webp",
@@ -1783,6 +4211,72 @@
   },
   "ich2026/scientific-roger-hewson.jpg": {
     "bytes": 45580,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1791,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-roger-hewson-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2777,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-roger-hewson-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3633,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-roger-hewson-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5745,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-roger-hewson-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9031,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-roger-hewson-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2120,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-roger-hewson-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3662,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-roger-hewson-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5236,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-roger-hewson-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8970,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-roger-hewson-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15276,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-roger-hewson-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1810,12 +4304,6 @@
         "width": 480
       },
       {
-        "bytes": 13012,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-roger-hewson-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 15276,
         "height": 720,
         "path": "optimized/ich2026/scientific-roger-hewson-720.webp",
@@ -1826,6 +4314,72 @@
   },
   "ich2026/scientific-satoru-arai.jpg": {
     "bytes": 31372,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1380,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-satoru-arai-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2195,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-satoru-arai-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2973,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-satoru-arai-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 4785,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-satoru-arai-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7859,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-satoru-arai-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1424,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-satoru-arai-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2626,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-satoru-arai-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3968,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-satoru-arai-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7134,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-satoru-arai-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12768,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-satoru-arai-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1853,12 +4407,6 @@
         "width": 480
       },
       {
-        "bytes": 10628,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-satoru-arai-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 12768,
         "height": 720,
         "path": "optimized/ich2026/scientific-satoru-arai-720.webp",
@@ -1869,6 +4417,72 @@
   },
   "ich2026/scientific-steven-bradfute.jpg": {
     "bytes": 42078,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1581,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-steven-bradfute-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2342,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-steven-bradfute-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3035,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-steven-bradfute-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5029,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-steven-bradfute-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9751,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-steven-bradfute-720.avif",
+          "width": 720
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1808,
+          "height": 160,
+          "path": "optimized/ich2026/scientific-steven-bradfute-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3026,
+          "height": 240,
+          "path": "optimized/ich2026/scientific-steven-bradfute-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4244,
+          "height": 320,
+          "path": "optimized/ich2026/scientific-steven-bradfute-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7590,
+          "height": 480,
+          "path": "optimized/ich2026/scientific-steven-bradfute-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15272,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-steven-bradfute-720.webp",
+          "width": 720
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1896,12 +4510,6 @@
         "width": 480
       },
       {
-        "bytes": 12002,
-        "height": 640,
-        "path": "optimized/ich2026/scientific-steven-bradfute-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 15272,
         "height": 720,
         "path": "optimized/ich2026/scientific-steven-bradfute-720.webp",
@@ -1912,6 +4520,72 @@
   },
   "ich2026/scientific-valeria-martinez.jpg": {
     "bytes": 54762,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1661,
+          "height": 161,
+          "path": "optimized/ich2026/scientific-valeria-martinez-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2604,
+          "height": 241,
+          "path": "optimized/ich2026/scientific-valeria-martinez-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3774,
+          "height": 321,
+          "path": "optimized/ich2026/scientific-valeria-martinez-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6573,
+          "height": 482,
+          "path": "optimized/ich2026/scientific-valeria-martinez-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12193,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-valeria-martinez-717.avif",
+          "width": 717
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1954,
+          "height": 161,
+          "path": "optimized/ich2026/scientific-valeria-martinez-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3346,
+          "height": 241,
+          "path": "optimized/ich2026/scientific-valeria-martinez-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5266,
+          "height": 321,
+          "path": "optimized/ich2026/scientific-valeria-martinez-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10576,
+          "height": 482,
+          "path": "optimized/ich2026/scientific-valeria-martinez-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 19474,
+          "height": 720,
+          "path": "optimized/ich2026/scientific-valeria-martinez-717.webp",
+          "width": 717
+        }
+      ]
+    },
     "height": 720,
     "variants": [
       {
@@ -1939,12 +4613,6 @@
         "width": 480
       },
       {
-        "bytes": 15782,
-        "height": 643,
-        "path": "optimized/ich2026/scientific-valeria-martinez-640.webp",
-        "width": 640
-      },
-      {
         "bytes": 19474,
         "height": 720,
         "path": "optimized/ich2026/scientific-valeria-martinez-717.webp",
@@ -1955,6 +4623,72 @@
   },
   "speakers/jay-hooper.png": {
     "bytes": 38489,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2832,
+          "height": 165,
+          "path": "optimized/speakers/jay-hooper-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4441,
+          "height": 247,
+          "path": "optimized/speakers/jay-hooper-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6190,
+          "height": 330,
+          "path": "optimized/speakers/jay-hooper-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 9595,
+          "height": 494,
+          "path": "optimized/speakers/jay-hooper-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10702,
+          "height": 513,
+          "path": "optimized/speakers/jay-hooper-498.avif",
+          "width": 498
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3468,
+          "height": 165,
+          "path": "optimized/speakers/jay-hooper-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5878,
+          "height": 247,
+          "path": "optimized/speakers/jay-hooper-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8640,
+          "height": 330,
+          "path": "optimized/speakers/jay-hooper-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 14628,
+          "height": 494,
+          "path": "optimized/speakers/jay-hooper-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15964,
+          "height": 513,
+          "path": "optimized/speakers/jay-hooper-498.webp",
+          "width": 498
+        }
+      ]
+    },
     "height": 513,
     "variants": [
       {
@@ -1992,6 +4726,72 @@
   },
   "speakers/marcela-ferres.png": {
     "bytes": 46609,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3662,
+          "height": 165,
+          "path": "optimized/speakers/marcela-ferres-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 5580,
+          "height": 247,
+          "path": "optimized/speakers/marcela-ferres-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 7549,
+          "height": 329,
+          "path": "optimized/speakers/marcela-ferres-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11075,
+          "height": 494,
+          "path": "optimized/speakers/marcela-ferres-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12584,
+          "height": 532,
+          "path": "optimized/speakers/marcela-ferres-517.avif",
+          "width": 517
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 4440,
+          "height": 165,
+          "path": "optimized/speakers/marcela-ferres-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 7286,
+          "height": 247,
+          "path": "optimized/speakers/marcela-ferres-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 10388,
+          "height": 329,
+          "path": "optimized/speakers/marcela-ferres-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 16648,
+          "height": 494,
+          "path": "optimized/speakers/marcela-ferres-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 18870,
+          "height": 532,
+          "path": "optimized/speakers/marcela-ferres-517.webp",
+          "width": 517
+        }
+      ]
+    },
     "height": 532,
     "variants": [
       {
@@ -2029,6 +4829,84 @@
   },
   "sponsors/anid.png": {
     "bytes": 95917,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2975,
+          "height": 135,
+          "path": "optimized/sponsors/anid-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4958,
+          "height": 202,
+          "path": "optimized/sponsors/anid-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 7895,
+          "height": 269,
+          "path": "optimized/sponsors/anid-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 12477,
+          "height": 404,
+          "path": "optimized/sponsors/anid-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 15626,
+          "height": 539,
+          "path": "optimized/sponsors/anid-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 21713,
+          "height": 778,
+          "path": "optimized/sponsors/anid-924.avif",
+          "width": 924
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3946,
+          "height": 135,
+          "path": "optimized/sponsors/anid-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 7142,
+          "height": 202,
+          "path": "optimized/sponsors/anid-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 10166,
+          "height": 269,
+          "path": "optimized/sponsors/anid-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 17436,
+          "height": 404,
+          "path": "optimized/sponsors/anid-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23116,
+          "height": 539,
+          "path": "optimized/sponsors/anid-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 35012,
+          "height": 778,
+          "path": "optimized/sponsors/anid-924.webp",
+          "width": 924
+        }
+      ]
+    },
     "height": 778,
     "variants": [
       {
@@ -2072,6 +4950,84 @@
   },
   "sponsors/ciencia-vida.png": {
     "bytes": 59419,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2504,
+          "height": 116,
+          "path": "optimized/sponsors/ciencia-vida-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3683,
+          "height": 174,
+          "path": "optimized/sponsors/ciencia-vida-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4658,
+          "height": 232,
+          "path": "optimized/sponsors/ciencia-vida-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6380,
+          "height": 348,
+          "path": "optimized/sponsors/ciencia-vida-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7950,
+          "height": 464,
+          "path": "optimized/sponsors/ciencia-vida-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 14047,
+          "height": 928,
+          "path": "optimized/sponsors/ciencia-vida-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3756,
+          "height": 116,
+          "path": "optimized/sponsors/ciencia-vida-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5898,
+          "height": 174,
+          "path": "optimized/sponsors/ciencia-vida-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8224,
+          "height": 232,
+          "path": "optimized/sponsors/ciencia-vida-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 12724,
+          "height": 348,
+          "path": "optimized/sponsors/ciencia-vida-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 17424,
+          "height": 464,
+          "path": "optimized/sponsors/ciencia-vida-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 35422,
+          "height": 928,
+          "path": "optimized/sponsors/ciencia-vida-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 928,
     "variants": [
       {
@@ -2105,12 +5061,6 @@
         "width": 640
       },
       {
-        "bytes": 27904,
-        "height": 696,
-        "path": "optimized/sponsors/ciencia-vida-960.webp",
-        "width": 960
-      },
-      {
         "bytes": 35422,
         "height": 928,
         "path": "optimized/sponsors/ciencia-vida-1280.webp",
@@ -2119,106 +5069,50 @@
     ],
     "width": 1280
   },
-  "sponsors/partner-extra.png": {
-    "bytes": 58109,
-    "height": 310,
-    "variants": [
-      {
-        "bytes": 3292,
-        "height": 39,
-        "path": "optimized/sponsors/partner-extra-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5654,
-        "height": 58,
-        "path": "optimized/sponsors/partner-extra-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 7960,
-        "height": 78,
-        "path": "optimized/sponsors/partner-extra-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 12958,
-        "height": 116,
-        "path": "optimized/sponsors/partner-extra-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 17790,
-        "height": 155,
-        "path": "optimized/sponsors/partner-extra-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 28356,
-        "height": 233,
-        "path": "optimized/sponsors/partner-extra-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 33876,
-        "height": 310,
-        "path": "optimized/sponsors/partner-extra-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
-  "sponsors/site-footer-mark.png": {
-    "bytes": 182938,
-    "height": 744,
-    "variants": [
-      {
-        "bytes": 3272,
-        "height": 93,
-        "path": "optimized/sponsors/site-footer-mark-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5532,
-        "height": 140,
-        "path": "optimized/sponsors/site-footer-mark-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 7908,
-        "height": 186,
-        "path": "optimized/sponsors/site-footer-mark-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 12722,
-        "height": 279,
-        "path": "optimized/sponsors/site-footer-mark-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 18404,
-        "height": 372,
-        "path": "optimized/sponsors/site-footer-mark-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 28338,
-        "height": 558,
-        "path": "optimized/sponsors/site-footer-mark-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 40782,
-        "height": 744,
-        "path": "optimized/sponsors/site-footer-mark-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
   "sponsors/somich.png": {
     "bytes": 37397,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1978,
+          "height": 82,
+          "path": "optimized/sponsors/somich-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2739,
+          "height": 123,
+          "path": "optimized/sponsors/somich-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3258,
+          "height": 164,
+          "path": "optimized/sponsors/somich-320.avif",
+          "width": 320
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2450,
+          "height": 82,
+          "path": "optimized/sponsors/somich-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3740,
+          "height": 123,
+          "path": "optimized/sponsors/somich-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5040,
+          "height": 164,
+          "path": "optimized/sponsors/somich-320.webp",
+          "width": 320
+        }
+      ]
+    },
     "height": 164,
     "variants": [
       {
@@ -2244,6 +5138,84 @@
   },
   "sponsors/universidad-catolica.jpg": {
     "bytes": 164690,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3326,
+          "height": 91,
+          "path": "optimized/sponsors/universidad-catolica-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 5806,
+          "height": 137,
+          "path": "optimized/sponsors/universidad-catolica-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 8161,
+          "height": 182,
+          "path": "optimized/sponsors/universidad-catolica-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 12941,
+          "height": 273,
+          "path": "optimized/sponsors/universidad-catolica-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 17538,
+          "height": 365,
+          "path": "optimized/sponsors/universidad-catolica-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 32924,
+          "height": 729,
+          "path": "optimized/sponsors/universidad-catolica-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3866,
+          "height": 91,
+          "path": "optimized/sponsors/universidad-catolica-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 7254,
+          "height": 137,
+          "path": "optimized/sponsors/universidad-catolica-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 11084,
+          "height": 182,
+          "path": "optimized/sponsors/universidad-catolica-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 18772,
+          "height": 273,
+          "path": "optimized/sponsors/universidad-catolica-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 26918,
+          "height": 365,
+          "path": "optimized/sponsors/universidad-catolica-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 57758,
+          "height": 729,
+          "path": "optimized/sponsors/universidad-catolica-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 729,
     "variants": [
       {
@@ -2277,12 +5249,6 @@
         "width": 640
       },
       {
-        "bytes": 42500,
-        "height": 547,
-        "path": "optimized/sponsors/universidad-catolica-960.webp",
-        "width": 960
-      },
-      {
         "bytes": 57758,
         "height": 729,
         "path": "optimized/sponsors/universidad-catolica-1280.webp",
@@ -2293,6 +5259,84 @@
   },
   "sponsors/universidad-del-desarrollo.png": {
     "bytes": 25574,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1536,
+          "height": 54,
+          "path": "optimized/sponsors/universidad-del-desarrollo-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2157,
+          "height": 81,
+          "path": "optimized/sponsors/universidad-del-desarrollo-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2648,
+          "height": 108,
+          "path": "optimized/sponsors/universidad-del-desarrollo-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 3816,
+          "height": 161,
+          "path": "optimized/sponsors/universidad-del-desarrollo-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 4755,
+          "height": 215,
+          "path": "optimized/sponsors/universidad-del-desarrollo-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 8282,
+          "height": 430,
+          "path": "optimized/sponsors/universidad-del-desarrollo-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1898,
+          "height": 54,
+          "path": "optimized/sponsors/universidad-del-desarrollo-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3090,
+          "height": 81,
+          "path": "optimized/sponsors/universidad-del-desarrollo-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4172,
+          "height": 108,
+          "path": "optimized/sponsors/universidad-del-desarrollo-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 6416,
+          "height": 161,
+          "path": "optimized/sponsors/universidad-del-desarrollo-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 8466,
+          "height": 215,
+          "path": "optimized/sponsors/universidad-del-desarrollo-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 13290,
+          "height": 430,
+          "path": "optimized/sponsors/universidad-del-desarrollo-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 430,
     "variants": [
       {
@@ -2326,12 +5370,6 @@
         "width": 640
       },
       {
-        "bytes": 12964,
-        "height": 323,
-        "path": "optimized/sponsors/universidad-del-desarrollo-960.webp",
-        "width": 960
-      },
-      {
         "bytes": 13290,
         "height": 430,
         "path": "optimized/sponsors/universidad-del-desarrollo-1280.webp",
@@ -2342,6 +5380,84 @@
   },
   "sponsors/universidad-san-sebastian.jpg": {
     "bytes": 141448,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3100,
+          "height": 110,
+          "path": "optimized/sponsors/universidad-san-sebastian-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4834,
+          "height": 165,
+          "path": "optimized/sponsors/universidad-san-sebastian-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6825,
+          "height": 220,
+          "path": "optimized/sponsors/universidad-san-sebastian-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 10282,
+          "height": 330,
+          "path": "optimized/sponsors/universidad-san-sebastian-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 13746,
+          "height": 440,
+          "path": "optimized/sponsors/universidad-san-sebastian-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 27207,
+          "height": 879,
+          "path": "optimized/sponsors/universidad-san-sebastian-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3652,
+          "height": 110,
+          "path": "optimized/sponsors/universidad-san-sebastian-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 6306,
+          "height": 165,
+          "path": "optimized/sponsors/universidad-san-sebastian-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 9204,
+          "height": 220,
+          "path": "optimized/sponsors/universidad-san-sebastian-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15170,
+          "height": 330,
+          "path": "optimized/sponsors/universidad-san-sebastian-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 20930,
+          "height": 440,
+          "path": "optimized/sponsors/universidad-san-sebastian-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 45004,
+          "height": 879,
+          "path": "optimized/sponsors/universidad-san-sebastian-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 879,
     "variants": [
       {
@@ -2375,12 +5491,6 @@
         "width": 640
       },
       {
-        "bytes": 32146,
-        "height": 659,
-        "path": "optimized/sponsors/universidad-san-sebastian-960.webp",
-        "width": 960
-      },
-      {
         "bytes": 45004,
         "height": 879,
         "path": "optimized/sponsors/universidad-san-sebastian-1280.webp",
@@ -2391,20 +5501,98 @@
   },
   "ui/home-science-hero.webp": {
     "bytes": 44748,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3295,
+          "height": 146,
+          "path": "optimized/ui/home-science-hero-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5099,
+          "height": 219,
+          "path": "optimized/ui/home-science-hero-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7059,
+          "height": 293,
+          "path": "optimized/ui/home-science-hero-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 11047,
+          "height": 439,
+          "path": "optimized/ui/home-science-hero-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 15078,
+          "height": 585,
+          "path": "optimized/ui/home-science-hero-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 19080,
+          "height": 731,
+          "path": "optimized/ui/home-science-hero-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 22890,
+          "height": 848,
+          "path": "optimized/ui/home-science-hero-1855.avif",
+          "width": 1855
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 4364,
+          "height": 146,
+          "path": "optimized/ui/home-science-hero-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7338,
+          "height": 219,
+          "path": "optimized/ui/home-science-hero-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10598,
+          "height": 293,
+          "path": "optimized/ui/home-science-hero-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 17762,
+          "height": 439,
+          "path": "optimized/ui/home-science-hero-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 25880,
+          "height": 585,
+          "path": "optimized/ui/home-science-hero-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 34040,
+          "height": 731,
+          "path": "optimized/ui/home-science-hero-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 40312,
+          "height": 848,
+          "path": "optimized/ui/home-science-hero-1855.webp",
+          "width": 1855
+        }
+      ]
+    },
     "height": 848,
     "variants": [
-      {
-        "bytes": 1688,
-        "height": 73,
-        "path": "optimized/ui/home-science-hero-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 2934,
-        "height": 110,
-        "path": "optimized/ui/home-science-hero-240.webp",
-        "width": 240
-      },
       {
         "bytes": 4364,
         "height": 146,
@@ -2452,8 +5640,80 @@
   },
   "ui/logo.png": {
     "bytes": 124853,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3985,
+          "height": 93,
+          "path": "optimized/ui/logo-120.avif",
+          "width": 120
+        },
+        {
+          "bytes": 5590,
+          "height": 124,
+          "path": "optimized/ui/logo-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 9434,
+          "height": 186,
+          "path": "optimized/ui/logo-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 13480,
+          "height": 248,
+          "path": "optimized/ui/logo-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 25432,
+          "height": 396,
+          "path": "optimized/ui/logo-512.avif",
+          "width": 512
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 4564,
+          "height": 93,
+          "path": "optimized/ui/logo-120.webp",
+          "width": 120
+        },
+        {
+          "bytes": 6906,
+          "height": 124,
+          "path": "optimized/ui/logo-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 12130,
+          "height": 186,
+          "path": "optimized/ui/logo-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 17868,
+          "height": 248,
+          "path": "optimized/ui/logo-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 38154,
+          "height": 396,
+          "path": "optimized/ui/logo-512.webp",
+          "width": 512
+        }
+      ]
+    },
     "height": 396,
     "variants": [
+      {
+        "bytes": 4564,
+        "height": 93,
+        "path": "optimized/ui/logo-120.webp",
+        "width": 120
+      },
       {
         "bytes": 6906,
         "height": 124,
@@ -2473,12 +5733,6 @@
         "width": 320
       },
       {
-        "bytes": 34948,
-        "height": 371,
-        "path": "optimized/ui/logo-480.webp",
-        "width": 480
-      },
-      {
         "bytes": 38154,
         "height": 396,
         "path": "optimized/ui/logo-512.webp",
@@ -2489,20 +5743,74 @@
   },
   "ui/society-archive-1.png": {
     "bytes": 365172,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 10930,
+          "height": 304,
+          "path": "optimized/ui/society-archive-1-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 17018,
+          "height": 456,
+          "path": "optimized/ui/society-archive-1-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 21266,
+          "height": 609,
+          "path": "optimized/ui/society-archive-1-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 30048,
+          "height": 913,
+          "path": "optimized/ui/society-archive-1-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 38375,
+          "height": 1217,
+          "path": "optimized/ui/society-archive-1-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 12996,
+          "height": 304,
+          "path": "optimized/ui/society-archive-1-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 21632,
+          "height": 456,
+          "path": "optimized/ui/society-archive-1-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 29368,
+          "height": 609,
+          "path": "optimized/ui/society-archive-1-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 45678,
+          "height": 913,
+          "path": "optimized/ui/society-archive-1-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 63198,
+          "height": 1217,
+          "path": "optimized/ui/society-archive-1-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 1217,
     "variants": [
-      {
-        "bytes": 5058,
-        "height": 152,
-        "path": "optimized/ui/society-archive-1-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 8964,
-        "height": 228,
-        "path": "optimized/ui/society-archive-1-240.webp",
-        "width": 240
-      },
       {
         "bytes": 12996,
         "height": 304,
@@ -2538,20 +5846,74 @@
   },
   "ui/society-archive-2.png": {
     "bytes": 248870,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 12254,
+          "height": 186,
+          "path": "optimized/ui/society-archive-2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 22416,
+          "height": 278,
+          "path": "optimized/ui/society-archive-2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 34269,
+          "height": 371,
+          "path": "optimized/ui/society-archive-2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 60308,
+          "height": 557,
+          "path": "optimized/ui/society-archive-2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 92389,
+          "height": 742,
+          "path": "optimized/ui/society-archive-2-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 13094,
+          "height": 186,
+          "path": "optimized/ui/society-archive-2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 24342,
+          "height": 278,
+          "path": "optimized/ui/society-archive-2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 38334,
+          "height": 371,
+          "path": "optimized/ui/society-archive-2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 69726,
+          "height": 557,
+          "path": "optimized/ui/society-archive-2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 107344,
+          "height": 742,
+          "path": "optimized/ui/society-archive-2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 742,
     "variants": [
-      {
-        "bytes": 4378,
-        "height": 93,
-        "path": "optimized/ui/society-archive-2-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 8212,
-        "height": 139,
-        "path": "optimized/ui/society-archive-2-240.webp",
-        "width": 240
-      },
       {
         "bytes": 13094,
         "height": 186,
@@ -2587,20 +5949,62 @@
   },
   "venue/conference-landscape.png": {
     "bytes": 117984,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 13162,
+          "height": 232,
+          "path": "optimized/venue/conference-landscape-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 29434,
+          "height": 348,
+          "path": "optimized/venue/conference-landscape-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 48231,
+          "height": 464,
+          "path": "optimized/venue/conference-landscape-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 59499,
+          "height": 507,
+          "path": "optimized/venue/conference-landscape-700.avif",
+          "width": 700
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 13194,
+          "height": 232,
+          "path": "optimized/venue/conference-landscape-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 30856,
+          "height": 348,
+          "path": "optimized/venue/conference-landscape-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 53706,
+          "height": 464,
+          "path": "optimized/venue/conference-landscape-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 66584,
+          "height": 507,
+          "path": "optimized/venue/conference-landscape-700.webp",
+          "width": 700
+        }
+      ]
+    },
     "height": 507,
     "variants": [
-      {
-        "bytes": 3700,
-        "height": 116,
-        "path": "optimized/venue/conference-landscape-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7680,
-        "height": 174,
-        "path": "optimized/venue/conference-landscape-240.webp",
-        "width": 240
-      },
       {
         "bytes": 13194,
         "height": 232,
@@ -2630,20 +6034,74 @@
   },
   "venue/hotel-bellavista.jpg": {
     "bytes": 209862,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 11002,
+          "height": 220,
+          "path": "optimized/venue/hotel-bellavista-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 20501,
+          "height": 329,
+          "path": "optimized/venue/hotel-bellavista-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 32304,
+          "height": 439,
+          "path": "optimized/venue/hotel-bellavista-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 62860,
+          "height": 659,
+          "path": "optimized/venue/hotel-bellavista-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 88449,
+          "height": 758,
+          "path": "optimized/venue/hotel-bellavista-1105.avif",
+          "width": 1105
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 14502,
+          "height": 220,
+          "path": "optimized/venue/hotel-bellavista-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 27994,
+          "height": 329,
+          "path": "optimized/venue/hotel-bellavista-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 45716,
+          "height": 439,
+          "path": "optimized/venue/hotel-bellavista-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 90302,
+          "height": 659,
+          "path": "optimized/venue/hotel-bellavista-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 122310,
+          "height": 758,
+          "path": "optimized/venue/hotel-bellavista-1105.webp",
+          "width": 1105
+        }
+      ]
+    },
     "height": 758,
     "variants": [
-      {
-        "bytes": 4604,
-        "height": 110,
-        "path": "optimized/venue/hotel-bellavista-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 8876,
-        "height": 165,
-        "path": "optimized/venue/hotel-bellavista-240.webp",
-        "width": 240
-      },
       {
         "bytes": 14502,
         "height": 220,
@@ -2677,71 +6135,76 @@
     ],
     "width": 1105
   },
-  "venue/puerto-varas-hero.jpg": {
-    "bytes": 201357,
-    "height": 856,
-    "variants": [
-      {
-        "bytes": 3690,
-        "height": 107,
-        "path": "optimized/venue/puerto-varas-hero-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7238,
-        "height": 161,
-        "path": "optimized/venue/puerto-varas-hero-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 12060,
-        "height": 214,
-        "path": "optimized/venue/puerto-varas-hero-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 23884,
-        "height": 321,
-        "path": "optimized/venue/puerto-varas-hero-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 38650,
-        "height": 428,
-        "path": "optimized/venue/puerto-varas-hero-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 71980,
-        "height": 642,
-        "path": "optimized/venue/puerto-varas-hero-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 109082,
-        "height": 856,
-        "path": "optimized/venue/puerto-varas-hero-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
   "venue/puerto-varas-waterfront.jpg": {
     "bytes": 131479,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6898,
+          "height": 135,
+          "path": "optimized/venue/puerto-varas-waterfront-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 12116,
+          "height": 203,
+          "path": "optimized/venue/puerto-varas-waterfront-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 17574,
+          "height": 270,
+          "path": "optimized/venue/puerto-varas-waterfront-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 28498,
+          "height": 405,
+          "path": "optimized/venue/puerto-varas-waterfront-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 40034,
+          "height": 540,
+          "path": "optimized/venue/puerto-varas-waterfront-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 8844,
+          "height": 135,
+          "path": "optimized/venue/puerto-varas-waterfront-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 16778,
+          "height": 203,
+          "path": "optimized/venue/puerto-varas-waterfront-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 25308,
+          "height": 270,
+          "path": "optimized/venue/puerto-varas-waterfront-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 43524,
+          "height": 405,
+          "path": "optimized/venue/puerto-varas-waterfront-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 61442,
+          "height": 540,
+          "path": "optimized/venue/puerto-varas-waterfront-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
     "height": 540,
     "variants": [
-      {
-        "bytes": 3062,
-        "height": 68,
-        "path": "optimized/venue/puerto-varas-waterfront-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5708,
-        "height": 101,
-        "path": "optimized/venue/puerto-varas-waterfront-240.webp",
-        "width": 240
-      },
       {
         "bytes": 8844,
         "height": 135,
