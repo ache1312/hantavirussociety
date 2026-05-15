@@ -6,6 +6,48 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+SITE_URL = "https://www.hantavirussociety.org"
+
+OG_IMAGES: dict[str, str] = {
+    "about": "ui/home-science-hero.webp",
+    "ich2026": "ich2026/conference-volcano.jpg",
+    "keynote": "venue/conference-landscape.png",
+    "programme": "ui/society-archive-2.png",
+    "registration": "venue/puerto-varas-waterfront.jpg",
+    "venue": "venue/hotel-bellavista.jpg",
+    "sponsors": "ui/society-archive-1.png",
+    "contact": "venue/conference-landscape.png",
+}
+
+CONFERENCE_JSON_LD = """{
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "International Conference on Hantaviruses 2026",
+    "alternateName": "ICH2026",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-05",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Hotel Bellavista",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Puerto Varas",
+        "addressRegion": "Los Lagos",
+        "addressCountry": "CL"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "International Society for Hantaviruses",
+      "url": "https://www.hantavirussociety.org"
+    },
+    "url": "https://www.hantavirussociety.org/ich2026",
+    "image": "https://www.hantavirussociety.org/assets/images/ich2026/conference-volcano.jpg",
+    "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile. Covering viral epidemiology, ecology, virus-host interactions, pathogenesis, vaccines and therapeutics."
+  }"""
+
 
 ORIGINAL_PAGES = [
     ("About ISH", "https://www.hantavirussociety.org/about-ish"),
@@ -213,6 +255,15 @@ def footer(prefix: str) -> str:
 def doc(out_path: str, active: str, title: str, description: str, body: str) -> str:
     prefix = prefix_for(out_path)
     subnav = ich_subnav(prefix, active) if active in ICH_NAV_KEYS else ""
+
+    page_dir = str(Path(out_path).parent)
+    canonical = SITE_URL + "/" if page_dir == "." else f"{SITE_URL}/{page_dir}/"
+    og_image = SITE_URL + "/assets/images/" + OG_IMAGES.get(active, "ui/home-science-hero.webp")
+
+    json_ld = ""
+    if active in ICH_NAV_KEYS:
+        json_ld = f'\n    <script type="application/ld+json">\n    {CONFERENCE_JSON_LD}\n    </script>'
+
     return f"""<!doctype html>
 <html lang="en">
   <head>
@@ -220,20 +271,37 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{escape(description)}">
     <title>{escape(title)}</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{escape(title)}">
+    <meta property="og:description" content="{escape(description)}">
+    <meta property="og:image" content="{og_image}">
+    <meta property="og:url" content="{canonical}">
+    <meta property="og:site_name" content="International Society for Hantaviruses">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{escape(title)}">
+    <meta name="twitter:description" content="{escape(description)}">
+    <meta name="twitter:image" content="{og_image}">
+    <!-- Canonical -->
+    <link rel="canonical" href="{canonical}">
     <link rel="icon" href="{img(prefix, "ui/logo.png")}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{prefix}styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{prefix}styles.css">{json_ld}
   </head>
   <body data-page="{active}">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 {header(prefix, active)}
     <div class="menu-backdrop" data-menu-backdrop hidden></div>
 {subnav}
-    <main id="top">
+    <main id="main-content" tabindex="-1">
 {body}
     </main>
 {footer(prefix)}
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
     <script src="{prefix}script.js" defer></script>
   </body>
 </html>
@@ -265,6 +333,13 @@ def home_page(
           <span>International Conference on Hantaviruses</span>
           <strong>Nov 2-5, 2026</strong>
           <small>Puerto Varas, Chile</small>
+          <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
+            <div class="countdown-unit"><span class="countdown-val" data-unit="days">—</span><span class="countdown-label">days</span></div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="hours">—</span><span class="countdown-label">hrs</span></div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">—</span><span class="countdown-label">min</span></div>
+          </div>
           <a href="{local(prefix, "ich2026/programme/")}">Programme</a>
         </aside>
       </section>
@@ -350,16 +425,26 @@ def advisory_grid(prefix: str) -> str:
     return f'<div class="advisory-grid" role="list">{"".join(cards)}</div>'
 
 
-def page_hero(prefix: str, eyebrow: str, title: str, lede: str, image: str, ctas: list[tuple[str, str, str]] | None = None) -> str:
+def page_hero(prefix: str, eyebrow: str, title: str, lede: str, image: str, ctas: list[tuple[str, str, str]] | None = None, breadcrumbs: list[tuple[str, str | None]] | None = None) -> str:
     actions = ""
     if ctas:
         links = "".join(f'<a class="button {klass}" href="{href}">{escape(label)}</a>' for label, href, klass in ctas)
         actions = f'<div class="hero-actions page-actions">{links}</div>'
+    breadcrumb_html = ""
+    if breadcrumbs:
+        items = []
+        for label, href in breadcrumbs:
+            if href:
+                items.append(f'<li><a href="{href}">{escape(label)}</a></li>')
+            else:
+                items.append(f'<li aria-current="page">{escape(label)}</li>')
+        breadcrumb_html = f'<nav class="breadcrumb" aria-label="Breadcrumb"><ol>{"".join(items)}</ol></nav>'
     return f"""
       <section class="page-hero">
         <img class="page-hero-bg" src="{img(prefix, image)}" alt="" aria-hidden="true">
         <div class="page-hero-overlay"></div>
         <div class="page-hero-copy reveal is-visible">
+          {breadcrumb_html}
           <p class="eyebrow">{escape(eyebrow)}</p>
           <h1>{escape(title)}</h1>
           <p class="hero-lede">{escape(lede)}</p>
@@ -540,8 +625,9 @@ def ich2026_page(prefix: str) -> str:
 
 
 def keynote_page(prefix: str) -> str:
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Keynote Speakers", None)]
     return f"""
-      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited speakers for the International Conference on Hantaviruses.", "venue/conference-landscape.png")}
+      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited speakers for the International Conference on Hantaviruses.", "venue/conference-landscape.png", breadcrumbs=crumbs)}
       <section class="section speakers">
         <div class="section-shell speaker-grid">
           <article class="speaker reveal">
@@ -569,8 +655,9 @@ def keynote_page(prefix: str) -> str:
 
 
 def programme_page(prefix: str) -> str:
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Programme", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ui/society-archive-2.png", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")])}
+      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ui/society-archive-2.png", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
       <section class="section program">
         <div class="section-shell">
           <div class="program-grid program-support">
@@ -582,8 +669,9 @@ def programme_page(prefix: str) -> str:
 
 
 def registration_page(prefix: str) -> str:
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Abstracts & Registration", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", local(prefix, "contact/"), "button-secondary")])}
+      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", local(prefix, "contact/"), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
           <div class="section-heading reveal"><p class="eyebrow">Registration flow</p><h2>ICH2026 Registration & Abstract Submission</h2><p>Comming soon ...</p><p>We apologize for the delay. Our team is currently supporting the cruise ship emergency.</p></div>
@@ -598,8 +686,9 @@ def registration_page(prefix: str) -> str:
 
 def venue_page(prefix: str) -> str:
     links = "".join(f'<a href="{href}" target="_blank" rel="noreferrer">{escape(label)}</a>' for label, href in TRAVEL_LINKS)
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Venue & Travel", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")])}
+      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
       <section class="section venue">
         <div class="section-shell venue-layout">
           <div class="venue-copy reveal">
@@ -662,8 +751,9 @@ def sponsors_page(prefix: str) -> str:
         f'<a class="sponsor reveal" href="{href}" target="_blank" rel="noreferrer"><img src="{img(prefix, image)}" alt="{escape(name)}" loading="lazy" decoding="async"><span>{escape(name)}</span></a>'
         for name, href, image in SPONSORS
     )
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Partners & Sponsors", None)]
     return f"""
-      {page_hero(prefix, "Partners & sponsors", "Institutional support across Chilean science and public research.", "ICH2026 is supported by Chilean scientific societies, universities and public research agencies.", "ui/society-archive-1.png")}
+      {page_hero(prefix, "Partners & sponsors", "Institutional support across Chilean science and public research.", "ICH2026 is supported by Chilean scientific societies, universities and public research agencies.", "ui/society-archive-1.png", breadcrumbs=crumbs)}
       <section class="section sponsors"><div class="section-shell"><div class="sponsor-grid" role="list">{cards}</div></div></section>"""
 
 
@@ -724,6 +814,24 @@ PAGES = [
 ]
 
 
+def generate_sitemap() -> None:
+    urls = []
+    priorities = {"about": "1.0", "ich2026": "0.9"}
+    for out_path, active, *_ in PAGES:
+        page_dir = str(Path(out_path).parent)
+        loc = SITE_URL + "/" if page_dir == "." else f"{SITE_URL}/{page_dir}/"
+        priority = priorities.get(active, "0.8")
+        changefreq = "weekly" if active in ("about", "ich2026") else "monthly"
+        urls.append(
+            f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>{changefreq}</changefreq>\n    <priority>{priority}</priority>\n  </url>"
+        )
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap += "\n".join(urls)
+    sitemap += "\n</urlset>\n"
+    (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    print("sitemap.xml")
+
+
 def main() -> None:
     for out_path, active, title, description, builder in PAGES:
         prefix = prefix_for(out_path)
@@ -732,6 +840,7 @@ def main() -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
         print(out_path)
+    generate_sitemap()
 
 
 if __name__ == "__main__":
