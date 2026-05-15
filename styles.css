@@ -385,7 +385,7 @@ h3 {
 
 .button-primary {
   background: var(--accent);
-  color: var(--ink);
+  color: #0b1110;
 }
 
 .button-primary:hover,
@@ -828,7 +828,7 @@ h3 {
 .conference-summary {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: var(--ink);
+  background: var(--forest);
   color: var(--white);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -1465,7 +1465,7 @@ h3 {
 }
 
 .contact {
-  background: var(--ink);
+  background: var(--forest);
   color: var(--white);
 }
 
@@ -1481,12 +1481,32 @@ h3 {
 }
 
 .contact-band {
-  background: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(31, 111, 120, 0.18), transparent 58%),
+    var(--forest);
   color: var(--white);
 }
 
 .contact-band h2 {
   color: var(--white);
+}
+
+.contact-band .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.contact-band .button-secondary.light {
+  border-color: rgba(255, 255, 255, 0.44);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-band .button-secondary.light:hover,
+.contact-band .button-secondary.light:focus-visible {
+  border-color: rgba(255, 255, 255, 0.64);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .detail-grid {
@@ -1831,13 +1851,12 @@ h3 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  opacity: 1;
+  transform: translateY(16px);
+  transition: transform 600ms ease;
 }
 
 .reveal.is-visible {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -2558,6 +2577,35 @@ h3 {
     border-bottom-color: rgba(220, 232, 229, 0.1);
   }
 
+  .brand-copy {
+    color: rgba(220, 232, 229, 0.7);
+  }
+
+  .brand-copy strong {
+    color: var(--ink);
+  }
+
+  .nav-group > span {
+    color: rgba(220, 232, 229, 0.62);
+  }
+
+  .site-nav {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .site-nav a {
+    color: rgba(220, 232, 229, 0.82);
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus-visible,
+  .site-nav a[aria-current="page"],
+  .site-nav a.active {
+    background: rgba(139, 184, 194, 0.14);
+    color: #ffffff;
+  }
+
   .intro-band,
   .speakers,
   .committees,
@@ -2642,9 +2690,18 @@ h3 {
     background: rgba(0, 0, 0, 0.68);
   }
 
+  .menu-toggle {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(220, 232, 229, 0.18);
+  }
+
+  .menu-toggle span:not(.sr-only) {
+    background: #ffffff;
+  }
+
   .site-nav {
-    background: var(--paper);
-    border-color: rgba(220, 232, 229, 0.12);
+    background: transparent;
+    border-color: transparent;
   }
 
   .back-to-top {
@@ -2654,6 +2711,13 @@ h3 {
 
   .back-to-top:hover {
     background: var(--lake);
+  }
+
+  @media (max-width: 1100px) {
+    .site-nav {
+      background: var(--paper);
+      border-color: rgba(220, 232, 229, 0.12);
+    }
   }
 }
 
