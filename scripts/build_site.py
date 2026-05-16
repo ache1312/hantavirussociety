@@ -82,17 +82,6 @@ THEME_BOOTSTRAP = """    <script>
     </script>"""
 
 
-ORIGINAL_PAGES = [
-    ("About ISH", "https://www.hantavirussociety.org/about-ish"),
-    ("ICH2026", "https://www.hantavirussociety.org/ich2026"),
-    ("Keynote Speakers", "https://www.hantavirussociety.org/ich2026/keynote-speakers"),
-    ("Programme", "https://www.hantavirussociety.org/ich2026/programme"),
-    ("Abstracts & Registration", "https://www.hantavirussociety.org/ich2026/abstracts-registration"),
-    ("Venue", "https://www.hantavirussociety.org/ich2026/venue"),
-    ("Partners & Sponsors", "https://www.hantavirussociety.org/ich2026/partners-sponsors"),
-    ("Contact", "https://www.hantavirussociety.org/contact"),
-]
-
 NAV = [
     ("about", "About ISH", "about-ish/"),
     ("ich2026", "ICH2026", "ich2026/"),
@@ -510,9 +499,6 @@ def ich_subnav(prefix: str, active: str) -> str:
 
 
 def footer(prefix: str) -> str:
-    originals = "\n".join(
-        f'<a href="{href}" target="_blank" rel="noreferrer">{escape(label)}</a>' for label, href in ORIGINAL_PAGES
-    )
     return f"""
     <footer class="site-footer-rich">
       <div>
@@ -525,10 +511,6 @@ def footer(prefix: str) -> str:
         <a href="{local(prefix, "ich2026/")}">ICH2026</a>
         <a href="{local(prefix, "ich2026/abstracts-registration/")}">Registration</a>
         <a href="{contact_href(prefix)}">Contact</a>
-      </nav>
-      <nav aria-label="Original Google Sites pages">
-        <strong>Original Google Sites</strong>
-        {originals}
       </nav>
       <nav aria-label="Actions">
         <strong>Actions</strong>
