@@ -266,6 +266,14 @@ main:focus {
   .nav-group + .nav-group::before {
     display: none;
   }
+
+  body.menu-open .site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .menu-toggle {
@@ -2374,8 +2382,8 @@ h3 {
   }
 
   .site-nav {
-    position: absolute;
-    top: calc(100% + 8px);
+    position: fixed;
+    top: calc(var(--header-height) + 8px);
     right: 28px;
     left: auto;
     z-index: 31;
@@ -2498,8 +2506,8 @@ h3 {
   }
 
   .site-nav {
-    position: absolute;
-    top: calc(100% + 8px);
+    position: fixed;
+    top: calc(var(--header-height) + 8px);
     left: 10px;
     right: 10px;
     z-index: 31;
