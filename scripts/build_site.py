@@ -18,7 +18,7 @@ SCRIPT = "script.min.js"
 OG_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp",
     "about": "ui/home-science-hero.webp",
-    "former": "ui/society-archive-2.png",
+    "former": "former-meetings/2023-seoul-1.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
     "ich2026": "ich2026/from-zip/pvaras2.jpg",
     "keynote": "venue/conference-landscape.png",
@@ -32,7 +32,7 @@ OG_IMAGES: dict[str, str] = {
 HERO_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp?v=sober-20260515",
     "about": "about-hantavirus-microscopy-pixnio.jpg",
-    "former": "ui/society-archive-2.png",
+    "former": "former-meetings/2023-seoul-1.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
     "ich2026": "ich2026/from-zip/pvaras2.jpg",
     "keynote": "venue/conference-landscape.png",
@@ -688,7 +688,10 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <meta name="twitter:image" content="{og_image}">
     <!-- Canonical -->
     <link rel="canonical" href="{canonical}">
-    <link rel="icon" href="{img(prefix, "ui/logo.png")}">
+    <link rel="icon" href="{prefix}favicon.ico?v={file_version("favicon.ico")}" sizes="any">
+    <link rel="icon" type="image/png" sizes="256x256" href="{prefix}assets/icons/ish-icon-256.png?v={file_version("assets/icons/ish-icon-256.png")}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{prefix}assets/icons/apple-touch-icon.png?v={file_version("assets/icons/apple-touch-icon.png")}">
+    <link rel="manifest" href="{prefix}site.webmanifest?v={file_version("site.webmanifest")}">
 {hero_preload}
     <link rel="preload" href="{prefix}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{prefix}assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -1286,6 +1289,25 @@ def archive_cell(prefix: str, label: str, href: str, *, is_image: bool = False, 
     return '<span class="archive-muted">-</span>'
 
 
+def abstract_book_link(prefix: str, label: str, href: str) -> str:
+    if not href:
+        return ""
+    icon = (
+        '<span class="archive-abstract-icon" aria-hidden="true">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+        'stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M7 3h7l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>'
+        '<path d="M14 3v5h5"/>'
+        '<path d="M8.5 13h7"/>'
+        '<path d="M8.5 16h5"/>'
+        '</svg></span>'
+    )
+    return (
+        f'<a class="archive-abstract-link" href="{local(prefix, href)}" target="_blank" rel="noreferrer">'
+        f'{icon}<span>{escape(label or "Abstract Book")}</span></a>'
+    )
+
+
 def former_images_for_year(year: str) -> list[str]:
     for _, gallery_year, _, images in FORMER_GALLERIES:
         if gallery_year == year:
@@ -1293,69 +1315,68 @@ def former_images_for_year(year: str) -> list[str]:
     return []
 
 
-def archive_photo_links(prefix: str, year: str, location: str, images: list[str]) -> str:
-    if not images:
-        return '<span class="archive-muted">-</span>'
-    links = []
-    caption = f"ICH {year} | {location}"
-    for index, asset in enumerate(images, start=1):
-        links.append(
-            f'<a href="{img(prefix, asset)}" data-lightbox-src="{img(prefix, asset)}" '
-            f'data-lightbox-caption="{escape(caption)}">Photo {index}</a>'
-        )
-    return f'<div class="archive-photo-list" aria-label="Photos from ICH {escape(year)}">{"".join(links)}</div>'
-
-
-def former_meetings_table(prefix: str) -> str:
-    rows = []
-    for number, year, location, abstract_label, abstract_href, _, _ in FORMER_MEETINGS:
-        photo_links = archive_photo_links(prefix, year, location, former_images_for_year(year))
-        rows.append(
+def former_meetings_timeline() -> str:
+    items = []
+    timeline_entries = list(reversed([(number, year, location, False) for number, year, location, *_ in FORMER_MEETINGS]))
+    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", True))
+    for index, (number, year, location, is_upcoming) in enumerate(timeline_entries):
+        item_class = "archive-timeline-item is-upcoming" if is_upcoming else "archive-timeline-item"
+        items.append(
             f"""
-            <tr>
-              <th scope="row">{escape(number)}</th>
-              <td>{escape(year)}</td>
-              <td>{escape(location)}</td>
-              <td>{archive_cell(prefix, abstract_label, abstract_href)}</td>
-              <td>{photo_links}</td>
-            </tr>"""
+            <li class="{item_class}" style="--timeline-index: {index}">
+              <div class="archive-timeline-card">
+                <span class="archive-timeline-no">{escape(number)}</span>
+                <time class="archive-timeline-year" datetime="{escape(year)}">{escape(year)}</time>
+                <strong class="archive-timeline-location">{escape(location)}</strong>
+              </div>
+            </li>"""
         )
     return f"""
-      <div class="archive-table-wrap reveal">
-        <table class="archive-table">
-          <thead><tr><th>No.</th><th>Year</th><th>Location</th><th>Abstract Book</th><th>Photos</th></tr></thead>
-          <tbody>{"".join(rows)}</tbody>
-        </table>
+      <div class="archive-timeline-wrap reveal">
+        <ol class="archive-timeline" aria-label="International Hantavirus Conference timeline">
+          {"".join(items)}
+        </ol>
       </div>"""
 
 
-def former_meeting_gallery(prefix: str) -> str:
+def former_meeting_materials(prefix: str) -> str:
     cards = []
     meeting_lookup = {year: (abstract_label, abstract_href) for _, year, _, abstract_label, abstract_href, _, _ in FORMER_MEETINGS}
     for number, year, location, images in FORMER_GALLERIES:
         abstract_label, abstract_href = meeting_lookup.get(year, ("Abstract Book", ""))
-        lead, *thumbs = images
+        if not images and not abstract_href:
+            continue
+        lead = images[0] if images else "ui/society-archive-2.png"
         photo_count = len(images)
-        lead_caption = f"ICH {year} | {location}"
-        thumb_html = "".join(
-            f'<a href="{img(prefix, asset)}" data-lightbox-src="{img(prefix, asset)}" data-lightbox-caption="{escape(lead_caption)}">{responsive_image(prefix, asset, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="120px")}</a>'
-            for asset in thumbs
-        )
+        gallery_id = f"former-{year}"
+        gallery_links = []
+        for index, asset in enumerate(images, start=1):
+            caption = f"ICH {year} | {location} | Photo {index} of {photo_count}"
+            gallery_links.append(
+                f'<a class="archive-hidden-lightbox" href="{img(prefix, asset)}" '
+                f'data-lightbox-src="{img(prefix, asset)}" data-lightbox-group="{escape(gallery_id)}" '
+                f'data-lightbox-caption="{escape(caption)}" data-lightbox-alt="{escape(f"ICH {year} {location} photo {index}")}" tabindex="-1" aria-hidden="true">Photo {index}</a>'
+            )
+        hidden_gallery = "".join(gallery_links[1:])
+        lead_caption = f"ICH {year} | {location} | Photo 1 of {photo_count}"
+        photo_label = f"{photo_count} photo" if photo_count == 1 else f"{photo_count} photos"
+        materials_label = f"{escape(number)} | {escape(year)}"
         cards.append(
             f"""
-            <article class="archive-visual reveal">
-              <a class="archive-visual-main" href="{img(prefix, lead)}" data-lightbox-src="{img(prefix, lead)}" data-lightbox-caption="{escape(lead_caption)}">
-                {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 88vw, 520px")}
+            <article class="archive-material reveal">
+              <a class="archive-material-image" href="{img(prefix, lead)}" data-lightbox-src="{img(prefix, lead)}" data-lightbox-group="{escape(gallery_id)}" data-lightbox-caption="{escape(lead_caption)}" aria-label="Open {escape(photo_label)} from ICH {escape(year)} in {escape(location)}">
+                {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 560px")}
+                <span>{escape(photo_label)}</span>
               </a>
-              <div class="archive-visual-copy">
-                <span>{escape(number)} | {escape(year)} | {photo_count} photos available</span>
+              <div class="archive-material-copy">
+                <span>{materials_label}</span>
                 <h3>{escape(location)}</h3>
-                {archive_cell(prefix, abstract_label or "Abstract Book", abstract_href)}
+                {abstract_book_link(prefix, abstract_label or "Abstract Book", abstract_href)}
+                {hidden_gallery}
               </div>
-              <div class="archive-thumbs" aria-label="Additional images for ICH {escape(year)}">{thumb_html}</div>
             </article>"""
         )
-    return f'<div class="archive-visual-grid">{"".join(cards)}</div>'
+    return f'<div class="archive-material-grid">{"".join(cards)}</div>'
 
 
 def former_meetings_page(prefix: str) -> str:
@@ -1384,19 +1405,19 @@ def former_meetings_page(prefix: str) -> str:
       <section class="section data-section">
         <div class="section-shell">
           <div class="section-heading compact reveal">
-            <p class="eyebrow">Conference record</p>
-            <h2>Twelve ICH editions in one consolidated record.</h2>
+            <p class="eyebrow">Conference timeline</p>
+            <h2>International Hantavirus Conference editions, 1989-2026.</h2>
           </div>
-          {former_meetings_table(prefix)}
+          {former_meetings_timeline()}
         </div>
       </section>
       <section class="section intro-band">
         <div class="section-shell">
           <div class="section-heading compact reveal">
-            <p class="eyebrow">Photos</p>
-            <h2>Browse available meeting photos by edition.</h2>
+            <p class="eyebrow">Photos & abstracts</p>
+            <h2>Available visual records and abstract books.</h2>
           </div>
-          {former_meeting_gallery(prefix)}
+          {former_meeting_materials(prefix)}
         </div>
       </section>"""
     )

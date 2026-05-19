@@ -1,0 +1,22 @@
+{
+  "name": "International Society for Hantaviruses",
+  "short_name": "ISH",
+  "description": "International Society for Hantaviruses and ICH2026.",
+  "start_url": "/hantavirussociety/",
+  "scope": "/hantavirussociety/",
+  "display": "standalone",
+  "background_color": "#eef5fb",
+  "theme_color": "#0f6fae",
+  "icons": [
+    {
+      "src": "assets/icons/ish-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/ish-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

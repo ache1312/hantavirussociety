@@ -123,17 +123,59 @@ if (lightboxLinks.length) {
   lightbox.setAttribute("aria-hidden", "true");
   lightbox.innerHTML = `
     <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">Previous</button>
     <figure class="lightbox-frame">
       <img alt="">
       <figcaption></figcaption>
     </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">Next</button>
+    <div class="lightbox-count" aria-live="polite"></div>
   `;
   body.appendChild(lightbox);
 
   const lightboxImage = lightbox.querySelector("img");
   const lightboxCaption = lightbox.querySelector("figcaption");
   const lightboxClose = lightbox.querySelector(".lightbox-close");
+  const lightboxPrev = lightbox.querySelector(".lightbox-prev");
+  const lightboxNext = lightbox.querySelector(".lightbox-next");
+  const lightboxCount = lightbox.querySelector(".lightbox-count");
   let lastLightboxTrigger = null;
+  let activeLightboxGroup = [];
+  let activeLightboxIndex = 0;
+
+  const lightboxGroups = lightboxLinks.reduce((groups, link, index) => {
+    const groupName = link.dataset.lightboxGroup || `single-${index}`;
+    if (!groups.has(groupName)) groups.set(groupName, []);
+    groups.get(groupName).push(link);
+    return groups;
+  }, new Map());
+
+  const syncLightboxNav = () => {
+    const hasGallery = activeLightboxGroup.length > 1;
+    lightboxPrev.hidden = !hasGallery;
+    lightboxNext.hidden = !hasGallery;
+    lightboxCount.hidden = !hasGallery;
+    if (hasGallery) {
+      lightboxCount.textContent = `${activeLightboxIndex + 1} / ${activeLightboxGroup.length}`;
+    }
+  };
+
+  const renderLightboxImage = () => {
+    const item = activeLightboxGroup[activeLightboxIndex];
+    if (!item) return;
+    const image = item.querySelector("img");
+    const caption = item.dataset.lightboxCaption || image?.alt || "";
+    lightboxImage.src = item.dataset.lightboxSrc;
+    lightboxImage.alt = item.dataset.lightboxAlt || image?.alt || caption || "Former meeting image";
+    lightboxCaption.textContent = caption;
+    syncLightboxNav();
+  };
+
+  const moveLightbox = (direction) => {
+    if (activeLightboxGroup.length < 2) return;
+    activeLightboxIndex = (activeLightboxIndex + direction + activeLightboxGroup.length) % activeLightboxGroup.length;
+    renderLightboxImage();
+  };
 
   const closeLightbox = () => {
     if (!lightbox.classList.contains("is-open")) return;
@@ -141,18 +183,20 @@ if (lightboxLinks.length) {
     lightbox.setAttribute("aria-hidden", "true");
     body.classList.remove("lightbox-open");
     lightboxImage.removeAttribute("src");
+    lightboxCaption.textContent = "";
+    activeLightboxGroup = [];
+    activeLightboxIndex = 0;
     if (lastLightboxTrigger) {
       lastLightboxTrigger.focus({ preventScroll: true });
     }
   };
 
   const openLightbox = (trigger) => {
-    const image = trigger.querySelector("img");
-    const caption = trigger.dataset.lightboxCaption || image?.alt || "";
+    const groupName = trigger.dataset.lightboxGroup || "";
+    activeLightboxGroup = lightboxGroups.get(groupName) || [trigger];
+    activeLightboxIndex = Math.max(0, activeLightboxGroup.indexOf(trigger));
     lastLightboxTrigger = trigger;
-    lightboxImage.src = trigger.dataset.lightboxSrc;
-    lightboxImage.alt = image?.alt || caption || "Former meeting image";
-    lightboxCaption.textContent = caption;
+    renderLightboxImage();
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     body.classList.add("lightbox-open");
@@ -167,11 +211,15 @@ if (lightboxLinks.length) {
   });
 
   lightboxClose.addEventListener("click", closeLightbox);
+  lightboxPrev.addEventListener("click", () => moveLightbox(-1));
+  lightboxNext.addEventListener("click", () => moveLightbox(1));
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) closeLightbox();
   });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeLightbox();
+    if (lightbox.classList.contains("is-open") && event.key === "ArrowLeft") moveLightbox(-1);
+    if (lightbox.classList.contains("is-open") && event.key === "ArrowRight") moveLightbox(1);
   });
 }
 
