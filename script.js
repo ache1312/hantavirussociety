@@ -123,12 +123,18 @@ if (lightboxLinks.length) {
   lightbox.setAttribute("aria-hidden", "true");
   lightbox.innerHTML = `
     <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
-    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">Previous</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
+      <span class="lightbox-nav-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous image</span>
+    </button>
     <figure class="lightbox-frame">
       <img alt="">
       <figcaption></figcaption>
     </figure>
-    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">Next</button>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">
+      <span class="lightbox-nav-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next image</span>
+    </button>
     <div class="lightbox-count" aria-live="polite"></div>
   `;
   body.appendChild(lightbox);
@@ -165,10 +171,12 @@ if (lightboxLinks.length) {
     if (!item) return;
     const image = item.querySelector("img");
     const caption = item.dataset.lightboxCaption || image?.alt || "";
+    lightboxImage.classList.remove("is-loaded");
     lightboxImage.src = item.dataset.lightboxSrc;
     lightboxImage.alt = item.dataset.lightboxAlt || image?.alt || caption || "Former meeting image";
     lightboxCaption.textContent = caption;
     syncLightboxNav();
+    requestAnimationFrame(() => lightboxImage.classList.add("is-loaded"));
   };
 
   const moveLightbox = (direction) => {
