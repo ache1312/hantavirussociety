@@ -1374,109 +1374,6 @@
     ],
     "width": 640
   },
-  "board/piet-maes.jpg": {
-    "bytes": 43630,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2037,
-          "height": 160,
-          "path": "optimized/board/piet-maes-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 3248,
-          "height": 240,
-          "path": "optimized/board/piet-maes-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4409,
-          "height": 320,
-          "path": "optimized/board/piet-maes-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 7546,
-          "height": 480,
-          "path": "optimized/board/piet-maes-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 12223,
-          "height": 640,
-          "path": "optimized/board/piet-maes-640.avif",
-          "width": 640
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 2452,
-          "height": 160,
-          "path": "optimized/board/piet-maes-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 4168,
-          "height": 240,
-          "path": "optimized/board/piet-maes-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 6150,
-          "height": 320,
-          "path": "optimized/board/piet-maes-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 11522,
-          "height": 480,
-          "path": "optimized/board/piet-maes-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 19150,
-          "height": 640,
-          "path": "optimized/board/piet-maes-640.webp",
-          "width": 640
-        }
-      ]
-    },
-    "height": 640,
-    "variants": [
-      {
-        "bytes": 2452,
-        "height": 160,
-        "path": "optimized/board/piet-maes-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 4168,
-        "height": 240,
-        "path": "optimized/board/piet-maes-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 6150,
-        "height": 320,
-        "path": "optimized/board/piet-maes-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 11522,
-        "height": 480,
-        "path": "optimized/board/piet-maes-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 19150,
-        "height": 640,
-        "path": "optimized/board/piet-maes-640.webp",
-        "width": 640
-      }
-    ],
-    "width": 640
-  },
   "board/roger-hewson.jpg": {
     "bytes": 37829,
     "formats": {
@@ -1889,6 +1786,1139 @@
     ],
     "width": 640
   },
+  "former-meetings/2013-china-1.jpg": {
+    "bytes": 2132543,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 7938,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-1-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 13314,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-1-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19289,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-1-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 31048,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-1-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 43043,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-1-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 11322,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-1-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 20360,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-1-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 30208,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-1-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 52042,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-1-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 75814,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-1-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 2448,
+    "variants": [
+      {
+        "bytes": 11322,
+        "height": 240,
+        "path": "optimized/former-meetings/2013-china-1-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 20360,
+        "height": 360,
+        "path": "optimized/former-meetings/2013-china-1-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 30208,
+        "height": 480,
+        "path": "optimized/former-meetings/2013-china-1-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 52042,
+        "height": 720,
+        "path": "optimized/former-meetings/2013-china-1-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 75814,
+        "height": 960,
+        "path": "optimized/former-meetings/2013-china-1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 3264
+  },
+  "former-meetings/2013-china-2.jpg": {
+    "bytes": 2015659,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 7716,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 13309,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19188,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 31643,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 44251,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-2-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 10934,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 19892,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 29882,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 51826,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 75696,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 2448,
+    "variants": [
+      {
+        "bytes": 10934,
+        "height": 240,
+        "path": "optimized/former-meetings/2013-china-2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 19892,
+        "height": 360,
+        "path": "optimized/former-meetings/2013-china-2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 29882,
+        "height": 480,
+        "path": "optimized/former-meetings/2013-china-2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 51826,
+        "height": 720,
+        "path": "optimized/former-meetings/2013-china-2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 75696,
+        "height": 960,
+        "path": "optimized/former-meetings/2013-china-2-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 3264
+  },
+  "former-meetings/2013-china-3.jpg": {
+    "bytes": 2142043,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 9327,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-3-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 15047,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-3-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 20517,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-3-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 30623,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-3-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 40174,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-3-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 13240,
+          "height": 240,
+          "path": "optimized/former-meetings/2013-china-3-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 23198,
+          "height": 360,
+          "path": "optimized/former-meetings/2013-china-3-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 32904,
+          "height": 480,
+          "path": "optimized/former-meetings/2013-china-3-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 53834,
+          "height": 720,
+          "path": "optimized/former-meetings/2013-china-3-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 74878,
+          "height": 960,
+          "path": "optimized/former-meetings/2013-china-3-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 2448,
+    "variants": [
+      {
+        "bytes": 13240,
+        "height": 240,
+        "path": "optimized/former-meetings/2013-china-3-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 23198,
+        "height": 360,
+        "path": "optimized/former-meetings/2013-china-3-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 32904,
+        "height": 480,
+        "path": "optimized/former-meetings/2013-china-3-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 53834,
+        "height": 720,
+        "path": "optimized/former-meetings/2013-china-3-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 74878,
+        "height": 960,
+        "path": "optimized/former-meetings/2013-china-3-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 3264
+  },
+  "former-meetings/2016-colorado-1.jpg": {
+    "bytes": 1829949,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6625,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-1-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 10670,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-1-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 14745,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-1-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 23089,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-1-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 31048,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-1-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 9660,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-1-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 16728,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-1-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 24906,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-1-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 41914,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-1-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 60302,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-1-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 2448,
+    "variants": [
+      {
+        "bytes": 9660,
+        "height": 240,
+        "path": "optimized/former-meetings/2016-colorado-1-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 16728,
+        "height": 360,
+        "path": "optimized/former-meetings/2016-colorado-1-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 24906,
+        "height": 480,
+        "path": "optimized/former-meetings/2016-colorado-1-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 41914,
+        "height": 720,
+        "path": "optimized/former-meetings/2016-colorado-1-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 60302,
+        "height": 960,
+        "path": "optimized/former-meetings/2016-colorado-1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 3264
+  },
+  "former-meetings/2016-colorado-2.jpg": {
+    "bytes": 1660018,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 4155,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7070,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10548,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 18825,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 28056,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-2-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 5920,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10734,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 16698,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 31360,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 47644,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3024,
+    "variants": [
+      {
+        "bytes": 5920,
+        "height": 240,
+        "path": "optimized/former-meetings/2016-colorado-2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 10734,
+        "height": 360,
+        "path": "optimized/former-meetings/2016-colorado-2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 16698,
+        "height": 480,
+        "path": "optimized/former-meetings/2016-colorado-2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 31360,
+        "height": 720,
+        "path": "optimized/former-meetings/2016-colorado-2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 47644,
+        "height": 960,
+        "path": "optimized/former-meetings/2016-colorado-2-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 4032
+  },
+  "former-meetings/2016-colorado-3.jpg": {
+    "bytes": 1765276,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 4591,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-3-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7849,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-3-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 11664,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-3-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 20325,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-3-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 29927,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-3-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 6466,
+          "height": 240,
+          "path": "optimized/former-meetings/2016-colorado-3-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11698,
+          "height": 360,
+          "path": "optimized/former-meetings/2016-colorado-3-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 18666,
+          "height": 480,
+          "path": "optimized/former-meetings/2016-colorado-3-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 34196,
+          "height": 720,
+          "path": "optimized/former-meetings/2016-colorado-3-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 51784,
+          "height": 960,
+          "path": "optimized/former-meetings/2016-colorado-3-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3024,
+    "variants": [
+      {
+        "bytes": 6466,
+        "height": 240,
+        "path": "optimized/former-meetings/2016-colorado-3-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 11698,
+        "height": 360,
+        "path": "optimized/former-meetings/2016-colorado-3-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 18666,
+        "height": 480,
+        "path": "optimized/former-meetings/2016-colorado-3-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 34196,
+        "height": 720,
+        "path": "optimized/former-meetings/2016-colorado-3-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 51784,
+        "height": 960,
+        "path": "optimized/former-meetings/2016-colorado-3-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 4032
+  },
+  "former-meetings/2019-leuven-1.jpg": {
+    "bytes": 1517823,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 11326,
+          "height": 480,
+          "path": "optimized/former-meetings/2019-leuven-1-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 19527,
+          "height": 720,
+          "path": "optimized/former-meetings/2019-leuven-1-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 28552,
+          "height": 960,
+          "path": "optimized/former-meetings/2019-leuven-1-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 50639,
+          "height": 1440,
+          "path": "optimized/former-meetings/2019-leuven-1-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 80154,
+          "height": 1920,
+          "path": "optimized/former-meetings/2019-leuven-1-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 16846,
+          "height": 480,
+          "path": "optimized/former-meetings/2019-leuven-1-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 30770,
+          "height": 720,
+          "path": "optimized/former-meetings/2019-leuven-1-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 46514,
+          "height": 960,
+          "path": "optimized/former-meetings/2019-leuven-1-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 86726,
+          "height": 1440,
+          "path": "optimized/former-meetings/2019-leuven-1-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 153356,
+          "height": 1920,
+          "path": "optimized/former-meetings/2019-leuven-1-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 4302,
+    "variants": [
+      {
+        "bytes": 16846,
+        "height": 480,
+        "path": "optimized/former-meetings/2019-leuven-1-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 30770,
+        "height": 720,
+        "path": "optimized/former-meetings/2019-leuven-1-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 46514,
+        "height": 960,
+        "path": "optimized/former-meetings/2019-leuven-1-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 86726,
+        "height": 1440,
+        "path": "optimized/former-meetings/2019-leuven-1-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 153356,
+        "height": 1920,
+        "path": "optimized/former-meetings/2019-leuven-1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 2868
+  },
+  "former-meetings/2019-leuven-2.jpg": {
+    "bytes": 2339408,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6872,
+          "height": 213,
+          "path": "optimized/former-meetings/2019-leuven-2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11790,
+          "height": 320,
+          "path": "optimized/former-meetings/2019-leuven-2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 17481,
+          "height": 427,
+          "path": "optimized/former-meetings/2019-leuven-2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 29525,
+          "height": 640,
+          "path": "optimized/former-meetings/2019-leuven-2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 44693,
+          "height": 853,
+          "path": "optimized/former-meetings/2019-leuven-2-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 9968,
+          "height": 213,
+          "path": "optimized/former-meetings/2019-leuven-2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 17700,
+          "height": 320,
+          "path": "optimized/former-meetings/2019-leuven-2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27518,
+          "height": 427,
+          "path": "optimized/former-meetings/2019-leuven-2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 49808,
+          "height": 640,
+          "path": "optimized/former-meetings/2019-leuven-2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 78640,
+          "height": 853,
+          "path": "optimized/former-meetings/2019-leuven-2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3723,
+    "variants": [
+      {
+        "bytes": 9968,
+        "height": 213,
+        "path": "optimized/former-meetings/2019-leuven-2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 17700,
+        "height": 320,
+        "path": "optimized/former-meetings/2019-leuven-2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 27518,
+        "height": 427,
+        "path": "optimized/former-meetings/2019-leuven-2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 49808,
+        "height": 640,
+        "path": "optimized/former-meetings/2019-leuven-2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 78640,
+        "height": 853,
+        "path": "optimized/former-meetings/2019-leuven-2-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 5584
+  },
+  "former-meetings/2023-seoul-1.jpg": {
+    "bytes": 2331765,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3539,
+          "height": 230,
+          "path": "optimized/former-meetings/2023-seoul-1-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6250,
+          "height": 345,
+          "path": "optimized/former-meetings/2023-seoul-1-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 9130,
+          "height": 460,
+          "path": "optimized/former-meetings/2023-seoul-1-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 16104,
+          "height": 689,
+          "path": "optimized/former-meetings/2023-seoul-1-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 22586,
+          "height": 919,
+          "path": "optimized/former-meetings/2023-seoul-1-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 5462,
+          "height": 230,
+          "path": "optimized/former-meetings/2023-seoul-1-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 9846,
+          "height": 345,
+          "path": "optimized/former-meetings/2023-seoul-1-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15200,
+          "height": 460,
+          "path": "optimized/former-meetings/2023-seoul-1-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 27998,
+          "height": 689,
+          "path": "optimized/former-meetings/2023-seoul-1-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 41670,
+          "height": 919,
+          "path": "optimized/former-meetings/2023-seoul-1-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3456,
+    "variants": [
+      {
+        "bytes": 5462,
+        "height": 230,
+        "path": "optimized/former-meetings/2023-seoul-1-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 9846,
+        "height": 345,
+        "path": "optimized/former-meetings/2023-seoul-1-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 15200,
+        "height": 460,
+        "path": "optimized/former-meetings/2023-seoul-1-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 27998,
+        "height": 689,
+        "path": "optimized/former-meetings/2023-seoul-1-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 41670,
+        "height": 919,
+        "path": "optimized/former-meetings/2023-seoul-1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 4812
+  },
+  "former-meetings/2023-seoul-2.jpg": {
+    "bytes": 7929956,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 10157,
+          "height": 213,
+          "path": "optimized/former-meetings/2023-seoul-2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 17831,
+          "height": 320,
+          "path": "optimized/former-meetings/2023-seoul-2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 25883,
+          "height": 426,
+          "path": "optimized/former-meetings/2023-seoul-2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 43231,
+          "height": 640,
+          "path": "optimized/former-meetings/2023-seoul-2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 61282,
+          "height": 853,
+          "path": "optimized/former-meetings/2023-seoul-2-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 13536,
+          "height": 213,
+          "path": "optimized/former-meetings/2023-seoul-2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 24590,
+          "height": 320,
+          "path": "optimized/former-meetings/2023-seoul-2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 37094,
+          "height": 426,
+          "path": "optimized/former-meetings/2023-seoul-2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 65110,
+          "height": 640,
+          "path": "optimized/former-meetings/2023-seoul-2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 97226,
+          "height": 853,
+          "path": "optimized/former-meetings/2023-seoul-2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3266,
+    "variants": [
+      {
+        "bytes": 13536,
+        "height": 213,
+        "path": "optimized/former-meetings/2023-seoul-2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 24590,
+        "height": 320,
+        "path": "optimized/former-meetings/2023-seoul-2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 37094,
+        "height": 426,
+        "path": "optimized/former-meetings/2023-seoul-2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 65110,
+        "height": 640,
+        "path": "optimized/former-meetings/2023-seoul-2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 97226,
+        "height": 853,
+        "path": "optimized/former-meetings/2023-seoul-2-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 4901
+  },
+  "former-meetings/2023-seoul-3.jpg": {
+    "bytes": 2520250,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 5971,
+          "height": 240,
+          "path": "optimized/former-meetings/2023-seoul-3-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 10558,
+          "height": 360,
+          "path": "optimized/former-meetings/2023-seoul-3-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 15330,
+          "height": 480,
+          "path": "optimized/former-meetings/2023-seoul-3-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 24857,
+          "height": 720,
+          "path": "optimized/former-meetings/2023-seoul-3-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 32936,
+          "height": 960,
+          "path": "optimized/former-meetings/2023-seoul-3-1280.avif",
+          "width": 1280
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 8348,
+          "height": 240,
+          "path": "optimized/former-meetings/2023-seoul-3-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 16024,
+          "height": 360,
+          "path": "optimized/former-meetings/2023-seoul-3-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 24014,
+          "height": 480,
+          "path": "optimized/former-meetings/2023-seoul-3-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 40602,
+          "height": 720,
+          "path": "optimized/former-meetings/2023-seoul-3-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 57758,
+          "height": 960,
+          "path": "optimized/former-meetings/2023-seoul-3-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 3024,
+    "variants": [
+      {
+        "bytes": 8348,
+        "height": 240,
+        "path": "optimized/former-meetings/2023-seoul-3-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 16024,
+        "height": 360,
+        "path": "optimized/former-meetings/2023-seoul-3-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 24014,
+        "height": 480,
+        "path": "optimized/former-meetings/2023-seoul-3-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 40602,
+        "height": 720,
+        "path": "optimized/former-meetings/2023-seoul-3-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 57758,
+        "height": 960,
+        "path": "optimized/former-meetings/2023-seoul-3-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 4032
+  },
   "ich2026/conference-volcano.jpg": {
     "bytes": 201357,
     "formats": {
@@ -1991,6 +3021,424 @@
       }
     ],
     "width": 1280
+  },
+  "ich2026/from-zip/pvaras.webp": {
+    "bytes": 170250,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6940,
+          "height": 180,
+          "path": "optimized/ich2026/from-zip/pvaras-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 13454,
+          "height": 270,
+          "path": "optimized/ich2026/from-zip/pvaras-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 21270,
+          "height": 360,
+          "path": "optimized/ich2026/from-zip/pvaras-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 41946,
+          "height": 529,
+          "path": "optimized/ich2026/from-zip/pvaras-940.avif",
+          "width": 940
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 8800,
+          "height": 180,
+          "path": "optimized/ich2026/from-zip/pvaras-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 17336,
+          "height": 270,
+          "path": "optimized/ich2026/from-zip/pvaras-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 28870,
+          "height": 360,
+          "path": "optimized/ich2026/from-zip/pvaras-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 56166,
+          "height": 529,
+          "path": "optimized/ich2026/from-zip/pvaras-940.webp",
+          "width": 940
+        }
+      ]
+    },
+    "height": 529,
+    "variants": [
+      {
+        "bytes": 8800,
+        "height": 180,
+        "path": "optimized/ich2026/from-zip/pvaras-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 17336,
+        "height": 270,
+        "path": "optimized/ich2026/from-zip/pvaras-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 28870,
+        "height": 360,
+        "path": "optimized/ich2026/from-zip/pvaras-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 56166,
+        "height": 529,
+        "path": "optimized/ich2026/from-zip/pvaras-940.webp",
+        "width": 940
+      }
+    ],
+    "width": 940
+  },
+  "ich2026/from-zip/pvaras2.jpg": {
+    "bytes": 210626,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 9006,
+          "height": 160,
+          "path": "optimized/ich2026/from-zip/pvaras2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 18686,
+          "height": 240,
+          "path": "optimized/ich2026/from-zip/pvaras2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 31853,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/pvaras2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 68568,
+          "height": 480,
+          "path": "optimized/ich2026/from-zip/pvaras2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 114958,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/pvaras2-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 155427,
+          "height": 792,
+          "path": "optimized/ich2026/from-zip/pvaras2-1585.avif",
+          "width": 1585
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 11660,
+          "height": 160,
+          "path": "optimized/ich2026/from-zip/pvaras2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 24658,
+          "height": 240,
+          "path": "optimized/ich2026/from-zip/pvaras2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 41958,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/pvaras2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 90562,
+          "height": 480,
+          "path": "optimized/ich2026/from-zip/pvaras2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 151298,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/pvaras2-1280.webp",
+          "width": 1280
+        }
+      ]
+    },
+    "height": 792,
+    "variants": [
+      {
+        "bytes": 11660,
+        "height": 160,
+        "path": "optimized/ich2026/from-zip/pvaras2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 24658,
+        "height": 240,
+        "path": "optimized/ich2026/from-zip/pvaras2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 41958,
+        "height": 320,
+        "path": "optimized/ich2026/from-zip/pvaras2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 90562,
+        "height": 480,
+        "path": "optimized/ich2026/from-zip/pvaras2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 151298,
+        "height": 640,
+        "path": "optimized/ich2026/from-zip/pvaras2-1280.webp",
+        "width": 1280
+      }
+    ],
+    "width": 1585
+  },
+  "ich2026/from-zip/sea-kayak-puerto-varas.jpg": {
+    "bytes": 180153,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3976,
+          "height": 142,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7697,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12831,
+          "height": 284,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 25975,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 43050,
+          "height": 569,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 67273,
+          "height": 711,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1600.avif",
+          "width": 1600
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 5846,
+          "height": 142,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11870,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 20180,
+          "height": 284,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 42240,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 70168,
+          "height": 569,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 106570,
+          "height": 711,
+          "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1600.webp",
+          "width": 1600
+        }
+      ]
+    },
+    "height": 711,
+    "variants": [
+      {
+        "bytes": 5846,
+        "height": 142,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 11870,
+        "height": 213,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 20180,
+        "height": 284,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 42240,
+        "height": 427,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 70168,
+        "height": 569,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 106570,
+        "height": 711,
+        "path": "optimized/ich2026/from-zip/sea-kayak-puerto-varas-1600.webp",
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "ich2026/from-zip/volcan-puerto-varas.jpg": {
+    "bytes": 334515,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 9765,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 20002,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 33237,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 65444,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 91234,
+          "height": 800,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.avif",
+          "width": 1200
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 12042,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 25178,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 42438,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 85142,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 122724,
+          "height": 800,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
+          "width": 1200
+        }
+      ]
+    },
+    "height": 800,
+    "variants": [
+      {
+        "bytes": 12042,
+        "height": 213,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 25178,
+        "height": 320,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 42438,
+        "height": 427,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 85142,
+        "height": 640,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 122724,
+        "height": 800,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
+        "width": 1200
+      }
+    ],
+    "width": 1200
   },
   "ich2026/generated/abstract-registration.jpg": {
     "bytes": 180386,
@@ -2457,6 +3905,206 @@
       }
     ],
     "width": 1600
+  },
+  "ich2026/hantavirus-em.jpg": {
+    "bytes": 89331,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 11237,
+          "height": 232,
+          "path": "optimized/ich2026/hantavirus-em-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 25349,
+          "height": 348,
+          "path": "optimized/ich2026/hantavirus-em-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 41911,
+          "height": 464,
+          "path": "optimized/ich2026/hantavirus-em-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 52288,
+          "height": 507,
+          "path": "optimized/ich2026/hantavirus-em-700.avif",
+          "width": 700
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 13340,
+          "height": 232,
+          "path": "optimized/ich2026/hantavirus-em-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 31102,
+          "height": 348,
+          "path": "optimized/ich2026/hantavirus-em-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 55582,
+          "height": 464,
+          "path": "optimized/ich2026/hantavirus-em-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 68274,
+          "height": 507,
+          "path": "optimized/ich2026/hantavirus-em-700.webp",
+          "width": 700
+        }
+      ]
+    },
+    "height": 507,
+    "variants": [
+      {
+        "bytes": 13340,
+        "height": 232,
+        "path": "optimized/ich2026/hantavirus-em-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 31102,
+        "height": 348,
+        "path": "optimized/ich2026/hantavirus-em-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 55582,
+        "height": 464,
+        "path": "optimized/ich2026/hantavirus-em-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 68274,
+        "height": 507,
+        "path": "optimized/ich2026/hantavirus-em-700.webp",
+        "width": 700
+      }
+    ],
+    "width": 700
+  },
+  "ich2026/ich2026-logo-landscape.png": {
+    "bytes": 343470,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6594,
+          "height": 155,
+          "path": "optimized/ich2026/ich2026-logo-landscape-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10459,
+          "height": 206,
+          "path": "optimized/ich2026/ich2026-logo-landscape-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 20306,
+          "height": 309,
+          "path": "optimized/ich2026/ich2026-logo-landscape-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 33091,
+          "height": 413,
+          "path": "optimized/ich2026/ich2026-logo-landscape-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 53816,
+          "height": 480,
+          "path": "optimized/ich2026/ich2026-logo-landscape-1489.avif",
+          "width": 1489
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3646,
+          "height": 103,
+          "path": "optimized/ich2026/ich2026-logo-landscape-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7250,
+          "height": 155,
+          "path": "optimized/ich2026/ich2026-logo-landscape-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 12138,
+          "height": 206,
+          "path": "optimized/ich2026/ich2026-logo-landscape-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 25708,
+          "height": 309,
+          "path": "optimized/ich2026/ich2026-logo-landscape-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 43458,
+          "height": 413,
+          "path": "optimized/ich2026/ich2026-logo-landscape-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 68376,
+          "height": 480,
+          "path": "optimized/ich2026/ich2026-logo-landscape-1489.webp",
+          "width": 1489
+        }
+      ]
+    },
+    "height": 480,
+    "variants": [
+      {
+        "bytes": 3646,
+        "height": 103,
+        "path": "optimized/ich2026/ich2026-logo-landscape-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 7250,
+        "height": 155,
+        "path": "optimized/ich2026/ich2026-logo-landscape-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 12138,
+        "height": 206,
+        "path": "optimized/ich2026/ich2026-logo-landscape-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 25708,
+        "height": 309,
+        "path": "optimized/ich2026/ich2026-logo-landscape-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 43458,
+        "height": 413,
+        "path": "optimized/ich2026/ich2026-logo-landscape-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 68376,
+        "height": 480,
+        "path": "optimized/ich2026/ich2026-logo-landscape-1489.webp",
+        "width": 1489
+      }
+    ],
+    "width": 1489
   },
   "ich2026/local-cecilia-vial.jpg": {
     "bytes": 59366,
@@ -4827,677 +6475,1451 @@
     ],
     "width": 517
   },
-  "sponsors/anid.png": {
-    "bytes": 95917,
+  "sponsors/poster/anasac.png": {
+    "bytes": 10862,
     "formats": {
       "avif": [
         {
-          "bytes": 2975,
-          "height": 135,
-          "path": "optimized/sponsors/anid-160.avif",
+          "bytes": 1175,
+          "height": 79,
+          "path": "optimized/sponsors/poster/anasac-160.avif",
           "width": 160
         },
         {
-          "bytes": 4958,
-          "height": 202,
-          "path": "optimized/sponsors/anid-240.avif",
+          "bytes": 1748,
+          "height": 118,
+          "path": "optimized/sponsors/poster/anasac-240.avif",
           "width": 240
         },
         {
-          "bytes": 7895,
-          "height": 269,
-          "path": "optimized/sponsors/anid-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 12477,
-          "height": 404,
-          "path": "optimized/sponsors/anid-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 15626,
-          "height": 539,
-          "path": "optimized/sponsors/anid-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 21713,
-          "height": 778,
-          "path": "optimized/sponsors/anid-924.avif",
-          "width": 924
+          "bytes": 1874,
+          "height": 141,
+          "path": "optimized/sponsors/poster/anasac-286.avif",
+          "width": 286
         }
       ],
       "webp": [
         {
-          "bytes": 3946,
-          "height": 135,
-          "path": "optimized/sponsors/anid-160.webp",
+          "bytes": 1252,
+          "height": 79,
+          "path": "optimized/sponsors/poster/anasac-160.webp",
           "width": 160
         },
         {
-          "bytes": 7142,
-          "height": 202,
-          "path": "optimized/sponsors/anid-240.webp",
+          "bytes": 2198,
+          "height": 118,
+          "path": "optimized/sponsors/poster/anasac-240.webp",
           "width": 240
         },
         {
-          "bytes": 10166,
-          "height": 269,
-          "path": "optimized/sponsors/anid-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 17436,
-          "height": 404,
-          "path": "optimized/sponsors/anid-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 23116,
-          "height": 539,
-          "path": "optimized/sponsors/anid-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 35012,
-          "height": 778,
-          "path": "optimized/sponsors/anid-924.webp",
-          "width": 924
+          "bytes": 2738,
+          "height": 141,
+          "path": "optimized/sponsors/poster/anasac-286.webp",
+          "width": 286
         }
       ]
     },
-    "height": 778,
+    "height": 141,
     "variants": [
       {
-        "bytes": 3946,
+        "bytes": 1252,
+        "height": 79,
+        "path": "optimized/sponsors/poster/anasac-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2198,
+        "height": 118,
+        "path": "optimized/sponsors/poster/anasac-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2738,
+        "height": 141,
+        "path": "optimized/sponsors/poster/anasac-286.webp",
+        "width": 286
+      }
+    ],
+    "width": 286
+  },
+  "sponsors/poster/anid.png": {
+    "bytes": 10321,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1704,
+          "height": 146,
+          "path": "optimized/sponsors/poster/anid-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1876,
+          "height": 169,
+          "path": "optimized/sponsors/poster/anid-185.avif",
+          "width": 185
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1886,
+          "height": 146,
+          "path": "optimized/sponsors/poster/anid-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2434,
+          "height": 169,
+          "path": "optimized/sponsors/poster/anid-185.webp",
+          "width": 185
+        }
+      ]
+    },
+    "height": 169,
+    "variants": [
+      {
+        "bytes": 1886,
+        "height": 146,
+        "path": "optimized/sponsors/poster/anid-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2434,
+        "height": 169,
+        "path": "optimized/sponsors/poster/anid-185.webp",
+        "width": 185
+      }
+    ],
+    "width": 185
+  },
+  "sponsors/poster/bd.png": {
+    "bytes": 6073,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1123,
+          "height": 72,
+          "path": "optimized/sponsors/poster/bd-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1476,
+          "height": 105,
+          "path": "optimized/sponsors/poster/bd-232.avif",
+          "width": 232
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1350,
+          "height": 72,
+          "path": "optimized/sponsors/poster/bd-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2010,
+          "height": 105,
+          "path": "optimized/sponsors/poster/bd-232.webp",
+          "width": 232
+        }
+      ]
+    },
+    "height": 105,
+    "variants": [
+      {
+        "bytes": 1350,
+        "height": 72,
+        "path": "optimized/sponsors/poster/bd-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2010,
+        "height": 105,
+        "path": "optimized/sponsors/poster/bd-232.webp",
+        "width": 232
+      }
+    ],
+    "width": 232
+  },
+  "sponsors/poster/centro-ciencia-vida.png": {
+    "bytes": 13391,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1451,
+          "height": 95,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2038,
+          "height": 142,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2301,
+          "height": 181,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-305.avif",
+          "width": 305
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1928,
+          "height": 95,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2912,
+          "height": 142,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3862,
+          "height": 181,
+          "path": "optimized/sponsors/poster/centro-ciencia-vida-305.webp",
+          "width": 305
+        }
+      ]
+    },
+    "height": 181,
+    "variants": [
+      {
+        "bytes": 1928,
+        "height": 95,
+        "path": "optimized/sponsors/poster/centro-ciencia-vida-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2912,
+        "height": 142,
+        "path": "optimized/sponsors/poster/centro-ciencia-vida-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 3862,
+        "height": 181,
+        "path": "optimized/sponsors/poster/centro-ciencia-vida-305.webp",
+        "width": 305
+      }
+    ],
+    "width": 305
+  },
+  "sponsors/poster/fundacion-ciencia-vida.png": {
+    "bytes": 9881,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1263,
+          "height": 95,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1737,
+          "height": 142,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 1753,
+          "height": 145,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-245.avif",
+          "width": 245
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1496,
+          "height": 95,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2238,
+          "height": 142,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2340,
+          "height": 145,
+          "path": "optimized/sponsors/poster/fundacion-ciencia-vida-245.webp",
+          "width": 245
+        }
+      ]
+    },
+    "height": 145,
+    "variants": [
+      {
+        "bytes": 1496,
+        "height": 95,
+        "path": "optimized/sponsors/poster/fundacion-ciencia-vida-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2238,
+        "height": 142,
+        "path": "optimized/sponsors/poster/fundacion-ciencia-vida-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2340,
+        "height": 145,
+        "path": "optimized/sponsors/poster/fundacion-ciencia-vida-245.webp",
+        "width": 245
+      }
+    ],
+    "width": 245
+  },
+  "sponsors/poster/imerlab.png": {
+    "bytes": 8190,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1063,
+          "height": 80,
+          "path": "optimized/sponsors/poster/imerlab-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1412,
+          "height": 120,
+          "path": "optimized/sponsors/poster/imerlab-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 1620,
+          "height": 141,
+          "path": "optimized/sponsors/poster/imerlab-281.avif",
+          "width": 281
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1110,
+          "height": 80,
+          "path": "optimized/sponsors/poster/imerlab-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 1788,
+          "height": 120,
+          "path": "optimized/sponsors/poster/imerlab-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2050,
+          "height": 141,
+          "path": "optimized/sponsors/poster/imerlab-281.webp",
+          "width": 281
+        }
+      ]
+    },
+    "height": 141,
+    "variants": [
+      {
+        "bytes": 1110,
+        "height": 80,
+        "path": "optimized/sponsors/poster/imerlab-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 1788,
+        "height": 120,
+        "path": "optimized/sponsors/poster/imerlab-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2050,
+        "height": 141,
+        "path": "optimized/sponsors/poster/imerlab-281.webp",
+        "width": 281
+      }
+    ],
+    "width": 281
+  },
+  "sponsors/poster/ish.png": {
+    "bytes": 18708,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2594,
+          "height": 144,
+          "path": "optimized/sponsors/poster/ish-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3389,
+          "height": 181,
+          "path": "optimized/sponsors/poster/ish-201.avif",
+          "width": 201
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2802,
+          "height": 144,
+          "path": "optimized/sponsors/poster/ish-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3920,
+          "height": 181,
+          "path": "optimized/sponsors/poster/ish-201.webp",
+          "width": 201
+        }
+      ]
+    },
+    "height": 181,
+    "variants": [
+      {
+        "bytes": 2802,
+        "height": 144,
+        "path": "optimized/sponsors/poster/ish-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 3920,
+        "height": 181,
+        "path": "optimized/sponsors/poster/ish-201.webp",
+        "width": 201
+      }
+    ],
+    "width": 201
+  },
+  "sponsors/poster/pontificia-universidad-catolica.png": {
+    "bytes": 21164,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2792,
+          "height": 129,
+          "path": "optimized/sponsors/poster/pontificia-universidad-catolica-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3500,
+          "height": 155,
+          "path": "optimized/sponsors/poster/pontificia-universidad-catolica-289.avif",
+          "width": 289
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1572,
+          "height": 86,
+          "path": "optimized/sponsors/poster/pontificia-universidad-catolica-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3034,
+          "height": 129,
+          "path": "optimized/sponsors/poster/pontificia-universidad-catolica-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 4194,
+          "height": 155,
+          "path": "optimized/sponsors/poster/pontificia-universidad-catolica-289.webp",
+          "width": 289
+        }
+      ]
+    },
+    "height": 155,
+    "variants": [
+      {
+        "bytes": 1572,
+        "height": 86,
+        "path": "optimized/sponsors/poster/pontificia-universidad-catolica-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 3034,
+        "height": 129,
+        "path": "optimized/sponsors/poster/pontificia-universidad-catolica-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 4194,
+        "height": 155,
+        "path": "optimized/sponsors/poster/pontificia-universidad-catolica-289.webp",
+        "width": 289
+      }
+    ],
+    "width": 289
+  },
+  "sponsors/poster/sociedad-bioquimica.png": {
+    "bytes": 12733,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1080,
+          "height": 76,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1656,
+          "height": 114,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2072,
+          "height": 135,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-285.avif",
+          "width": 285
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1088,
+          "height": 76,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 1896,
+          "height": 114,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2604,
+          "height": 135,
+          "path": "optimized/sponsors/poster/sociedad-bioquimica-285.webp",
+          "width": 285
+        }
+      ]
+    },
+    "height": 135,
+    "variants": [
+      {
+        "bytes": 1088,
+        "height": 76,
+        "path": "optimized/sponsors/poster/sociedad-bioquimica-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 1896,
+        "height": 114,
+        "path": "optimized/sponsors/poster/sociedad-bioquimica-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2604,
         "height": 135,
-        "path": "optimized/sponsors/anid-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7142,
-        "height": 202,
-        "path": "optimized/sponsors/anid-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 10166,
-        "height": 269,
-        "path": "optimized/sponsors/anid-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 17436,
-        "height": 404,
-        "path": "optimized/sponsors/anid-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 23116,
-        "height": 539,
-        "path": "optimized/sponsors/anid-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 35012,
-        "height": 778,
-        "path": "optimized/sponsors/anid-924.webp",
-        "width": 924
+        "path": "optimized/sponsors/poster/sociedad-bioquimica-285.webp",
+        "width": 285
       }
     ],
-    "width": 924
+    "width": 285
   },
-  "sponsors/ciencia-vida.png": {
-    "bytes": 59419,
+  "sponsors/poster/sociedad-chilena-infectologia.png": {
+    "bytes": 14028,
     "formats": {
       "avif": [
         {
-          "bytes": 2504,
-          "height": 116,
-          "path": "optimized/sponsors/ciencia-vida-160.avif",
+          "bytes": 1421,
+          "height": 73,
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-160.avif",
           "width": 160
         },
         {
-          "bytes": 3683,
-          "height": 174,
-          "path": "optimized/sponsors/ciencia-vida-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4658,
-          "height": 232,
-          "path": "optimized/sponsors/ciencia-vida-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 6380,
-          "height": 348,
-          "path": "optimized/sponsors/ciencia-vida-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 7950,
-          "height": 464,
-          "path": "optimized/sponsors/ciencia-vida-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 14047,
-          "height": 928,
-          "path": "optimized/sponsors/ciencia-vida-1280.avif",
-          "width": 1280
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 3756,
-          "height": 116,
-          "path": "optimized/sponsors/ciencia-vida-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 5898,
-          "height": 174,
-          "path": "optimized/sponsors/ciencia-vida-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 8224,
-          "height": 232,
-          "path": "optimized/sponsors/ciencia-vida-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 12724,
-          "height": 348,
-          "path": "optimized/sponsors/ciencia-vida-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 17424,
-          "height": 464,
-          "path": "optimized/sponsors/ciencia-vida-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 35422,
-          "height": 928,
-          "path": "optimized/sponsors/ciencia-vida-1280.webp",
-          "width": 1280
-        }
-      ]
-    },
-    "height": 928,
-    "variants": [
-      {
-        "bytes": 3756,
-        "height": 116,
-        "path": "optimized/sponsors/ciencia-vida-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5898,
-        "height": 174,
-        "path": "optimized/sponsors/ciencia-vida-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 8224,
-        "height": 232,
-        "path": "optimized/sponsors/ciencia-vida-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 12724,
-        "height": 348,
-        "path": "optimized/sponsors/ciencia-vida-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 17424,
-        "height": 464,
-        "path": "optimized/sponsors/ciencia-vida-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 35422,
-        "height": 928,
-        "path": "optimized/sponsors/ciencia-vida-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
-  "sponsors/somich.png": {
-    "bytes": 37397,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 1978,
-          "height": 82,
-          "path": "optimized/sponsors/somich-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 2739,
-          "height": 123,
-          "path": "optimized/sponsors/somich-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 3258,
-          "height": 164,
-          "path": "optimized/sponsors/somich-320.avif",
-          "width": 320
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 2450,
-          "height": 82,
-          "path": "optimized/sponsors/somich-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 3740,
-          "height": 123,
-          "path": "optimized/sponsors/somich-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 5040,
-          "height": 164,
-          "path": "optimized/sponsors/somich-320.webp",
-          "width": 320
-        }
-      ]
-    },
-    "height": 164,
-    "variants": [
-      {
-        "bytes": 2450,
-        "height": 82,
-        "path": "optimized/sponsors/somich-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 3740,
-        "height": 123,
-        "path": "optimized/sponsors/somich-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 5040,
-        "height": 164,
-        "path": "optimized/sponsors/somich-320.webp",
-        "width": 320
-      }
-    ],
-    "width": 320
-  },
-  "sponsors/universidad-catolica.jpg": {
-    "bytes": 164690,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 3326,
-          "height": 91,
-          "path": "optimized/sponsors/universidad-catolica-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 5806,
-          "height": 137,
-          "path": "optimized/sponsors/universidad-catolica-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 8161,
-          "height": 182,
-          "path": "optimized/sponsors/universidad-catolica-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 12941,
-          "height": 273,
-          "path": "optimized/sponsors/universidad-catolica-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 17538,
-          "height": 365,
-          "path": "optimized/sponsors/universidad-catolica-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 32924,
-          "height": 729,
-          "path": "optimized/sponsors/universidad-catolica-1280.avif",
-          "width": 1280
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 3866,
-          "height": 91,
-          "path": "optimized/sponsors/universidad-catolica-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 7254,
-          "height": 137,
-          "path": "optimized/sponsors/universidad-catolica-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 11084,
-          "height": 182,
-          "path": "optimized/sponsors/universidad-catolica-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 18772,
-          "height": 273,
-          "path": "optimized/sponsors/universidad-catolica-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 26918,
-          "height": 365,
-          "path": "optimized/sponsors/universidad-catolica-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 57758,
-          "height": 729,
-          "path": "optimized/sponsors/universidad-catolica-1280.webp",
-          "width": 1280
-        }
-      ]
-    },
-    "height": 729,
-    "variants": [
-      {
-        "bytes": 3866,
-        "height": 91,
-        "path": "optimized/sponsors/universidad-catolica-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 7254,
-        "height": 137,
-        "path": "optimized/sponsors/universidad-catolica-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 11084,
-        "height": 182,
-        "path": "optimized/sponsors/universidad-catolica-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 18772,
-        "height": 273,
-        "path": "optimized/sponsors/universidad-catolica-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 26918,
-        "height": 365,
-        "path": "optimized/sponsors/universidad-catolica-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 57758,
-        "height": 729,
-        "path": "optimized/sponsors/universidad-catolica-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
-  "sponsors/universidad-del-desarrollo.png": {
-    "bytes": 25574,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 1536,
-          "height": 54,
-          "path": "optimized/sponsors/universidad-del-desarrollo-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 2157,
-          "height": 81,
-          "path": "optimized/sponsors/universidad-del-desarrollo-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 2648,
-          "height": 108,
-          "path": "optimized/sponsors/universidad-del-desarrollo-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 3816,
-          "height": 161,
-          "path": "optimized/sponsors/universidad-del-desarrollo-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 4755,
-          "height": 215,
-          "path": "optimized/sponsors/universidad-del-desarrollo-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 8282,
-          "height": 430,
-          "path": "optimized/sponsors/universidad-del-desarrollo-1280.avif",
-          "width": 1280
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 1898,
-          "height": 54,
-          "path": "optimized/sponsors/universidad-del-desarrollo-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 3090,
-          "height": 81,
-          "path": "optimized/sponsors/universidad-del-desarrollo-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 4172,
-          "height": 108,
-          "path": "optimized/sponsors/universidad-del-desarrollo-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 6416,
-          "height": 161,
-          "path": "optimized/sponsors/universidad-del-desarrollo-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 8466,
-          "height": 215,
-          "path": "optimized/sponsors/universidad-del-desarrollo-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 13290,
-          "height": 430,
-          "path": "optimized/sponsors/universidad-del-desarrollo-1280.webp",
-          "width": 1280
-        }
-      ]
-    },
-    "height": 430,
-    "variants": [
-      {
-        "bytes": 1898,
-        "height": 54,
-        "path": "optimized/sponsors/universidad-del-desarrollo-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 3090,
-        "height": 81,
-        "path": "optimized/sponsors/universidad-del-desarrollo-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 4172,
-        "height": 108,
-        "path": "optimized/sponsors/universidad-del-desarrollo-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 6416,
-        "height": 161,
-        "path": "optimized/sponsors/universidad-del-desarrollo-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 8466,
-        "height": 215,
-        "path": "optimized/sponsors/universidad-del-desarrollo-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 13290,
-        "height": 430,
-        "path": "optimized/sponsors/universidad-del-desarrollo-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
-  },
-  "sponsors/universidad-san-sebastian.jpg": {
-    "bytes": 141448,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 3100,
+          "bytes": 2270,
           "height": 110,
-          "path": "optimized/sponsors/universidad-san-sebastian-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 4834,
-          "height": 165,
-          "path": "optimized/sponsors/universidad-san-sebastian-240.avif",
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-240.avif",
           "width": 240
         },
         {
-          "bytes": 6825,
-          "height": 220,
-          "path": "optimized/sponsors/universidad-san-sebastian-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 10282,
-          "height": 330,
-          "path": "optimized/sponsors/universidad-san-sebastian-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 13746,
-          "height": 440,
-          "path": "optimized/sponsors/universidad-san-sebastian-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 27207,
-          "height": 879,
-          "path": "optimized/sponsors/universidad-san-sebastian-1280.avif",
-          "width": 1280
+          "bytes": 2581,
+          "height": 135,
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-295.avif",
+          "width": 295
         }
       ],
       "webp": [
         {
-          "bytes": 3652,
-          "height": 110,
-          "path": "optimized/sponsors/universidad-san-sebastian-160.webp",
+          "bytes": 1706,
+          "height": 73,
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-160.webp",
           "width": 160
         },
         {
-          "bytes": 6306,
-          "height": 165,
-          "path": "optimized/sponsors/universidad-san-sebastian-240.webp",
+          "bytes": 2988,
+          "height": 110,
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-240.webp",
           "width": 240
         },
         {
-          "bytes": 9204,
-          "height": 220,
-          "path": "optimized/sponsors/universidad-san-sebastian-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 15170,
-          "height": 330,
-          "path": "optimized/sponsors/universidad-san-sebastian-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 20930,
-          "height": 440,
-          "path": "optimized/sponsors/universidad-san-sebastian-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 45004,
-          "height": 879,
-          "path": "optimized/sponsors/universidad-san-sebastian-1280.webp",
-          "width": 1280
+          "bytes": 3786,
+          "height": 135,
+          "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-295.webp",
+          "width": 295
         }
       ]
     },
-    "height": 879,
+    "height": 135,
     "variants": [
       {
-        "bytes": 3652,
+        "bytes": 1706,
+        "height": 73,
+        "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2988,
         "height": 110,
-        "path": "optimized/sponsors/universidad-san-sebastian-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 6306,
-        "height": 165,
-        "path": "optimized/sponsors/universidad-san-sebastian-240.webp",
+        "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-240.webp",
         "width": 240
       },
       {
-        "bytes": 9204,
-        "height": 220,
-        "path": "optimized/sponsors/universidad-san-sebastian-320.webp",
+        "bytes": 3786,
+        "height": 135,
+        "path": "optimized/sponsors/poster/sociedad-chilena-infectologia-295.webp",
+        "width": 295
+      }
+    ],
+    "width": 295
+  },
+  "sponsors/poster/somich.png": {
+    "bytes": 9917,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1552,
+          "height": 106,
+          "path": "optimized/sponsors/poster/somich-185.avif",
+          "width": 185
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1290,
+          "height": 92,
+          "path": "optimized/sponsors/poster/somich-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 1636,
+          "height": 106,
+          "path": "optimized/sponsors/poster/somich-185.webp",
+          "width": 185
+        }
+      ]
+    },
+    "height": 106,
+    "variants": [
+      {
+        "bytes": 1290,
+        "height": 92,
+        "path": "optimized/sponsors/poster/somich-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 1636,
+        "height": 106,
+        "path": "optimized/sponsors/poster/somich-185.webp",
+        "width": 185
+      }
+    ],
+    "width": 185
+  },
+  "sponsors/poster/thermofisher-scientific.png": {
+    "bytes": 7791,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1210,
+          "height": 69,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1688,
+          "height": 104,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2106,
+          "height": 139,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 2006,
+          "height": 141,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-325.avif",
+          "width": 325
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1520,
+          "height": 69,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2348,
+          "height": 104,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2870,
+          "height": 139,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 2976,
+          "height": 141,
+          "path": "optimized/sponsors/poster/thermofisher-scientific-325.webp",
+          "width": 325
+        }
+      ]
+    },
+    "height": 141,
+    "variants": [
+      {
+        "bytes": 1520,
+        "height": 69,
+        "path": "optimized/sponsors/poster/thermofisher-scientific-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2348,
+        "height": 104,
+        "path": "optimized/sponsors/poster/thermofisher-scientific-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2870,
+        "height": 139,
+        "path": "optimized/sponsors/poster/thermofisher-scientific-320.webp",
         "width": 320
       },
       {
-        "bytes": 15170,
-        "height": 330,
-        "path": "optimized/sponsors/universidad-san-sebastian-480.webp",
+        "bytes": 2976,
+        "height": 141,
+        "path": "optimized/sponsors/poster/thermofisher-scientific-325.webp",
+        "width": 325
+      }
+    ],
+    "width": 325
+  },
+  "sponsors/poster/universidad-del-desarrollo.png": {
+    "bytes": 10129,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1067,
+          "height": 65,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1547,
+          "height": 97,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 1977,
+          "height": 129,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 1906,
+          "height": 141,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-349.avif",
+          "width": 349
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1226,
+          "height": 65,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 1872,
+          "height": 97,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2414,
+          "height": 129,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 2528,
+          "height": 141,
+          "path": "optimized/sponsors/poster/universidad-del-desarrollo-349.webp",
+          "width": 349
+        }
+      ]
+    },
+    "height": 141,
+    "variants": [
+      {
+        "bytes": 1226,
+        "height": 65,
+        "path": "optimized/sponsors/poster/universidad-del-desarrollo-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 1872,
+        "height": 97,
+        "path": "optimized/sponsors/poster/universidad-del-desarrollo-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2414,
+        "height": 129,
+        "path": "optimized/sponsors/poster/universidad-del-desarrollo-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 2528,
+        "height": 141,
+        "path": "optimized/sponsors/poster/universidad-del-desarrollo-349.webp",
+        "width": 349
+      }
+    ],
+    "width": 349
+  },
+  "sponsors/poster/universidad-san-sebastian.png": {
+    "bytes": 16712,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1641,
+          "height": 80,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2546,
+          "height": 120,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2725,
+          "height": 127,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-255.avif",
+          "width": 255
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1702,
+          "height": 80,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2932,
+          "height": 120,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 3206,
+          "height": 127,
+          "path": "optimized/sponsors/poster/universidad-san-sebastian-255.webp",
+          "width": 255
+        }
+      ]
+    },
+    "height": 127,
+    "variants": [
+      {
+        "bytes": 1702,
+        "height": 80,
+        "path": "optimized/sponsors/poster/universidad-san-sebastian-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2932,
+        "height": 120,
+        "path": "optimized/sponsors/poster/universidad-san-sebastian-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 3206,
+        "height": 127,
+        "path": "optimized/sponsors/poster/universidad-san-sebastian-255.webp",
+        "width": 255
+      }
+    ],
+    "width": 255
+  },
+  "ui/home-hero-emblem-science.webp": {
+    "bytes": 51430,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2631,
+          "height": 146,
+          "path": "optimized/ui/home-hero-emblem-science-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 4527,
+          "height": 219,
+          "path": "optimized/ui/home-hero-emblem-science-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 6944,
+          "height": 293,
+          "path": "optimized/ui/home-hero-emblem-science-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 12140,
+          "height": 439,
+          "path": "optimized/ui/home-hero-emblem-science-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 17428,
+          "height": 585,
+          "path": "optimized/ui/home-hero-emblem-science-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 22460,
+          "height": 731,
+          "path": "optimized/ui/home-hero-emblem-science-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 26747,
+          "height": 848,
+          "path": "optimized/ui/home-hero-emblem-science-1855.avif",
+          "width": 1855
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3488,
+          "height": 146,
+          "path": "optimized/ui/home-hero-emblem-science-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 6562,
+          "height": 219,
+          "path": "optimized/ui/home-hero-emblem-science-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10456,
+          "height": 293,
+          "path": "optimized/ui/home-hero-emblem-science-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 19590,
+          "height": 439,
+          "path": "optimized/ui/home-hero-emblem-science-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 28870,
+          "height": 585,
+          "path": "optimized/ui/home-hero-emblem-science-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 38828,
+          "height": 731,
+          "path": "optimized/ui/home-hero-emblem-science-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 47446,
+          "height": 848,
+          "path": "optimized/ui/home-hero-emblem-science-1855.webp",
+          "width": 1855
+        }
+      ]
+    },
+    "height": 848,
+    "variants": [
+      {
+        "bytes": 3488,
+        "height": 146,
+        "path": "optimized/ui/home-hero-emblem-science-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 6562,
+        "height": 219,
+        "path": "optimized/ui/home-hero-emblem-science-480.webp",
         "width": 480
       },
       {
-        "bytes": 20930,
-        "height": 440,
-        "path": "optimized/sponsors/universidad-san-sebastian-640.webp",
+        "bytes": 10456,
+        "height": 293,
+        "path": "optimized/ui/home-hero-emblem-science-640.webp",
         "width": 640
       },
       {
-        "bytes": 45004,
-        "height": 879,
-        "path": "optimized/sponsors/universidad-san-sebastian-1280.webp",
+        "bytes": 19590,
+        "height": 439,
+        "path": "optimized/ui/home-hero-emblem-science-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 28870,
+        "height": 585,
+        "path": "optimized/ui/home-hero-emblem-science-1280.webp",
         "width": 1280
+      },
+      {
+        "bytes": 38828,
+        "height": 731,
+        "path": "optimized/ui/home-hero-emblem-science-1600.webp",
+        "width": 1600
+      },
+      {
+        "bytes": 47446,
+        "height": 848,
+        "path": "optimized/ui/home-hero-emblem-science-1855.webp",
+        "width": 1855
       }
     ],
-    "width": 1280
+    "width": 1855
+  },
+  "ui/home-hero-global-medallion.webp": {
+    "bytes": 113836,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3016,
+          "height": 146,
+          "path": "optimized/ui/home-hero-global-medallion-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6206,
+          "height": 219,
+          "path": "optimized/ui/home-hero-global-medallion-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 10699,
+          "height": 293,
+          "path": "optimized/ui/home-hero-global-medallion-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 23860,
+          "height": 439,
+          "path": "optimized/ui/home-hero-global-medallion-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 39533,
+          "height": 585,
+          "path": "optimized/ui/home-hero-global-medallion-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 53114,
+          "height": 731,
+          "path": "optimized/ui/home-hero-global-medallion-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 66931,
+          "height": 848,
+          "path": "optimized/ui/home-hero-global-medallion-1855.avif",
+          "width": 1855
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 4146,
+          "height": 146,
+          "path": "optimized/ui/home-hero-global-medallion-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 8986,
+          "height": 219,
+          "path": "optimized/ui/home-hero-global-medallion-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15656,
+          "height": 293,
+          "path": "optimized/ui/home-hero-global-medallion-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 34406,
+          "height": 439,
+          "path": "optimized/ui/home-hero-global-medallion-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 57518,
+          "height": 585,
+          "path": "optimized/ui/home-hero-global-medallion-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 80584,
+          "height": 731,
+          "path": "optimized/ui/home-hero-global-medallion-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 103982,
+          "height": 848,
+          "path": "optimized/ui/home-hero-global-medallion-1855.webp",
+          "width": 1855
+        }
+      ]
+    },
+    "height": 848,
+    "variants": [
+      {
+        "bytes": 4146,
+        "height": 146,
+        "path": "optimized/ui/home-hero-global-medallion-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 8986,
+        "height": 219,
+        "path": "optimized/ui/home-hero-global-medallion-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 15656,
+        "height": 293,
+        "path": "optimized/ui/home-hero-global-medallion-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 34406,
+        "height": 439,
+        "path": "optimized/ui/home-hero-global-medallion-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 57518,
+        "height": 585,
+        "path": "optimized/ui/home-hero-global-medallion-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 80584,
+        "height": 731,
+        "path": "optimized/ui/home-hero-global-medallion-1600.webp",
+        "width": 1600
+      },
+      {
+        "bytes": 103982,
+        "height": 848,
+        "path": "optimized/ui/home-hero-global-medallion-1855.webp",
+        "width": 1855
+      }
+    ],
+    "width": 1855
+  },
+  "ui/home-hero-logo-background.webp": {
+    "bytes": 56654,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2817,
+          "height": 146,
+          "path": "optimized/ui/home-hero-logo-background-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5055,
+          "height": 219,
+          "path": "optimized/ui/home-hero-logo-background-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7575,
+          "height": 293,
+          "path": "optimized/ui/home-hero-logo-background-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 13587,
+          "height": 439,
+          "path": "optimized/ui/home-hero-logo-background-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 20026,
+          "height": 585,
+          "path": "optimized/ui/home-hero-logo-background-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 26082,
+          "height": 731,
+          "path": "optimized/ui/home-hero-logo-background-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 31479,
+          "height": 848,
+          "path": "optimized/ui/home-hero-logo-background-1855.avif",
+          "width": 1855
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3550,
+          "height": 146,
+          "path": "optimized/ui/home-hero-logo-background-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 6498,
+          "height": 219,
+          "path": "optimized/ui/home-hero-logo-background-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 10362,
+          "height": 293,
+          "path": "optimized/ui/home-hero-logo-background-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 19674,
+          "height": 439,
+          "path": "optimized/ui/home-hero-logo-background-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 30256,
+          "height": 585,
+          "path": "optimized/ui/home-hero-logo-background-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 41238,
+          "height": 731,
+          "path": "optimized/ui/home-hero-logo-background-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 51236,
+          "height": 848,
+          "path": "optimized/ui/home-hero-logo-background-1855.webp",
+          "width": 1855
+        }
+      ]
+    },
+    "height": 848,
+    "variants": [
+      {
+        "bytes": 3550,
+        "height": 146,
+        "path": "optimized/ui/home-hero-logo-background-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 6498,
+        "height": 219,
+        "path": "optimized/ui/home-hero-logo-background-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 10362,
+        "height": 293,
+        "path": "optimized/ui/home-hero-logo-background-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 19674,
+        "height": 439,
+        "path": "optimized/ui/home-hero-logo-background-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 30256,
+        "height": 585,
+        "path": "optimized/ui/home-hero-logo-background-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 41238,
+        "height": 731,
+        "path": "optimized/ui/home-hero-logo-background-1600.webp",
+        "width": 1600
+      },
+      {
+        "bytes": 51236,
+        "height": 848,
+        "path": "optimized/ui/home-hero-logo-background-1855.webp",
+        "width": 1855
+      }
+    ],
+    "width": 1855
+  },
+  "ui/home-hero-microscopy-aesthetic.webp": {
+    "bytes": 83428,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 4505,
+          "height": 146,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 8213,
+          "height": 219,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12551,
+          "height": 293,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 22659,
+          "height": 439,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 33356,
+          "height": 585,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 42814,
+          "height": 731,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.avif",
+          "width": 1600
+        },
+        {
+          "bytes": 51770,
+          "height": 848,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.avif",
+          "width": 1855
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 5880,
+          "height": 146,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11004,
+          "height": 219,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 17444,
+          "height": 293,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 32096,
+          "height": 439,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 48840,
+          "height": 585,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 64890,
+          "height": 731,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.webp",
+          "width": 1600
+        },
+        {
+          "bytes": 79178,
+          "height": 848,
+          "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.webp",
+          "width": 1855
+        }
+      ]
+    },
+    "height": 848,
+    "variants": [
+      {
+        "bytes": 5880,
+        "height": 146,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 11004,
+        "height": 219,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 17444,
+        "height": 293,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 32096,
+        "height": 439,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 48840,
+        "height": 585,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 64890,
+        "height": 731,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.webp",
+        "width": 1600
+      },
+      {
+        "bytes": 79178,
+        "height": 848,
+        "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.webp",
+        "width": 1855
+      }
+    ],
+    "width": 1855
   },
   "ui/home-science-hero.webp": {
     "bytes": 44748,
@@ -5740,109 +8162,6 @@
       }
     ],
     "width": 512
-  },
-  "ui/society-archive-1.png": {
-    "bytes": 365172,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 10930,
-          "height": 304,
-          "path": "optimized/ui/society-archive-1-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 17018,
-          "height": 456,
-          "path": "optimized/ui/society-archive-1-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 21266,
-          "height": 609,
-          "path": "optimized/ui/society-archive-1-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 30048,
-          "height": 913,
-          "path": "optimized/ui/society-archive-1-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 38375,
-          "height": 1217,
-          "path": "optimized/ui/society-archive-1-1280.avif",
-          "width": 1280
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 12996,
-          "height": 304,
-          "path": "optimized/ui/society-archive-1-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 21632,
-          "height": 456,
-          "path": "optimized/ui/society-archive-1-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 29368,
-          "height": 609,
-          "path": "optimized/ui/society-archive-1-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 45678,
-          "height": 913,
-          "path": "optimized/ui/society-archive-1-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 63198,
-          "height": 1217,
-          "path": "optimized/ui/society-archive-1-1280.webp",
-          "width": 1280
-        }
-      ]
-    },
-    "height": 1217,
-    "variants": [
-      {
-        "bytes": 12996,
-        "height": 304,
-        "path": "optimized/ui/society-archive-1-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 21632,
-        "height": 456,
-        "path": "optimized/ui/society-archive-1-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 29368,
-        "height": 609,
-        "path": "optimized/ui/society-archive-1-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 45678,
-        "height": 913,
-        "path": "optimized/ui/society-archive-1-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 63198,
-        "height": 1217,
-        "path": "optimized/ui/society-archive-1-1280.webp",
-        "width": 1280
-      }
-    ],
-    "width": 1280
   },
   "ui/society-archive-2.png": {
     "bytes": 248870,

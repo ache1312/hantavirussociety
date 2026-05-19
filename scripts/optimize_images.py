@@ -91,6 +91,8 @@ def widths_for(source: Path) -> tuple[int, ...]:
         return PROFILE_WIDTHS
     if parts[0] == "sponsors":
         return SPONSOR_WIDTHS
+    if parts[0] == "ui" and filename.startswith("home-hero-"):
+        return HERO_WIDTHS
     if relative in {
         "about-hantavirus-microscopy-pixnio.jpg",
         "ui/home-science-hero.webp",
