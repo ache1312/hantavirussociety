@@ -148,6 +148,7 @@ if (lightboxLinks.length) {
   let lastLightboxTrigger = null;
   let activeLightboxGroup = [];
   let activeLightboxIndex = 0;
+  let lightboxRenderToken = 0;
 
   const lightboxGroups = lightboxLinks.reduce((groups, link, index) => {
     const groupName = link.dataset.lightboxGroup || `single-${index}`;
@@ -166,17 +167,45 @@ if (lightboxLinks.length) {
     }
   };
 
+  const preloadLightboxGroup = () => {
+    activeLightboxGroup.forEach((item) => {
+      if (!item.dataset.lightboxSrc) return;
+      const preload = new Image();
+      preload.decoding = "async";
+      preload.src = item.dataset.lightboxSrc;
+    });
+  };
+
   const renderLightboxImage = () => {
     const item = activeLightboxGroup[activeLightboxIndex];
     if (!item) return;
     const image = item.querySelector("img");
     const caption = item.dataset.lightboxCaption || image?.alt || "";
+    const nextSrc = item.dataset.lightboxSrc;
+    const nextAlt = item.dataset.lightboxAlt || image?.alt || caption || "Former meeting image";
+    if (!nextSrc) return;
+    const renderToken = lightboxRenderToken + 1;
+    lightboxRenderToken = renderToken;
+    lightbox.classList.add("is-loading");
+    lightbox.setAttribute("aria-busy", "true");
     lightboxImage.classList.remove("is-loaded");
-    lightboxImage.src = item.dataset.lightboxSrc;
-    lightboxImage.alt = item.dataset.lightboxAlt || image?.alt || caption || "Former meeting image";
-    lightboxCaption.textContent = caption;
-    syncLightboxNav();
-    requestAnimationFrame(() => lightboxImage.classList.add("is-loaded"));
+
+    const commitImage = () => {
+      if (renderToken !== lightboxRenderToken) return;
+      lightboxImage.src = nextSrc;
+      lightboxImage.alt = nextAlt;
+      lightboxCaption.textContent = caption;
+      syncLightboxNav();
+      lightbox.classList.remove("is-loading");
+      lightbox.setAttribute("aria-busy", "false");
+      requestAnimationFrame(() => lightboxImage.classList.add("is-loaded"));
+    };
+
+    const preload = new Image();
+    preload.decoding = "async";
+    preload.onload = commitImage;
+    preload.onerror = commitImage;
+    preload.src = nextSrc;
   };
 
   const moveLightbox = (direction) => {
@@ -189,7 +218,10 @@ if (lightboxLinks.length) {
     if (!lightbox.classList.contains("is-open")) return;
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
+    lightbox.setAttribute("aria-busy", "false");
+    lightbox.classList.remove("is-loading");
     body.classList.remove("lightbox-open");
+    lightboxRenderToken += 1;
     lightboxImage.removeAttribute("src");
     lightboxCaption.textContent = "";
     activeLightboxGroup = [];
@@ -204,6 +236,7 @@ if (lightboxLinks.length) {
     activeLightboxGroup = lightboxGroups.get(groupName) || [trigger];
     activeLightboxIndex = Math.max(0, activeLightboxGroup.indexOf(trigger));
     lastLightboxTrigger = trigger;
+    preloadLightboxGroup();
     renderLightboxImage();
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");

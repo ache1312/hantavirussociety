@@ -481,6 +481,21 @@ def optimized_source(prefix: str, asset_path: str, sizes: str, format_name: str)
     return f'<source {format_attrs({"type": f"image/{format_name}", "srcset": srcset, "sizes": sizes})}>'
 
 
+def optimized_image_url(prefix: str, asset_path: str, *, format_name: str = "webp", max_width: int = 1280) -> str:
+    manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
+    if not manifest:
+        return img(prefix, asset_path)
+    formats = manifest.get("formats", {})  # type: ignore[assignment]
+    variants = formats.get(format_name, []) if isinstance(formats, dict) else []
+    if not variants:
+        variants = manifest.get("variants", [])  # type: ignore[assignment]
+    if not variants:
+        return img(prefix, asset_path)
+    sorted_variants = sorted(variants, key=lambda item: item["width"])
+    selected = next((variant for variant in sorted_variants if variant["width"] >= max_width), sorted_variants[-1])
+    return f'{prefix}assets/images/{selected["path"]}'
+
+
 def responsive_image(
     prefix: str,
     asset_path: str,
@@ -1355,21 +1370,24 @@ def former_meeting_materials(prefix: str) -> str:
         gallery_links = []
         for index, asset in enumerate(images, start=1):
             caption = f"ICH {year} | {location} | Photo {index} of {photo_count}"
+            lightbox_src = optimized_image_url(prefix, asset)
             gallery_links.append(
                 f'<a class="archive-hidden-lightbox" href="{img(prefix, asset)}" '
-                f'data-lightbox-src="{img(prefix, asset)}" data-lightbox-group="{escape(gallery_id)}" '
+                f'data-lightbox-src="{lightbox_src}" data-lightbox-full-src="{img(prefix, asset)}" data-lightbox-group="{escape(gallery_id)}" '
                 f'data-lightbox-caption="{escape(caption)}" data-lightbox-alt="{escape(f"ICH {year} {location} photo {index}")}" tabindex="-1" aria-hidden="true">Photo {index}</a>'
             )
         hidden_gallery = "".join(gallery_links[1:])
         lead_caption = f"ICH {year} | {location} | Photo 1 of {photo_count}"
         photo_label = f"{photo_count} photo" if photo_count == 1 else f"{photo_count} photos"
         materials_label = f"{escape(number)} | {escape(year)}"
+        lead_lightbox_src = optimized_image_url(prefix, lead)
         cards.append(
             f"""
             <article class="archive-material reveal">
-              <a class="archive-material-image" href="{img(prefix, lead)}" data-lightbox-src="{img(prefix, lead)}" data-lightbox-group="{escape(gallery_id)}" data-lightbox-caption="{escape(lead_caption)}" aria-label="Open {escape(photo_label)} from ICH {escape(year)} in {escape(location)}">
+              <a class="archive-material-image" href="{img(prefix, lead)}" data-lightbox-src="{lead_lightbox_src}" data-lightbox-full-src="{img(prefix, lead)}" data-lightbox-group="{escape(gallery_id)}" data-lightbox-caption="{escape(lead_caption)}" aria-label="Open {escape(photo_label)} from ICH {escape(year)} in {escape(location)}">
                 {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 560px")}
-                <span>{escape(photo_label)}</span>
+                <span class="archive-photo-count">{escape(photo_label)}</span>
+                <span class="archive-gallery-label">View gallery</span>
               </a>
               <div class="archive-material-copy">
                 <span>{materials_label}</span>
