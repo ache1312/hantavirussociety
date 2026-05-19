@@ -6,7 +6,7 @@ const menuBackdrop = document.querySelector("[data-menu-backdrop]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeLabel = document.querySelector("[data-theme-label]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
-const mobileQuery = window.matchMedia("(max-width: 1100px)");
+const mobileQuery = window.matchMedia("(max-width: 1240px)");
 const themeStorageKey = "ish-theme";
 const sections = navLinks
   .map((link) => {
@@ -113,6 +113,68 @@ document.querySelectorAll(".reveal:not(.is-visible)").forEach((element) => {
   revealObserver.observe(element);
 });
 
+const lightboxLinks = Array.from(document.querySelectorAll("[data-lightbox-src]"));
+if (lightboxLinks.length) {
+  const lightbox = document.createElement("div");
+  lightbox.className = "lightbox";
+  lightbox.setAttribute("role", "dialog");
+  lightbox.setAttribute("aria-modal", "true");
+  lightbox.setAttribute("aria-label", "Image preview");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightbox.innerHTML = `
+    <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <figure class="lightbox-frame">
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  `;
+  body.appendChild(lightbox);
+
+  const lightboxImage = lightbox.querySelector("img");
+  const lightboxCaption = lightbox.querySelector("figcaption");
+  const lightboxClose = lightbox.querySelector(".lightbox-close");
+  let lastLightboxTrigger = null;
+
+  const closeLightbox = () => {
+    if (!lightbox.classList.contains("is-open")) return;
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+    body.classList.remove("lightbox-open");
+    lightboxImage.removeAttribute("src");
+    if (lastLightboxTrigger) {
+      lastLightboxTrigger.focus({ preventScroll: true });
+    }
+  };
+
+  const openLightbox = (trigger) => {
+    const image = trigger.querySelector("img");
+    const caption = trigger.dataset.lightboxCaption || image?.alt || "";
+    lastLightboxTrigger = trigger;
+    lightboxImage.src = trigger.dataset.lightboxSrc;
+    lightboxImage.alt = image?.alt || caption || "Former meeting image";
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+    body.classList.add("lightbox-open");
+    lightboxClose.focus({ preventScroll: true });
+  };
+
+  lightboxLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      openLightbox(link);
+    });
+  });
+
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeLightbox();
+  });
+}
+
 const navObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -133,6 +195,47 @@ if (currentPage) {
   navLinks.forEach((link) => {
     link.classList.toggle("active", link.dataset.nav === currentPage);
   });
+}
+
+const heroCarousel = document.querySelector("[data-hero-carousel]");
+if (heroCarousel) {
+  const heroSlides = Array.from(heroCarousel.querySelectorAll("[data-hero-slide]"));
+  const heroControls = Array.from(heroCarousel.querySelectorAll("[data-hero-control]"));
+  const heroPrev = heroCarousel.querySelector("[data-hero-prev]");
+  const heroNext = heroCarousel.querySelector("[data-hero-next]");
+  let activeHeroIndex = 0;
+
+  function setHeroVariant(index) {
+    if (!heroSlides.length) return;
+    activeHeroIndex = (index + heroSlides.length) % heroSlides.length;
+    heroCarousel.dataset.activeHero = String(activeHeroIndex);
+
+    heroSlides.forEach((slide, slideIndex) => {
+      const active = slideIndex === activeHeroIndex;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+    });
+
+    heroControls.forEach((control) => {
+      const active = Number(control.dataset.heroIndex) === activeHeroIndex;
+      control.classList.toggle("is-active", active);
+      control.setAttribute("aria-pressed", String(active));
+    });
+  }
+
+  heroControls.forEach((control) => {
+    control.addEventListener("click", () => setHeroVariant(Number(control.dataset.heroIndex)));
+  });
+
+  if (heroPrev) {
+    heroPrev.addEventListener("click", () => setHeroVariant(activeHeroIndex - 1));
+  }
+
+  if (heroNext) {
+    heroNext.addEventListener("click", () => setHeroVariant(activeHeroIndex + 1));
+  }
+
+  setHeroVariant(activeHeroIndex);
 }
 
 document.addEventListener("keydown", (event) => {
