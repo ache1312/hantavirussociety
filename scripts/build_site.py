@@ -690,6 +690,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <link rel="canonical" href="{canonical}">
     <link rel="icon" href="{prefix}favicon.ico?v={file_version("favicon.ico")}" sizes="any">
     <link rel="icon" type="image/png" sizes="256x256" href="{prefix}assets/icons/ish-icon-256.png?v={file_version("assets/icons/ish-icon-256.png")}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{prefix}assets/icons/ish-icon-512.png?v={file_version("assets/icons/ish-icon-512.png")}">
     <link rel="apple-touch-icon" sizes="180x180" href="{prefix}assets/icons/apple-touch-icon.png?v={file_version("assets/icons/apple-touch-icon.png")}">
     <link rel="manifest" href="{prefix}site.webmanifest?v={file_version("site.webmanifest")}">
 {hero_preload}
@@ -1321,10 +1322,12 @@ def former_meetings_timeline() -> str:
     timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", True))
     for index, (number, year, location, is_upcoming) in enumerate(timeline_entries):
         item_class = "archive-timeline-item is-upcoming" if is_upcoming else "archive-timeline-item"
+        timeline_tag = '<span class="archive-timeline-tag">Next ICH</span>' if is_upcoming else ""
         items.append(
             f"""
             <li class="{item_class}" style="--timeline-index: {index}">
               <div class="archive-timeline-card">
+                {timeline_tag}
                 <span class="archive-timeline-no">{escape(number)}</span>
                 <time class="archive-timeline-year" datetime="{escape(year)}">{escape(year)}</time>
                 <strong class="archive-timeline-location">{escape(location)}</strong>
