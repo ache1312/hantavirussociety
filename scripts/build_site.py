@@ -75,6 +75,8 @@ HOME_HERO_VARIANTS = [
     ),
 ]
 
+VISIBLE_HOME_HERO_VARIANTS = HOME_HERO_VARIANTS[:3]
+
 CONFERENCE_JSON_LD_TEMPLATE = """{
     "@context": "https://schema.org",
     "@type": "Event",
@@ -739,7 +741,7 @@ def home_page(
 ) -> str:
     hero_slides = []
     hero_controls = []
-    for index, (_, label, image, alt) in enumerate(HOME_HERO_VARIANTS):
+    for index, (_, label, image, alt) in enumerate(VISIBLE_HOME_HERO_VARIANTS):
         active = index == 0
         hero_slides.append(
             responsive_image(
