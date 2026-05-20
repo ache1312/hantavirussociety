@@ -7366,47 +7366,47 @@
     "width": 255
   },
   "ui/home-hero-emblem-science.webp": {
-    "bytes": 51430,
+    "bytes": 42866,
     "formats": {
       "avif": [
         {
-          "bytes": 2631,
+          "bytes": 1985,
           "height": 146,
           "path": "optimized/ui/home-hero-emblem-science-320.avif",
           "width": 320
         },
         {
-          "bytes": 4527,
+          "bytes": 3401,
           "height": 219,
           "path": "optimized/ui/home-hero-emblem-science-480.avif",
           "width": 480
         },
         {
-          "bytes": 6944,
+          "bytes": 5269,
           "height": 293,
           "path": "optimized/ui/home-hero-emblem-science-640.avif",
           "width": 640
         },
         {
-          "bytes": 12140,
+          "bytes": 9363,
           "height": 439,
           "path": "optimized/ui/home-hero-emblem-science-960.avif",
           "width": 960
         },
         {
-          "bytes": 17428,
+          "bytes": 14001,
           "height": 585,
           "path": "optimized/ui/home-hero-emblem-science-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 22460,
+          "bytes": 18399,
           "height": 731,
           "path": "optimized/ui/home-hero-emblem-science-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 26747,
+          "bytes": 22282,
           "height": 848,
           "path": "optimized/ui/home-hero-emblem-science-1855.avif",
           "width": 1855
@@ -7414,43 +7414,43 @@
       ],
       "webp": [
         {
-          "bytes": 3488,
+          "bytes": 2584,
           "height": 146,
           "path": "optimized/ui/home-hero-emblem-science-320.webp",
           "width": 320
         },
         {
-          "bytes": 6562,
+          "bytes": 4822,
           "height": 219,
           "path": "optimized/ui/home-hero-emblem-science-480.webp",
           "width": 480
         },
         {
-          "bytes": 10456,
+          "bytes": 7724,
           "height": 293,
           "path": "optimized/ui/home-hero-emblem-science-640.webp",
           "width": 640
         },
         {
-          "bytes": 19590,
+          "bytes": 14758,
           "height": 439,
           "path": "optimized/ui/home-hero-emblem-science-960.webp",
           "width": 960
         },
         {
-          "bytes": 28870,
+          "bytes": 23100,
           "height": 585,
           "path": "optimized/ui/home-hero-emblem-science-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 38828,
+          "bytes": 31866,
           "height": 731,
           "path": "optimized/ui/home-hero-emblem-science-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 47446,
+          "bytes": 40316,
           "height": 848,
           "path": "optimized/ui/home-hero-emblem-science-1855.webp",
           "width": 1855
@@ -7460,43 +7460,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 3488,
+        "bytes": 2584,
         "height": 146,
         "path": "optimized/ui/home-hero-emblem-science-320.webp",
         "width": 320
       },
       {
-        "bytes": 6562,
+        "bytes": 4822,
         "height": 219,
         "path": "optimized/ui/home-hero-emblem-science-480.webp",
         "width": 480
       },
       {
-        "bytes": 10456,
+        "bytes": 7724,
         "height": 293,
         "path": "optimized/ui/home-hero-emblem-science-640.webp",
         "width": 640
       },
       {
-        "bytes": 19590,
+        "bytes": 14758,
         "height": 439,
         "path": "optimized/ui/home-hero-emblem-science-960.webp",
         "width": 960
       },
       {
-        "bytes": 28870,
+        "bytes": 23100,
         "height": 585,
         "path": "optimized/ui/home-hero-emblem-science-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 38828,
+        "bytes": 31866,
         "height": 731,
         "path": "optimized/ui/home-hero-emblem-science-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 47446,
+        "bytes": 40316,
         "height": 848,
         "path": "optimized/ui/home-hero-emblem-science-1855.webp",
         "width": 1855
@@ -7505,47 +7505,47 @@
     "width": 1855
   },
   "ui/home-hero-global-medallion.webp": {
-    "bytes": 113836,
+    "bytes": 53430,
     "formats": {
       "avif": [
         {
-          "bytes": 3016,
+          "bytes": 2343,
           "height": 146,
           "path": "optimized/ui/home-hero-global-medallion-320.avif",
           "width": 320
         },
         {
-          "bytes": 6206,
+          "bytes": 4130,
           "height": 219,
           "path": "optimized/ui/home-hero-global-medallion-480.avif",
           "width": 480
         },
         {
-          "bytes": 10699,
+          "bytes": 6643,
           "height": 293,
           "path": "optimized/ui/home-hero-global-medallion-640.avif",
           "width": 640
         },
         {
-          "bytes": 23860,
+          "bytes": 11665,
           "height": 439,
           "path": "optimized/ui/home-hero-global-medallion-960.avif",
           "width": 960
         },
         {
-          "bytes": 39533,
+          "bytes": 16978,
           "height": 585,
           "path": "optimized/ui/home-hero-global-medallion-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 53114,
+          "bytes": 21709,
           "height": 731,
           "path": "optimized/ui/home-hero-global-medallion-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 66931,
+          "bytes": 26353,
           "height": 848,
           "path": "optimized/ui/home-hero-global-medallion-1855.avif",
           "width": 1855
@@ -7553,43 +7553,43 @@
       ],
       "webp": [
         {
-          "bytes": 4146,
+          "bytes": 3028,
           "height": 146,
           "path": "optimized/ui/home-hero-global-medallion-320.webp",
           "width": 320
         },
         {
-          "bytes": 8986,
+          "bytes": 5720,
           "height": 219,
           "path": "optimized/ui/home-hero-global-medallion-480.webp",
           "width": 480
         },
         {
-          "bytes": 15656,
+          "bytes": 9502,
           "height": 293,
           "path": "optimized/ui/home-hero-global-medallion-640.webp",
           "width": 640
         },
         {
-          "bytes": 34406,
+          "bytes": 18136,
           "height": 439,
           "path": "optimized/ui/home-hero-global-medallion-960.webp",
           "width": 960
         },
         {
-          "bytes": 57518,
+          "bytes": 27884,
           "height": 585,
           "path": "optimized/ui/home-hero-global-medallion-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 80584,
+          "bytes": 38286,
           "height": 731,
           "path": "optimized/ui/home-hero-global-medallion-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 103982,
+          "bytes": 49022,
           "height": 848,
           "path": "optimized/ui/home-hero-global-medallion-1855.webp",
           "width": 1855
@@ -7599,43 +7599,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 4146,
+        "bytes": 3028,
         "height": 146,
         "path": "optimized/ui/home-hero-global-medallion-320.webp",
         "width": 320
       },
       {
-        "bytes": 8986,
+        "bytes": 5720,
         "height": 219,
         "path": "optimized/ui/home-hero-global-medallion-480.webp",
         "width": 480
       },
       {
-        "bytes": 15656,
+        "bytes": 9502,
         "height": 293,
         "path": "optimized/ui/home-hero-global-medallion-640.webp",
         "width": 640
       },
       {
-        "bytes": 34406,
+        "bytes": 18136,
         "height": 439,
         "path": "optimized/ui/home-hero-global-medallion-960.webp",
         "width": 960
       },
       {
-        "bytes": 57518,
+        "bytes": 27884,
         "height": 585,
         "path": "optimized/ui/home-hero-global-medallion-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 80584,
+        "bytes": 38286,
         "height": 731,
         "path": "optimized/ui/home-hero-global-medallion-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 103982,
+        "bytes": 49022,
         "height": 848,
         "path": "optimized/ui/home-hero-global-medallion-1855.webp",
         "width": 1855
@@ -7922,47 +7922,47 @@
     "width": 1855
   },
   "ui/home-science-hero.webp": {
-    "bytes": 44748,
+    "bytes": 42704,
     "formats": {
       "avif": [
         {
-          "bytes": 3295,
+          "bytes": 2005,
           "height": 146,
           "path": "optimized/ui/home-science-hero-320.avif",
           "width": 320
         },
         {
-          "bytes": 5099,
+          "bytes": 3362,
           "height": 219,
           "path": "optimized/ui/home-science-hero-480.avif",
           "width": 480
         },
         {
-          "bytes": 7059,
+          "bytes": 5071,
           "height": 293,
           "path": "optimized/ui/home-science-hero-640.avif",
           "width": 640
         },
         {
-          "bytes": 11047,
+          "bytes": 9093,
           "height": 439,
           "path": "optimized/ui/home-science-hero-960.avif",
           "width": 960
         },
         {
-          "bytes": 15078,
+          "bytes": 13378,
           "height": 585,
           "path": "optimized/ui/home-science-hero-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 19080,
+          "bytes": 17613,
           "height": 731,
           "path": "optimized/ui/home-science-hero-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 22890,
+          "bytes": 21507,
           "height": 848,
           "path": "optimized/ui/home-science-hero-1855.avif",
           "width": 1855
@@ -7970,43 +7970,43 @@
       ],
       "webp": [
         {
-          "bytes": 4364,
+          "bytes": 2552,
           "height": 146,
           "path": "optimized/ui/home-science-hero-320.webp",
           "width": 320
         },
         {
-          "bytes": 7338,
+          "bytes": 4668,
           "height": 219,
           "path": "optimized/ui/home-science-hero-480.webp",
           "width": 480
         },
         {
-          "bytes": 10598,
+          "bytes": 7320,
           "height": 293,
           "path": "optimized/ui/home-science-hero-640.webp",
           "width": 640
         },
         {
-          "bytes": 17762,
+          "bytes": 14056,
           "height": 439,
           "path": "optimized/ui/home-science-hero-960.webp",
           "width": 960
         },
         {
-          "bytes": 25880,
+          "bytes": 22142,
           "height": 585,
           "path": "optimized/ui/home-science-hero-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 34040,
+          "bytes": 30476,
           "height": 731,
           "path": "optimized/ui/home-science-hero-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 40312,
+          "bytes": 39240,
           "height": 848,
           "path": "optimized/ui/home-science-hero-1855.webp",
           "width": 1855
@@ -8016,43 +8016,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 4364,
+        "bytes": 2552,
         "height": 146,
         "path": "optimized/ui/home-science-hero-320.webp",
         "width": 320
       },
       {
-        "bytes": 7338,
+        "bytes": 4668,
         "height": 219,
         "path": "optimized/ui/home-science-hero-480.webp",
         "width": 480
       },
       {
-        "bytes": 10598,
+        "bytes": 7320,
         "height": 293,
         "path": "optimized/ui/home-science-hero-640.webp",
         "width": 640
       },
       {
-        "bytes": 17762,
+        "bytes": 14056,
         "height": 439,
         "path": "optimized/ui/home-science-hero-960.webp",
         "width": 960
       },
       {
-        "bytes": 25880,
+        "bytes": 22142,
         "height": 585,
         "path": "optimized/ui/home-science-hero-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 34040,
+        "bytes": 30476,
         "height": 731,
         "path": "optimized/ui/home-science-hero-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 40312,
+        "bytes": 39240,
         "height": 848,
         "path": "optimized/ui/home-science-hero-1855.webp",
         "width": 1855
