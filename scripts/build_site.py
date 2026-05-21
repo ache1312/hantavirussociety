@@ -52,20 +52,20 @@ HOME_HERO_VARIANTS = [
     (
         "emblem",
         "Emblem",
-        "ui/home-hero-emblem-science.webp",
-        "Premium virology background with abstract microscopy and a logo focal area",
+        "ui/home-hero-emblem-science.webp?v=bg-only-20260521",
+        "Premium virology background without society logo or emblem",
     ),
     (
         "global",
         "Global",
-        "ui/home-hero-global-medallion.webp",
-        "Institutional global research network background with a medallion focal area",
+        "ui/home-hero-global-medallion.webp?v=bg-only-20260521",
+        "Institutional global research background without society logo or medallion",
     ),
     (
         "microscopy",
         "Microscopy",
-        "ui/home-hero-microscopy-aesthetic.webp",
-        "Editorial microscopy background with optical glass and molecular forms",
+        "ui/home-hero-microscopy-aesthetic.webp?v=bg-only-20260521",
+        "Editorial microscopy background without society logo or emblem",
     ),
     (
         "logo",
@@ -75,7 +75,7 @@ HOME_HERO_VARIANTS = [
     ),
 ]
 
-VISIBLE_HOME_HERO_VARIANTS = HOME_HERO_VARIANTS[:3]
+VISIBLE_HOME_HERO_VARIANTS = HOME_HERO_VARIANTS[:4]
 
 CONFERENCE_JSON_LD_TEMPLATE = """{
     "@context": "https://schema.org",
@@ -457,6 +457,11 @@ def asset_key(asset_path: str) -> str:
     return asset_path.split("?", 1)[0]
 
 
+def asset_query_suffix(asset_path: str) -> str:
+    parts = asset_path.split("?", 1)
+    return f"?{parts[1]}" if len(parts) == 2 else ""
+
+
 def format_attrs(values: dict[str, object]) -> str:
     parts = []
     for key, value in values.items():
@@ -477,8 +482,9 @@ def optimized_source(prefix: str, asset_path: str, sizes: str, format_name: str)
         variants = manifest.get("variants", [])  # type: ignore[assignment]
     if not variants:
         return ""
+    query_suffix = asset_query_suffix(asset_path)
     srcset = ", ".join(
-        f'{prefix}assets/images/{variant["path"]} {variant["width"]}w' for variant in variants
+        f'{prefix}assets/images/{variant["path"]}{query_suffix} {variant["width"]}w' for variant in variants
     )
     return f'<source {format_attrs({"type": f"image/{format_name}", "srcset": srcset, "sizes": sizes})}>'
 
@@ -495,7 +501,7 @@ def optimized_image_url(prefix: str, asset_path: str, *, format_name: str = "web
         return img(prefix, asset_path)
     sorted_variants = sorted(variants, key=lambda item: item["width"])
     selected = next((variant for variant in sorted_variants if variant["width"] >= max_width), sorted_variants[-1])
-    return f'{prefix}assets/images/{selected["path"]}'
+    return f'{prefix}assets/images/{selected["path"]}{asset_query_suffix(asset_path)}'
 
 
 def responsive_image(
@@ -548,10 +554,11 @@ def preload_image(prefix: str, asset_path: str, sizes: str = "100vw") -> str:
     if not variants:
         return f'    <link rel="preload" as="image" href="{img(prefix, asset_path)}" fetchpriority="high">'
     variants = sorted(variants, key=lambda item: item["width"])
+    query_suffix = asset_query_suffix(asset_path)
     srcset = ", ".join(
-        f'{prefix}assets/images/{variant["path"]} {variant["width"]}w' for variant in variants
+        f'{prefix}assets/images/{variant["path"]}{query_suffix} {variant["width"]}w' for variant in variants
     )
-    href = f'{prefix}assets/images/{variants[-1]["path"]}'
+    href = f'{prefix}assets/images/{variants[-1]["path"]}{query_suffix}'
     return f'<link {format_attrs({"rel": "preload", "as": "image", "href": href, "type": f"image/{format_name}", "imagesrcset": srcset, "imagesizes": sizes, "fetchpriority": "high"})}>'
 
 

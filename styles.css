@@ -495,7 +495,10 @@ main:focus {
   transition: opacity 360ms ease, visibility 360ms ease;
 }
 
-.hero[data-active-hero="0"] .hero-brand-mark {
+.hero[data-active-hero="0"] .hero-brand-mark,
+.hero[data-active-hero="1"] .hero-brand-mark,
+.hero[data-active-hero="2"] .hero-brand-mark,
+.hero[data-active-hero="3"] .hero-brand-mark {
   visibility: hidden;
   opacity: 0;
 }
