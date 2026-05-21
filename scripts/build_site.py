@@ -52,20 +52,20 @@ HOME_HERO_VARIANTS = [
     (
         "emblem",
         "Emblem",
-        "ui/home-hero-emblem-science.webp?v=bg-only-20260521",
-        "Premium virology background without society logo or emblem",
+        "ui/home-hero-emblem-science.webp?v=small-emblems-20260521",
+        "Premium virology background with several small logo-inspired viral forms",
     ),
     (
         "global",
         "Global",
-        "ui/home-hero-global-medallion.webp?v=bg-only-20260521",
-        "Institutional global research background without society logo or medallion",
+        "ui/home-hero-global-medallion.webp?v=small-emblems-20260521",
+        "Institutional research background with hundreds of small logo-inspired viral forms",
     ),
     (
         "microscopy",
         "Microscopy",
-        "ui/home-hero-microscopy-aesthetic.webp?v=bg-only-20260521",
-        "Editorial microscopy background without society logo or emblem",
+        "ui/home-hero-microscopy-aesthetic.webp?v=small-emblems-20260521",
+        "Editorial microscopy background with small logo-inspired viral particles in depth",
     ),
     (
         "logo",

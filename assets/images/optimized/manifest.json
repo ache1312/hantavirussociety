@@ -7366,47 +7366,47 @@
     "width": 255
   },
   "ui/home-hero-emblem-science.webp": {
-    "bytes": 46032,
+    "bytes": 24760,
     "formats": {
       "avif": [
         {
-          "bytes": 2477,
+          "bytes": 1359,
           "height": 146,
           "path": "optimized/ui/home-hero-emblem-science-320.avif",
           "width": 320
         },
         {
-          "bytes": 4390,
+          "bytes": 2214,
           "height": 219,
           "path": "optimized/ui/home-hero-emblem-science-480.avif",
           "width": 480
         },
         {
-          "bytes": 6694,
+          "bytes": 3208,
           "height": 293,
           "path": "optimized/ui/home-hero-emblem-science-640.avif",
           "width": 640
         },
         {
-          "bytes": 11150,
+          "bytes": 5242,
           "height": 439,
           "path": "optimized/ui/home-hero-emblem-science-960.avif",
           "width": 960
         },
         {
-          "bytes": 15627,
+          "bytes": 7358,
           "height": 585,
           "path": "optimized/ui/home-hero-emblem-science-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 19836,
+          "bytes": 9301,
           "height": 731,
           "path": "optimized/ui/home-hero-emblem-science-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 23607,
+          "bytes": 11326,
           "height": 848,
           "path": "optimized/ui/home-hero-emblem-science-1855.avif",
           "width": 1855
@@ -7414,43 +7414,43 @@
       ],
       "webp": [
         {
-          "bytes": 3462,
+          "bytes": 1768,
           "height": 146,
           "path": "optimized/ui/home-hero-emblem-science-320.webp",
           "width": 320
         },
         {
-          "bytes": 6368,
+          "bytes": 3240,
           "height": 219,
           "path": "optimized/ui/home-hero-emblem-science-480.webp",
           "width": 480
         },
         {
-          "bytes": 9938,
+          "bytes": 5024,
           "height": 293,
           "path": "optimized/ui/home-hero-emblem-science-640.webp",
           "width": 640
         },
         {
-          "bytes": 17562,
+          "bytes": 8980,
           "height": 439,
           "path": "optimized/ui/home-hero-emblem-science-960.webp",
           "width": 960
         },
         {
-          "bytes": 25870,
+          "bytes": 13102,
           "height": 585,
           "path": "optimized/ui/home-hero-emblem-science-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 34054,
+          "bytes": 17812,
           "height": 731,
           "path": "optimized/ui/home-hero-emblem-science-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 42314,
+          "bytes": 22326,
           "height": 848,
           "path": "optimized/ui/home-hero-emblem-science-1855.webp",
           "width": 1855
@@ -7460,43 +7460,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 3462,
+        "bytes": 1768,
         "height": 146,
         "path": "optimized/ui/home-hero-emblem-science-320.webp",
         "width": 320
       },
       {
-        "bytes": 6368,
+        "bytes": 3240,
         "height": 219,
         "path": "optimized/ui/home-hero-emblem-science-480.webp",
         "width": 480
       },
       {
-        "bytes": 9938,
+        "bytes": 5024,
         "height": 293,
         "path": "optimized/ui/home-hero-emblem-science-640.webp",
         "width": 640
       },
       {
-        "bytes": 17562,
+        "bytes": 8980,
         "height": 439,
         "path": "optimized/ui/home-hero-emblem-science-960.webp",
         "width": 960
       },
       {
-        "bytes": 25870,
+        "bytes": 13102,
         "height": 585,
         "path": "optimized/ui/home-hero-emblem-science-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 34054,
+        "bytes": 17812,
         "height": 731,
         "path": "optimized/ui/home-hero-emblem-science-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 42314,
+        "bytes": 22326,
         "height": 848,
         "path": "optimized/ui/home-hero-emblem-science-1855.webp",
         "width": 1855
@@ -7505,47 +7505,47 @@
     "width": 1855
   },
   "ui/home-hero-global-medallion.webp": {
-    "bytes": 28912,
+    "bytes": 54042,
     "formats": {
       "avif": [
         {
-          "bytes": 1425,
+          "bytes": 1757,
           "height": 146,
           "path": "optimized/ui/home-hero-global-medallion-320.avif",
           "width": 320
         },
         {
-          "bytes": 2330,
+          "bytes": 3483,
           "height": 219,
           "path": "optimized/ui/home-hero-global-medallion-480.avif",
           "width": 480
         },
         {
-          "bytes": 3302,
+          "bytes": 5922,
           "height": 293,
           "path": "optimized/ui/home-hero-global-medallion-640.avif",
           "width": 640
         },
         {
-          "bytes": 5736,
+          "bytes": 11200,
           "height": 439,
           "path": "optimized/ui/home-hero-global-medallion-960.avif",
           "width": 960
         },
         {
-          "bytes": 8523,
+          "bytes": 16801,
           "height": 585,
           "path": "optimized/ui/home-hero-global-medallion-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 11038,
+          "bytes": 21631,
           "height": 731,
           "path": "optimized/ui/home-hero-global-medallion-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 13458,
+          "bytes": 26270,
           "height": 848,
           "path": "optimized/ui/home-hero-global-medallion-1855.avif",
           "width": 1855
@@ -7553,43 +7553,43 @@
       ],
       "webp": [
         {
-          "bytes": 2034,
+          "bytes": 2620,
           "height": 146,
           "path": "optimized/ui/home-hero-global-medallion-320.webp",
           "width": 320
         },
         {
-          "bytes": 3652,
+          "bytes": 5320,
           "height": 219,
           "path": "optimized/ui/home-hero-global-medallion-480.webp",
           "width": 480
         },
         {
-          "bytes": 5726,
+          "bytes": 8786,
           "height": 293,
           "path": "optimized/ui/home-hero-global-medallion-640.webp",
           "width": 640
         },
         {
-          "bytes": 10180,
+          "bytes": 17034,
           "height": 439,
           "path": "optimized/ui/home-hero-global-medallion-960.webp",
           "width": 960
         },
         {
-          "bytes": 15338,
+          "bytes": 26270,
           "height": 585,
           "path": "optimized/ui/home-hero-global-medallion-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 20498,
+          "bytes": 35488,
           "height": 731,
           "path": "optimized/ui/home-hero-global-medallion-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 25522,
+          "bytes": 46746,
           "height": 848,
           "path": "optimized/ui/home-hero-global-medallion-1855.webp",
           "width": 1855
@@ -7599,43 +7599,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 2034,
+        "bytes": 2620,
         "height": 146,
         "path": "optimized/ui/home-hero-global-medallion-320.webp",
         "width": 320
       },
       {
-        "bytes": 3652,
+        "bytes": 5320,
         "height": 219,
         "path": "optimized/ui/home-hero-global-medallion-480.webp",
         "width": 480
       },
       {
-        "bytes": 5726,
+        "bytes": 8786,
         "height": 293,
         "path": "optimized/ui/home-hero-global-medallion-640.webp",
         "width": 640
       },
       {
-        "bytes": 10180,
+        "bytes": 17034,
         "height": 439,
         "path": "optimized/ui/home-hero-global-medallion-960.webp",
         "width": 960
       },
       {
-        "bytes": 15338,
+        "bytes": 26270,
         "height": 585,
         "path": "optimized/ui/home-hero-global-medallion-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 20498,
+        "bytes": 35488,
         "height": 731,
         "path": "optimized/ui/home-hero-global-medallion-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 25522,
+        "bytes": 46746,
         "height": 848,
         "path": "optimized/ui/home-hero-global-medallion-1855.webp",
         "width": 1855
@@ -7783,47 +7783,47 @@
     "width": 1855
   },
   "ui/home-hero-microscopy-aesthetic.webp": {
-    "bytes": 32340,
+    "bytes": 44704,
     "formats": {
       "avif": [
         {
-          "bytes": 2207,
+          "bytes": 2191,
           "height": 146,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-320.avif",
           "width": 320
         },
         {
-          "bytes": 3492,
+          "bytes": 3819,
           "height": 219,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-480.avif",
           "width": 480
         },
         {
-          "bytes": 4837,
+          "bytes": 5770,
           "height": 293,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-640.avif",
           "width": 640
         },
         {
-          "bytes": 7611,
+          "bytes": 9623,
           "height": 439,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-960.avif",
           "width": 960
         },
         {
-          "bytes": 10450,
+          "bytes": 13786,
           "height": 585,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 13202,
+          "bytes": 17421,
           "height": 731,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 15673,
+          "bytes": 21237,
           "height": 848,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.avif",
           "width": 1855
@@ -7831,43 +7831,43 @@
       ],
       "webp": [
         {
-          "bytes": 2966,
+          "bytes": 3068,
           "height": 146,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-320.webp",
           "width": 320
         },
         {
-          "bytes": 5070,
+          "bytes": 5782,
           "height": 219,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-480.webp",
           "width": 480
         },
         {
-          "bytes": 7698,
+          "bytes": 9112,
           "height": 293,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-640.webp",
           "width": 640
         },
         {
-          "bytes": 13016,
+          "bytes": 16140,
           "height": 439,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-960.webp",
           "width": 960
         },
         {
-          "bytes": 18562,
+          "bytes": 23862,
           "height": 585,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 24568,
+          "bytes": 31998,
           "height": 731,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 29860,
+          "bytes": 40756,
           "height": 848,
           "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.webp",
           "width": 1855
@@ -7877,43 +7877,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 2966,
+        "bytes": 3068,
         "height": 146,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-320.webp",
         "width": 320
       },
       {
-        "bytes": 5070,
+        "bytes": 5782,
         "height": 219,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-480.webp",
         "width": 480
       },
       {
-        "bytes": 7698,
+        "bytes": 9112,
         "height": 293,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-640.webp",
         "width": 640
       },
       {
-        "bytes": 13016,
+        "bytes": 16140,
         "height": 439,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-960.webp",
         "width": 960
       },
       {
-        "bytes": 18562,
+        "bytes": 23862,
         "height": 585,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 24568,
+        "bytes": 31998,
         "height": 731,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 29860,
+        "bytes": 40756,
         "height": 848,
         "path": "optimized/ui/home-hero-microscopy-aesthetic-1855.webp",
         "width": 1855
