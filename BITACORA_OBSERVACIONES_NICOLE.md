@@ -167,3 +167,8 @@ Fecha: 2026-05-19
 
 54. Requisito: en modo oscuro, Partners & Sponsors presentaba problemas similares de legibilidad.
     Resolucion: implementado. Se corrigieron las tarjetas de sponsor en modo oscuro y se agrego fondo claro interno para logos, manteniendo texto legible.
+
+## Homepage
+
+55. Requisito: antes de continuar, generar una copia de la imagen actual del homepage.
+    Resolucion: implementado. Se preservo una copia exacta de `assets/images/ui/home-science-hero.webp` en `assets/images/ui/home-science-hero.copia-20260521.webp`. Dimensiones: 1855x848. SHA256: `9b9d5931c2225e8b205841a059a7d4a094118c73153271f35e8a44d60a33fe3b`. Commit base al momento de la copia: `7c62d8a`.
