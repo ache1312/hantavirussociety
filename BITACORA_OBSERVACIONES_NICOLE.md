@@ -172,3 +172,6 @@ Fecha: 2026-05-19
 
 55. Requisito: antes de continuar, generar una copia de la imagen actual del homepage.
     Resolucion: implementado. Se preservo una copia exacta de `assets/images/ui/home-science-hero.webp` en `assets/images/ui/home-science-hero.copia-20260521.webp`. Dimensiones: 1855x848. SHA256: `9b9d5931c2225e8b205841a059a7d4a094118c73153271f35e8a44d60a33fe3b`. Commit base al momento de la copia: `7c62d8a`.
+
+56. Requisito: reemplazar la imagen activa del homepage por una version casi igual, con interior del emblema mas relleno, sin eliminar la antigua.
+    Resolucion: implementado. `assets/images/ui/home-science-hero.webp` fue reemplazada por una version generada con el interior del emblema mas denso y volumetrico. La version anterior se conserva intacta en `assets/images/ui/home-science-hero.copia-20260521.webp`. Cache-bust activo: `filled-core-20260521`.
