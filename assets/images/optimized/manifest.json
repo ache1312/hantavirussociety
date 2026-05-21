@@ -7922,47 +7922,47 @@
     "width": 1855
   },
   "ui/home-science-hero.webp": {
-    "bytes": 66210,
+    "bytes": 77000,
     "formats": {
       "avif": [
         {
-          "bytes": 2413,
+          "bytes": 3106,
           "height": 146,
           "path": "optimized/ui/home-science-hero-320.avif",
           "width": 320
         },
         {
-          "bytes": 4226,
+          "bytes": 5906,
           "height": 219,
           "path": "optimized/ui/home-science-hero-480.avif",
           "width": 480
         },
         {
-          "bytes": 6455,
+          "bytes": 9268,
           "height": 293,
           "path": "optimized/ui/home-science-hero-640.avif",
           "width": 640
         },
         {
-          "bytes": 12837,
+          "bytes": 18654,
           "height": 439,
           "path": "optimized/ui/home-science-hero-960.avif",
           "width": 960
         },
         {
-          "bytes": 20597,
+          "bytes": 28837,
           "height": 585,
           "path": "optimized/ui/home-science-hero-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 28223,
+          "bytes": 37780,
           "height": 731,
           "path": "optimized/ui/home-science-hero-1600.avif",
           "width": 1600
         },
         {
-          "bytes": 35446,
+          "bytes": 45970,
           "height": 848,
           "path": "optimized/ui/home-science-hero-1855.avif",
           "width": 1855
@@ -7970,43 +7970,43 @@
       ],
       "webp": [
         {
-          "bytes": 3194,
+          "bytes": 3962,
           "height": 146,
           "path": "optimized/ui/home-science-hero-320.webp",
           "width": 320
         },
         {
-          "bytes": 6074,
+          "bytes": 8122,
           "height": 219,
           "path": "optimized/ui/home-science-hero-480.webp",
           "width": 480
         },
         {
-          "bytes": 9762,
+          "bytes": 13234,
           "height": 293,
           "path": "optimized/ui/home-science-hero-640.webp",
           "width": 640
         },
         {
-          "bytes": 19892,
+          "bytes": 26218,
           "height": 439,
           "path": "optimized/ui/home-science-hero-960.webp",
           "width": 960
         },
         {
-          "bytes": 32898,
+          "bytes": 41574,
           "height": 585,
           "path": "optimized/ui/home-science-hero-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 45778,
+          "bytes": 56790,
           "height": 731,
           "path": "optimized/ui/home-science-hero-1600.webp",
           "width": 1600
         },
         {
-          "bytes": 60878,
+          "bytes": 72096,
           "height": 848,
           "path": "optimized/ui/home-science-hero-1855.webp",
           "width": 1855
@@ -8016,43 +8016,43 @@
     "height": 848,
     "variants": [
       {
-        "bytes": 3194,
+        "bytes": 3962,
         "height": 146,
         "path": "optimized/ui/home-science-hero-320.webp",
         "width": 320
       },
       {
-        "bytes": 6074,
+        "bytes": 8122,
         "height": 219,
         "path": "optimized/ui/home-science-hero-480.webp",
         "width": 480
       },
       {
-        "bytes": 9762,
+        "bytes": 13234,
         "height": 293,
         "path": "optimized/ui/home-science-hero-640.webp",
         "width": 640
       },
       {
-        "bytes": 19892,
+        "bytes": 26218,
         "height": 439,
         "path": "optimized/ui/home-science-hero-960.webp",
         "width": 960
       },
       {
-        "bytes": 32898,
+        "bytes": 41574,
         "height": 585,
         "path": "optimized/ui/home-science-hero-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 45778,
+        "bytes": 56790,
         "height": 731,
         "path": "optimized/ui/home-science-hero-1600.webp",
         "width": 1600
       },
       {
-        "bytes": 60878,
+        "bytes": 72096,
         "height": 848,
         "path": "optimized/ui/home-science-hero-1855.webp",
         "width": 1855

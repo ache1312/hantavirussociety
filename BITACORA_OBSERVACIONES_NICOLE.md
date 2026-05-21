@@ -175,3 +175,6 @@ Fecha: 2026-05-19
 
 56. Requisito: reemplazar la imagen activa del homepage por una version casi igual, con interior del emblema mas relleno, sin eliminar la antigua.
     Resolucion: implementado. `assets/images/ui/home-science-hero.webp` fue reemplazada por una version generada con el interior del emblema mas denso y volumetrico. La version anterior se conserva intacta en `assets/images/ui/home-science-hero.copia-20260521.webp`. Cache-bust activo: `filled-core-20260521`.
+
+57. Requisito: corregir el relleno del emblema porque parecia un planeta y debe leerse como virus.
+    Resolucion: implementado. Se reemplazo nuevamente `assets/images/ui/home-science-hero.webp` por una version con textura interior viral/microscopica, evitando lectura de planeta, crateres o superficie celeste. La copia anterior al proceso se mantiene en `assets/images/ui/home-science-hero.copia-20260521.webp`. Cache-bust activo: `virus-fill-20260521`.

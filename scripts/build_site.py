@@ -30,7 +30,7 @@ OG_IMAGES: dict[str, str] = {
 }
 
 HERO_IMAGES: dict[str, str] = {
-    "home": "ui/home-science-hero.webp?v=filled-core-20260521",
+    "home": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "about": "about-hantavirus-microscopy-pixnio.jpg",
     "former": "former-meetings/2023-seoul-1.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
@@ -46,7 +46,7 @@ HOME_HERO_VARIANTS = [
     (
         "current",
         "Current",
-        "ui/home-science-hero.webp?v=filled-core-20260521",
+        "ui/home-science-hero.webp?v=virus-fill-20260521",
         "Large International Society for Hantaviruses logo emblem on a clean scientific background",
     ),
     (
@@ -743,7 +743,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
 
 def home_page(
     prefix: str,
-    hero_image: str = "ui/home-science-hero.webp?v=filled-core-20260521",
+    hero_image: str = "ui/home-science-hero.webp?v=virus-fill-20260521",
     hero_alt: str = "Large International Society for Hantaviruses logo emblem on a clean scientific background",
 ) -> str:
     hero_media = responsive_image(
