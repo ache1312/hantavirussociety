@@ -746,39 +746,26 @@ def home_page(
     hero_image: str = "ui/home-science-hero.webp?v=logo-clean-20260520",
     hero_alt: str = "Large International Society for Hantaviruses logo emblem on a clean scientific background",
 ) -> str:
-    hero_slides = []
-    hero_controls = []
-    for index, (_, label, image, alt) in enumerate(VISIBLE_HOME_HERO_VARIANTS):
-        active = index == 0
-        hero_slides.append(
-            responsive_image(
-                prefix,
-                image,
-                alt,
-                picture_class=f"hero-media{' is-active' if active else ''}",
-                loading="eager",
-                decoding="async",
-                fetchpriority="high" if active else "",
-                sizes="100vw",
-                picture_attrs_extra={
-                    "data_hero_slide": str(index),
-                    "aria_hidden": "false" if active else "true",
-                },
-            )
-        )
-        hero_controls.append(
-            f"""<button class="hero-option{' is-active' if active else ''}" type="button" data-hero-control data-hero-index="{index}" aria-pressed="{str(active).lower()}"><span>{index + 1}</span>{escape(label)}</button>"""
-        )
+    hero_media = responsive_image(
+        prefix,
+        hero_image,
+        hero_alt,
+        picture_class="hero-media is-active",
+        loading="eager",
+        decoding="async",
+        fetchpriority="high",
+        sizes="100vw",
+        picture_attrs_extra={
+            "aria_hidden": "false",
+        },
+    )
 
     return f"""
-      <section class="hero" aria-labelledby="hero-title" data-hero-carousel data-active-hero="0">
+      <section class="hero" aria-labelledby="hero-title" data-active-hero="0">
         <div class="hero-slides">
-          {"".join(hero_slides)}
+          {hero_media}
         </div>
         <div class="hero-overlay"></div>
-        <div class="hero-brand-mark" aria-hidden="true">
-          {responsive_image(prefix, "ui/logo.png", "", class_name="hero-brand-logo", picture_class="hero-brand-picture", loading="eager", decoding="async", sizes="(max-width: 780px) 140px, 360px", aria_hidden="true")}
-        </div>
         <div class="hero-content reveal is-visible">
           <p class="eyebrow">Research collaboration since 1989</p>
           <h1 id="hero-title">International Society for Hantaviruses</h1>
@@ -787,13 +774,6 @@ def home_page(
             <a class="button button-primary" href="{local(prefix, "ich2026/")}">ICH2026 in Chile</a>
             <a class="button button-secondary" href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for membership</a>
             <a class="button button-ghost" href="{local(prefix, "ich2026/abstracts-registration/")}">Abstracts & registration</a>
-          </div>
-          <div class="hero-carousel-controls" aria-label="Hero image options">
-            <button class="hero-carousel-step" type="button" data-hero-prev aria-label="Previous hero image"><span aria-hidden="true">&larr;</span></button>
-            <div class="hero-options" role="list">
-              {"".join(hero_controls)}
-            </div>
-            <button class="hero-carousel-step" type="button" data-hero-next aria-label="Next hero image"><span aria-hidden="true">&rarr;</span></button>
           </div>
         </div>
         <aside class="hero-panel" aria-label="ICH2026 conference brief">

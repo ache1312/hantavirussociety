@@ -726,15 +726,15 @@ h3 {
 
 .hero-panel {
   position: absolute;
-  right: 32px;
-  bottom: 30px;
+  right: clamp(88px, 10.5vw, 188px);
+  bottom: clamp(92px, 14vh, 148px);
   z-index: 3;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 218px;
-  align-items: center;
-  gap: 9px 16px;
-  width: min(560px, calc(100% - 64px));
-  padding: 14px 16px;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+  width: min(430px, calc(100% - 64px));
+  padding: 18px;
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 6px;
@@ -4747,8 +4747,8 @@ body.lightbox-open {
 }
 
 .hero-panel .countdown {
-  grid-column: 2;
-  grid-row: 1 / span 3;
+  grid-column: auto;
+  grid-row: auto;
   gap: 6px;
   width: 100%;
 }
@@ -4767,7 +4767,8 @@ body.lightbox-open {
 }
 
 .hero-panel .hero-panel-link {
-  grid-column: 2;
+  grid-column: auto;
+  justify-self: start;
 }
 
 .countdown-separator {
